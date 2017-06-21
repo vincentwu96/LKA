@@ -17,7 +17,7 @@ password: String;
 
 constructor(
 private validateService: ValidateService,
-private authService:AuthService,
+private authService: AuthService,
 private router: Router
 ) { }
 
