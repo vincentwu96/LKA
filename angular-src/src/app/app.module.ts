@@ -17,6 +17,10 @@ import {AuthService} from './services/auth.service';
 import {AuthGuard} from './guards/auth.guard';
 import { ContactComponent } from './components/contact/contact.component';
 import { ASCComponent } from './components/asc/asc.component';
+import { EwComponent } from './components/ew/ew.component';
+import { IopComponent } from './components/iop/iop.component';
+import { ChessComponent } from './components/chess/chess.component';
+import { ApComponent } from './components/ap/ap.component';
 
 
 const appRoutes: Routes = [
@@ -24,6 +28,11 @@ const appRoutes: Routes = [
 	{path:'register', component: RegisterComponent},
 	{path:'login', component: LoginComponent},
 	{path:'contact', component: ContactComponent},
+	{path:'asc', component: ASCComponent},
+	{path:'ew', component: EwComponent},
+	{path:'iop', component: IopComponent},
+	{path:'chess', component: ChessComponent},
+	{path:'ap', component: ApComponent},
 	{path:'dashboard', component: DashboardComponent, canActivate:[AuthGuard]},
 	{path:'profile', component: ProfileComponent, canActivate:[AuthGuard]}
 ]
@@ -38,7 +47,11 @@ const appRoutes: Routes = [
     DashboardComponent,
     ProfileComponent,
     ContactComponent,
-    ASCComponent
+    ASCComponent,
+    EwComponent,
+    IopComponent,
+    ChessComponent,
+    ApComponent
   ],
   imports: [
     BrowserModule,
