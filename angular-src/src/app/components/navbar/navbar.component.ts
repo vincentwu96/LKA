@@ -10,11 +10,14 @@ import {Router} from '@angular/router';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
+fullImagePath: string;
 
 constructor(
 private authService:AuthService,
 private router:Router
-) { }
+) { 
+this.fullImagePath = '/assets/images/logo.jpg'
+}
 
   ngOnInit() {
   }
