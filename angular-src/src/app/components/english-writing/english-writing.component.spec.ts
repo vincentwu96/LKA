@@ -3,21 +3,21 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { ASCComponent } from './asc.component';
+import { EnglishWritingComponent } from './english-writing.component';
 
-describe('ASCComponent', () => {
-  let component: ASCComponent;
-  let fixture: ComponentFixture<ASCComponent>;
+describe('EnglishWritingComponent', () => {
+  let component: EnglishWritingComponent;
+  let fixture: ComponentFixture<EnglishWritingComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ASCComponent ]
+      declarations: [ EnglishWritingComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ASCComponent);
+    fixture = TestBed.createComponent(EnglishWritingComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

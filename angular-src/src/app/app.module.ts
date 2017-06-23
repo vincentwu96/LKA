@@ -16,26 +16,26 @@ import {ValidateService} from './services/validate.service';
 import {AuthService} from './services/auth.service';
 import {AuthGuard} from './guards/auth.guard';
 import { ContactComponent } from './components/contact/contact.component';
-import { ASCComponent } from './components/asc/asc.component';
-import { EwComponent } from './components/ew/ew.component';
-import { IopComponent } from './components/iop/iop.component';
+import { EnglishWritingComponent } from './components/english-writing/english-writing.component';
 import { ChessComponent } from './components/chess/chess.component';
-import { ApComponent } from './components/ap/ap.component';
-
+import { AfterSchoolCareComponent } from './components/after-school-care/after-school-care.component';
+import { IntroToProgrammingComponent } from './components/intro-to-programming/intro-to-programming.component';
+import { ApTutoringComponent } from './components/ap-tutoring/ap-tutoring.component';
 
 const appRoutes: Routes = [
 	{path:'', component: HomeComponent},
 	{path:'register', component: RegisterComponent},
 	{path:'login', component: LoginComponent},
 	{path:'contact', component: ContactComponent},
-	{path:'asc', component: ASCComponent},
-	{path:'ew', component: EwComponent},
-	{path:'iop', component: IopComponent},
-	{path:'chess', component: ChessComponent},
-	{path:'ap', component: ApComponent},
+	
 	{path:'dashboard', component: DashboardComponent, canActivate:[AuthGuard]},
-	{path:'profile', component: ProfileComponent, canActivate:[AuthGuard]}
-]
+	{path:'profile', component: ProfileComponent, canActivate:[AuthGuard]},
+	{path:'after-school-care', component: AfterSchoolCareComponent},
+	{path:'english-writing', component: EnglishWritingComponent},
+	{path:'intro-to-programming', component: IntroToProgrammingComponent},
+	{path:'chess', component: ChessComponent},
+	{path:'ap-tutoring', component: ApTutoringComponent},
+	]
 
 @NgModule({
   declarations: [
@@ -47,11 +47,11 @@ const appRoutes: Routes = [
     DashboardComponent,
     ProfileComponent,
     ContactComponent,
-    ASCComponent,
-    EwComponent,
-    IopComponent,
+    EnglishWritingComponent,
     ChessComponent,
-    ApComponent
+    AfterSchoolCareComponent,
+    IntroToProgrammingComponent,
+    ApTutoringComponent
   ],
   imports: [
     BrowserModule,
