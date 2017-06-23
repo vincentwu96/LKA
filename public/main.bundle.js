@@ -841,7 +841,7 @@ module.exports = ""
 /***/ 681:
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "div {\n\theight: 350px;\n\twidth: 100%;\n}\n"
 
 /***/ }),
 
@@ -932,7 +932,7 @@ module.exports = "<p>\n  English Writing Description\n</p>\n"
 /***/ 694:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"jumbotron text-center\">\r\n\t<h1>LKA</h1>\r\n\t<p class=\"lead\">Welcome to Light of Knowledge Academy</p>\r\n\t<div>\r\n\t\t<a class=\"btn btn-primary\" [routerLink]=\"['/register']\">Register</a>\r\n\t\t<a class=\"btn btn-default\" [routerLink]=\"['/login']\">Login</a>\r\n\t</div>\r\n</div>\r\n\r\n<div class=\"row\">\r\n\t<div class=\"col-md-4\">\r\n\t\t<h3>Summer Camp</h3>\r\n\t\t<p>Summer Camp Description</p>\r\n\t</div>\r\n\t<div class=\"col-md-4\">\r\n\t\t<h3>English Writing</h3>\r\n\t\t<p>English Writing</p>\r\n\t</div>\r\n\t<div class=\"col-md-4\">\r\n\t\t<h3>Chess Class</h3>\r\n\t\t<p>Chess Class</p>\r\n\t</div>\r\n</div>\r\n"
+module.exports = "<div class=\"jumbotron text-center\">\r\n\t<h1>Light of Knowledge Academy</h1>\r\n\t<br>\r\n\t<p>20432 Silverado Ave. Ste. 6 | Cupertino, CA 95014\r\n\t<br>Call us at: (408) 996-1236 | (408) 564-8133 | Text us at: (408) 218-1698\r\n\t<br>Email: <a href=\"info.lkastaff@gmail.com\">info.lkastaff@gmail.com</a> | <a href=\"http://facebook.com/LOKacademy\">Give us a like on our Facebook page!</a></p>\r\n\t<br>\r\n\t<div>\r\n\t\t<a class=\"btn btn-primary\" [routerLink]=\"['/login']\">Login</a>\r\n\t\t<a class=\"btn btn-default\" [routerLink]=\"['/register']\">Register</a>\r\n\t</div>\r\n</div>\r\n\r\n<legend>Updates!</legend>\r\n<div class=\"row\">\r\n\t<div class=\"col-md-4\">\r\n\t\t<h3>Summer Camp</h3>\r\n\t\t<p>Summer Camp Description</p>\r\n\t</div>\r\n\t<div class=\"col-md-4\">\r\n\t\t<h3>English Writing</h3>\r\n\t\t<p>English Writing</p>\r\n\t</div>\r\n\t<div class=\"col-md-4\">\r\n\t\t<h3>Chess Class</h3>\r\n\t\t<p>Chess Class</p>\r\n\t</div>\r\n</div>\r\n<br><br>\r\n"
 
 /***/ }),
 
@@ -1010,13 +1010,13 @@ var AuthService = (function () {
     AuthService.prototype.registerUser = function (user) {
         var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["Headers"]();
         headers.append('Content-Type', 'application/json');
-        return this.http.post('users/register', user, { headers: headers })
+        return this.http.post('http://localhost:3000/users/register', user, { headers: headers })
             .map(function (res) { return res.json(); });
     };
     AuthService.prototype.authenticateUser = function (user) {
         var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["Headers"]();
         headers.append('Content-Type', 'application/json');
-        return this.http.post('users/authenticate', user, { headers: headers })
+        return this.http.post('http://localhost:3000/users/authenticate', user, { headers: headers })
             .map(function (res) { return res.json(); });
     };
     AuthService.prototype.getProfile = function () {
@@ -1024,7 +1024,7 @@ var AuthService = (function () {
         this.loadToken();
         headers.append('Authorization', this.authToken);
         headers.append('Content-Type', 'application/json');
-        return this.http.get('users/profile', { headers: headers })
+        return this.http.get('http://localhost:3000/users/profile', { headers: headers })
             .map(function (res) { return res.json(); });
     };
     AuthService.prototype.storeUserData = function (token, user) {
