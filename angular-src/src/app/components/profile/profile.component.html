@@ -1,7 +1,96 @@
 <div *ngIf="user">
-	<h2 class="page-header">Welcome back {{user.name}}</h2>
-	<ul class="list-group">
-		<li class="list-group-item">Username: {{user.username}}</li>
-		<li class="list-group-item">Email: {{user.email}}</li>
-	</ul>
+	<h2 class="page-header">Welcome back {{user.name}}.</h2>
+	<!--
+	 <ul class="list-group">
+	 <li class="list-group-item">Username: {{user.username}}</li>
+	 <li class="list-group-item">Email: {{user.email}}</li>
+	 </ul>
+	-->
+	<h4><p>Username: {{user.username}}</p></h4>
+	<h4><p>Email: {{user.email}}</p></h4>
+
+
+	<legend><br>Grades</legend>
+	<table>
+		<tr>
+			<th>Week No.</th>
+			<th>Essay</th>
+			<th>Reading Comprehension</th>
+			<th>Vocabulary</th>
+		</tr>
+		<tr>
+			<td>Week 1</td>
+			<td>{{user.e1}}</td>
+			<td>{{user.rc1}}</td>
+			<td>{{user.v1}}</td>
+		</tr>
+		<tr>
+			<td>Week 2</td>
+			<td>{{user.e2}}</td>
+			<td>{{user.rc2}}</td>
+			<td>{{user.v2}}</td>
+		</tr>
+		<tr>
+			<td>Week 3</td>
+			<td>{{user.e3}}</td>
+			<td>{{user.rc3}}</td>
+			<td>{{user.v3}}</td>
+		</tr>
+		<tr>
+			<td>Week 4</td>
+			<td>{{user.e4}}</td>
+			<td>{{user.rc4}}</td>
+			<td>{{user.v4}}</td>
+		</tr>
+		<tr>
+			<td>Week 5</td>
+			<td>{{user.e5}}</td>
+			<td>{{user.rc5}}</td>
+			<td>{{user.v5}}</td>
+		</tr>
+		<tr>
+			<td>Week 6</td>
+			<td>{{user.e6}}</td>
+			<td>{{user.rc6}}</td>
+			<td>{{user.v6}}</td>
+		</tr>
+		<tr>
+			<td>Week 7</td>
+			<td>{{user.e7}}</td>
+			<td>{{user.rc7}}</td>
+			<td>{{user.v7}}</td>
+		</tr>
+		<tr>
+			<td>Week 8</td>
+			<td>{{user.e8}}</td>
+			<td>{{user.rc8}}</td>
+			<td>{{user.v8}}</td>
+		</tr>
+		<tr>
+			<td>Week 9</td>
+			<td>{{user.e9}}</td>
+			<td>{{user.rc9}}</td>
+			<td>{{user.v9}}</td>
+		</tr>
+		<tr>
+			<td>Week 10</td>
+			<td>{{user.e10}}</td>
+			<td>{{user.rc10}}</td>
+			<td>{{user.v10}}</td>
+		</tr>
+		<tr>
+			<td>Week 11</td>
+			<td>{{user.e11}}</td>
+			<td>{{user.rc11}}</td>
+			<td>{{user.v11}}</td>
+		</tr>
+		<tr>
+			<td>Week 12</td>
+			<td>{{user.e12}}</td>
+			<td>{{user.rc12}}</td>
+			<td>{{user.v12}}</td>
+		</tr>
+	</table>
+
+	<br><br><br>
 </div>

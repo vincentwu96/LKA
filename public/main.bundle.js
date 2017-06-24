@@ -130,11 +130,11 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__services_auth_service__ = __webpack_require__(80);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__guards_auth_guard__ = __webpack_require__(518);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_contact_contact_component__ = __webpack_require__(509);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_asc_asc_component__ = __webpack_require__(507);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_ew_ew_component__ = __webpack_require__(511);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_iop_iop_component__ = __webpack_require__(513);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_chess_chess_component__ = __webpack_require__(508);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__components_ap_ap_component__ = __webpack_require__(506);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_english_writing_english_writing_component__ = __webpack_require__(511);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_chess_chess_component__ = __webpack_require__(508);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_after_school_care_after_school_care_component__ = __webpack_require__(506);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_intro_to_programming_intro_to_programming_component__ = __webpack_require__(513);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__components_ap_tutoring_ap_tutoring_component__ = __webpack_require__(507);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -171,13 +171,13 @@ var appRoutes = [
     { path: 'register', component: __WEBPACK_IMPORTED_MODULE_8__components_register_register_component__["a" /* RegisterComponent */] },
     { path: 'login', component: __WEBPACK_IMPORTED_MODULE_7__components_login_login_component__["a" /* LoginComponent */] },
     { path: 'contact', component: __WEBPACK_IMPORTED_MODULE_15__components_contact_contact_component__["a" /* ContactComponent */] },
-    { path: 'asc', component: __WEBPACK_IMPORTED_MODULE_16__components_asc_asc_component__["a" /* ASCComponent */] },
-    { path: 'ew', component: __WEBPACK_IMPORTED_MODULE_17__components_ew_ew_component__["a" /* EwComponent */] },
-    { path: 'iop', component: __WEBPACK_IMPORTED_MODULE_18__components_iop_iop_component__["a" /* IopComponent */] },
-    { path: 'chess', component: __WEBPACK_IMPORTED_MODULE_19__components_chess_chess_component__["a" /* ChessComponent */] },
-    { path: 'ap', component: __WEBPACK_IMPORTED_MODULE_20__components_ap_ap_component__["a" /* ApComponent */] },
     { path: 'dashboard', component: __WEBPACK_IMPORTED_MODULE_10__components_dashboard_dashboard_component__["a" /* DashboardComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_14__guards_auth_guard__["a" /* AuthGuard */]] },
-    { path: 'profile', component: __WEBPACK_IMPORTED_MODULE_11__components_profile_profile_component__["a" /* ProfileComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_14__guards_auth_guard__["a" /* AuthGuard */]] }
+    { path: 'profile', component: __WEBPACK_IMPORTED_MODULE_11__components_profile_profile_component__["a" /* ProfileComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_14__guards_auth_guard__["a" /* AuthGuard */]] },
+    { path: 'after-school-care', component: __WEBPACK_IMPORTED_MODULE_18__components_after_school_care_after_school_care_component__["a" /* AfterSchoolCareComponent */] },
+    { path: 'english-writing', component: __WEBPACK_IMPORTED_MODULE_16__components_english_writing_english_writing_component__["a" /* EnglishWritingComponent */] },
+    { path: 'intro-to-programming', component: __WEBPACK_IMPORTED_MODULE_19__components_intro_to_programming_intro_to_programming_component__["a" /* IntroToProgrammingComponent */] },
+    { path: 'chess', component: __WEBPACK_IMPORTED_MODULE_17__components_chess_chess_component__["a" /* ChessComponent */] },
+    { path: 'ap-tutoring', component: __WEBPACK_IMPORTED_MODULE_20__components_ap_tutoring_ap_tutoring_component__["a" /* ApTutoringComponent */] },
 ];
 var AppModule = (function () {
     function AppModule() {
@@ -193,11 +193,11 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_10__components_dashboard_dashboard_component__["a" /* DashboardComponent */],
                 __WEBPACK_IMPORTED_MODULE_11__components_profile_profile_component__["a" /* ProfileComponent */],
                 __WEBPACK_IMPORTED_MODULE_15__components_contact_contact_component__["a" /* ContactComponent */],
-                __WEBPACK_IMPORTED_MODULE_16__components_asc_asc_component__["a" /* ASCComponent */],
-                __WEBPACK_IMPORTED_MODULE_17__components_ew_ew_component__["a" /* EwComponent */],
-                __WEBPACK_IMPORTED_MODULE_18__components_iop_iop_component__["a" /* IopComponent */],
-                __WEBPACK_IMPORTED_MODULE_19__components_chess_chess_component__["a" /* ChessComponent */],
-                __WEBPACK_IMPORTED_MODULE_20__components_ap_ap_component__["a" /* ApComponent */]
+                __WEBPACK_IMPORTED_MODULE_16__components_english_writing_english_writing_component__["a" /* EnglishWritingComponent */],
+                __WEBPACK_IMPORTED_MODULE_17__components_chess_chess_component__["a" /* ChessComponent */],
+                __WEBPACK_IMPORTED_MODULE_18__components_after_school_care_after_school_care_component__["a" /* AfterSchoolCareComponent */],
+                __WEBPACK_IMPORTED_MODULE_19__components_intro_to_programming_intro_to_programming_component__["a" /* IntroToProgrammingComponent */],
+                __WEBPACK_IMPORTED_MODULE_20__components_ap_tutoring_ap_tutoring_component__["a" /* ApTutoringComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -221,7 +221,7 @@ var AppModule = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ApComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AfterSchoolCareComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -232,22 +232,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-var ApComponent = (function () {
-    function ApComponent() {
+var AfterSchoolCareComponent = (function () {
+    function AfterSchoolCareComponent() {
     }
-    ApComponent.prototype.ngOnInit = function () {
+    AfterSchoolCareComponent.prototype.ngOnInit = function () {
     };
-    ApComponent = __decorate([
+    AfterSchoolCareComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'app-ap',
+            selector: 'app-after-school-care',
             template: __webpack_require__(688),
             styles: [__webpack_require__(675)]
         }), 
         __metadata('design:paramtypes', [])
-    ], ApComponent);
-    return ApComponent;
+    ], AfterSchoolCareComponent);
+    return AfterSchoolCareComponent;
 }());
-//# sourceMappingURL=C:/Users/Wendy/Desktop/LKA/LKA/angular-src/src/ap.component.js.map
+//# sourceMappingURL=C:/Users/Wendy/Desktop/LKA/LKA/angular-src/src/after-school-care.component.js.map
 
 /***/ }),
 
@@ -256,7 +256,7 @@ var ApComponent = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ASCComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ApTutoringComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -267,22 +267,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-var ASCComponent = (function () {
-    function ASCComponent() {
+var ApTutoringComponent = (function () {
+    function ApTutoringComponent() {
     }
-    ASCComponent.prototype.ngOnInit = function () {
+    ApTutoringComponent.prototype.ngOnInit = function () {
     };
-    ASCComponent = __decorate([
+    ApTutoringComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'app-asc',
+            selector: 'app-ap-tutoring',
             template: __webpack_require__(689),
             styles: [__webpack_require__(676)]
         }), 
         __metadata('design:paramtypes', [])
-    ], ASCComponent);
-    return ASCComponent;
+    ], ApTutoringComponent);
+    return ApTutoringComponent;
 }());
-//# sourceMappingURL=C:/Users/Wendy/Desktop/LKA/LKA/angular-src/src/asc.component.js.map
+//# sourceMappingURL=C:/Users/Wendy/Desktop/LKA/LKA/angular-src/src/ap-tutoring.component.js.map
 
 /***/ }),
 
@@ -304,6 +304,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var ChessComponent = (function () {
     function ChessComponent() {
+        this.lat1 = 36.9914;
+        this.lng1 = -122.0609;
+        this.zoom1 = 8;
+        this.lat2 = 36.9643;
+        this.lng2 = 122.0189;
     }
     ChessComponent.prototype.ngOnInit = function () {
     };
@@ -396,7 +401,7 @@ var DashboardComponent = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EwComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EnglishWritingComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -407,22 +412,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-var EwComponent = (function () {
-    function EwComponent() {
+var EnglishWritingComponent = (function () {
+    function EnglishWritingComponent() {
     }
-    EwComponent.prototype.ngOnInit = function () {
+    EnglishWritingComponent.prototype.ngOnInit = function () {
     };
-    EwComponent = __decorate([
+    EnglishWritingComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'app-ew',
+            selector: 'app-english-writing',
             template: __webpack_require__(693),
             styles: [__webpack_require__(680)]
         }), 
         __metadata('design:paramtypes', [])
-    ], EwComponent);
-    return EwComponent;
+    ], EnglishWritingComponent);
+    return EnglishWritingComponent;
 }());
-//# sourceMappingURL=C:/Users/Wendy/Desktop/LKA/LKA/angular-src/src/ew.component.js.map
+//# sourceMappingURL=C:/Users/Wendy/Desktop/LKA/LKA/angular-src/src/english-writing.component.js.map
 
 /***/ }),
 
@@ -466,7 +471,7 @@ var HomeComponent = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return IopComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return IntroToProgrammingComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -477,22 +482,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-var IopComponent = (function () {
-    function IopComponent() {
+var IntroToProgrammingComponent = (function () {
+    function IntroToProgrammingComponent() {
     }
-    IopComponent.prototype.ngOnInit = function () {
+    IntroToProgrammingComponent.prototype.ngOnInit = function () {
     };
-    IopComponent = __decorate([
+    IntroToProgrammingComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'app-iop',
+            selector: 'app-intro-to-programming',
             template: __webpack_require__(695),
             styles: [__webpack_require__(682)]
         }), 
         __metadata('design:paramtypes', [])
-    ], IopComponent);
-    return IopComponent;
+    ], IntroToProgrammingComponent);
+    return IntroToProgrammingComponent;
 }());
-//# sourceMappingURL=C:/Users/Wendy/Desktop/LKA/LKA/angular-src/src/iop.component.js.map
+//# sourceMappingURL=C:/Users/Wendy/Desktop/LKA/LKA/angular-src/src/intro-to-programming.component.js.map
 
 /***/ }),
 
@@ -799,21 +804,21 @@ module.exports = ""
 /***/ 675:
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "@media screen and (max-width: 1020px) {\n\t#container, #header, #content, #footer {\n\t\tfloat: none;\n\t\twidth: auto;\n\t}\n\t#subtitle, #share, #slider, #sidebar{\n\t\tdisplay:none;\n\t}\n\tp{ font-size: 2em; }\n}\n"
 
 /***/ }),
 
 /***/ 676:
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "@media screen and (max-width: 1020px) {\n\t#container, #header, #content, #footer {\n\t\tfloat: none;\n\t\twidth: auto;\n\t}\n\t#subtitle, #share, #slider, #sidebar{\n\t\tdisplay:none;\n\t}\n\tp{ font-size: 2em; }\n}\n"
 
 /***/ }),
 
 /***/ 677:
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "#main-container {\r\n        /*border: solid 1px;*/\r\n        height: 73vh;\r\n        /*width: 300vh; */\r\n}\r\n\r\nagm-map {\r\n        height: 100%;\r\n        width: 208vh;\r\n}\r\n/*.col-md-4, */\r\n.col-md-8 {\r\n\r\n        padding-left: 0;\r\n        height: 100%;\r\n}\r\n\r\n.search {\r\n        border-bottom: 0;\r\n        padding: 0;\r\n        margin: 0;\r\n}\r\n\r\n.form-group {\r\n        margin: 0;\r\n}\r\n"
 
 /***/ }),
 
@@ -841,7 +846,7 @@ module.exports = ""
 /***/ 681:
 /***/ (function(module, exports) {
 
-module.exports = "div {\n\theight: 350px;\n\twidth: 100%;\n}\n"
+module.exports = "div {\n\theight: 333px;\n\twidth: 100%;\n}\n\n@media screen and (max-width: 1020px) {\n\t#container, #header, #content, #footer {\n\t\tfloat: none;\n\t\twidth: auto;\n\t}\n\t#subtitle, #share, #slider, #sidebar{\n\t\tdisplay:none;\n\t}\n\tp{ font-size: 2em; }\n}\n"
 
 /***/ }),
 
@@ -869,7 +874,7 @@ module.exports = ""
 /***/ 685:
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "table, td, th {\n\tborder: 1px solid black;\n}\n\ntable {\n\tborder-collapse: collapse;\n\twidth: 100%;\n}\n\nth {\n\ttext-align: left;\n\theight: 50px;\n}\ntd, th{\n\n\tpadding: 15px;\n\ttext-align: left;\n}\ntr:nth-child(even) {background-color: #f2f2f2}\ntr:hover {background-color: #f5f5f5}\n"
 
 /***/ }),
 
@@ -890,21 +895,21 @@ module.exports = "<app-navbar></app-navbar>\n<div class=\"container\">\n\t<route
 /***/ 688:
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  AP Tutoring Description\n</p>\n"
+module.exports = "<p>After-School Care Description</p>\n"
 
 /***/ }),
 
 /***/ 689:
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  After-School Care Description\n</p>\n"
+module.exports = "<p>AP Tutoring Description</p>\n"
 
 /***/ }),
 
 /***/ 690:
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  Chess Description\n</p>\n"
+module.exports = "<p>Chess Description</p>\r\n\r\n<div class=\"jumobotron text-center\">\r\n  <p><font size=\"10\"></font></p>\r\n</div>\r\n<div id=\"main-container\" class=\"row\">\r\n\r\n\t\r\n<!--\r\n  <agm-map [latitude]=\"lat1\" [longitude]=\"lng1\" [zoom]=\"zoom1\">\r\n    <agm-marker [latitude]=\"lat1\" [longitude]=\"lng1\">\r\n      <agm-info-window>This is UCSC!</agm-info-window>\r\n    </agm-marker>\r\n    <agm-marker [latitude]=\"36.5\" [longitude]=\"122\">\r\n      <agm-info-window>Test</agm-info-window>\r\n    </agm-marker>\r\n  </agm-map>\r\n  -->\r\n</div>\r\n"
 
 /***/ }),
 
@@ -918,28 +923,28 @@ module.exports = "<form class=\"form-horizontal\">\r\n\t<fieldset>\r\n\t\t<legen
 /***/ 692:
 /***/ (function(module, exports) {
 
-module.exports = "<h2 class=\"page-header\">Dashboard</h2>\n<p>Thank you for creating an account, more functionality will be added soon!</p>\n"
+module.exports = "<h2 class=\"page-header\">Dashboard</h2>\n<a class=\"btn btn-primary\" [routerLink]=\"['/profile']\">Go to your profile</a>\n<p><br>Thank you for creating an account, more functionality will be added soon!</p>\n"
 
 /***/ }),
 
 /***/ 693:
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  English Writing Description\n</p>\n"
+module.exports = "<p>English Writing Description</p>\n"
 
 /***/ }),
 
 /***/ 694:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"jumbotron text-center\">\r\n\t<h1>Light of Knowledge Academy</h1>\r\n\t<br>\r\n\t<p>20432 Silverado Ave. Ste. 6 | Cupertino, CA 95014\r\n\t<br>Call us at: (408) 996-1236 | (408) 564-8133 | Text us at: (408) 218-1698\r\n\t<br>Email: <a href=\"info.lkastaff@gmail.com\">info.lkastaff@gmail.com</a> | <a href=\"http://facebook.com/LOKacademy\">Give us a like on our Facebook page!</a></p>\r\n\t<br>\r\n\t<div>\r\n\t\t<a class=\"btn btn-primary\" [routerLink]=\"['/login']\">Login</a>\r\n\t\t<a class=\"btn btn-default\" [routerLink]=\"['/register']\">Register</a>\r\n\t</div>\r\n</div>\r\n\r\n<legend>Updates!</legend>\r\n<div class=\"row\">\r\n\t<div class=\"col-md-4\">\r\n\t\t<h3>Summer Camp</h3>\r\n\t\t<p>Summer Camp Description</p>\r\n\t</div>\r\n\t<div class=\"col-md-4\">\r\n\t\t<h3>English Writing</h3>\r\n\t\t<p>English Writing</p>\r\n\t</div>\r\n\t<div class=\"col-md-4\">\r\n\t\t<h3>Chess Class</h3>\r\n\t\t<p>Chess Class</p>\r\n\t</div>\r\n</div>\r\n<br><br>\r\n"
+module.exports = "<div class=\"jumbotron text-center\">\r\n\t<h1>Light of Knowledge Academy</h1>\r\n\t<br>\r\n\t<p>20432 Silverado Ave. Ste. 6 | Cupertino, CA 95014\r\n\t<br>Call us at: (408) 996-1236 | (408) 564-8133 | Text us at: (408) 218-1698\r\n\t<br>Email: <a href=\"info.lkastaff@gmail.com\">info.lkastaff@gmail.com</a> | <a href=\"http://facebook.com/LOKacademy\">Give us a like on our Facebook page!</a></p>\r\n\t<!--\r\n\t<div>\r\n\t\t<a class=\"btn btn-primary\" [routerLink]=\"['/login']\">Login</a>\r\n\t\t<a class=\"btn btn-default\" [routerLink]=\"['/register']\">Register</a>\r\n\t</div>\r\n\t-->\r\n</div>\r\n\r\n\r\n<legend>Updates!</legend>\r\n<div class=\"row\">\r\n\t<div class=\"col-md-4\">\r\n\t\t<h3>Summer Camp</h3>\r\n\t\t<p>Enroll in our Summer Camp Program Today!</p>\r\n\t</div>\r\n\t<div class=\"col-md-4\">\r\n\t\t<h3>English Writing</h3>\r\n\t\t<p>English Writing</p>\r\n\t</div>\r\n\t<div class=\"col-md-4\">\r\n\t\t<h3>Chess Class</h3>\r\n\t\t<p>Chess Class</p>\r\n\t</div>\r\n</div>\r\n<br><br>\r\n"
 
 /***/ }),
 
 /***/ 695:
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  Intro to Programming Description\n</p>\n"
+module.exports = "<p>Intro to Programming Description\n</p>\n"
 
 /***/ }),
 
@@ -953,14 +958,14 @@ module.exports = "<h2 class=\"page-header\">Login</h2>\n<form (submit)=\"onLogin
 /***/ 697:
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-default\">\r\n\t<div class=\"container\">\r\n\t\t<div class=\"navbar-header\">\r\n\t\t\t<button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#navbar\" aria-expande=\"false\" aria-controls=\"navbar\">\r\n\t\t\t\t<span class=\"sr-only\">Toggle navigation</span>\r\n\t\t\t\t<span class=\"icon-bar\"></span>\r\n\t\t\t\t<span class=\"icon-bar\"></span>\r\n\t\t\t\t<span class=\"icon-bar\"></span>\r\n\t\t\t</button>\r\n\t\t\t<a class=\"navbar-brand\" href=\"#\"><img [src]=\"fullImagePath\"></a>\r\n\t\t</div>\r\n\r\n\r\n\t\t<div id=\"navbar\" class=\"collapse navbar-collapse\">\r\n<!--\r\n\t\t\t<ul class=\"nav navbar-nav\">\r\n\t\t\t\t<li class=\"dropdown\">\r\n\t\t\t\t\t<a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" role=\"button\" aria-expanded=\"false\">Courses <span class=\"caret\"></span></a>\r\n\t\t\t\t\t<ul class=\"dropdown-menu\" role=\"menu\">\r\n\t\t\t\t\t\t<li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/contact']\">Action</a></li>\r\n\t\t\t\t\t\t<li><a href=\"#\">Another action</a></li>\r\n\t\t\t\t\t\t<li><a href=\"#\">Something else here</a></li>\r\n\t\t\t\t\t\t<li class=\"divider\"></li>\r\n\t\t\t\t\t\t<li><a href=\"#\">Separated link</a></li>\r\n\t\t\t\t\t\t<li class=\"divider\"></li>\r\n\t\t\t\t\t\t<li><a href=\"#\">One more separated link</a></li>\r\n\t\t\t\t\t</ul>\r\n\t\t\t\t</li>\r\n\t\t\t</ul>\r\n-->\r\n\t\t\t<ul class=\"nav navbar-nav navbar-left\">\r\n\t\t\t\t<li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/']\">Home <span class=\"glyphicon glyphicon-home\" aria-hidden=\"true\"></span></a></li>\r\n\t\t\t\t<li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/contact']\">Contact Us</a></li>\r\n\t\t\t\t<li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/asc']\">After-School Care</a></li>\r\n\t\t\t\t<li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/ew']\">English Writing</a></li>\r\n\t\t\t\t<li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/iop']\">Intro to Programming</a></li>\r\n\t\t\t\t<li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/chess']\">Chess</a></li>\r\n\t\t\t\t<li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/ap']\">AP Tutoring</a></li>\r\n\r\n\t\t\t</ul>\r\n\r\n\t\t\t<ul class=\"nav navbar-nav navbar-right\">\r\n\t\t\t\t<li *ngIf=\"authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/dashboard']\">Dashboard</a></li>\r\n\t\t\t\t<li *ngIf=\"authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/profile']\">Profile</a></li>\r\n\t\t\t\t<li *ngIf=\"!authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/login']\">Login</a></li>\r\n\t\t\t\t<li *ngIf=\"!authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/register']\">Register</a></li>\r\n\t\t\t\t<li *ngIf=\"authService.loggedIn()\"><a (click)=\"onLogoutClick()\" href=\"#\">Logout</a></li>\r\n\t\t\t</ul>\r\n\t\t</div><!--/.nav-collapse -->\r\n\t</div>\r\n</nav>\r\n"
+module.exports = "<nav class=\"navbar navbar-default\">\r\n\t<div class=\"container-fluid\">\r\n\t\t<div class=\"navbar-header\">\r\n\t\t\t<button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#navbar\" aria-expande=\"false\" aria-controls=\"navbar\">\r\n\t\t\t\t<span class=\"sr-only\">Toggle navigation</span>\r\n\t\t\t\t<span class=\"icon-bar\"></span>\r\n\t\t\t\t<span class=\"icon-bar\"></span>\r\n\t\t\t\t<span class=\"icon-bar\"></span>\r\n\t\t\t</button>\r\n\t\t\t<a class=\"navbar-brand\" href=\"#\"><img [src]=\"fullImagePath\"></a>\r\n\t\t</div>\r\n\r\n\r\n\t\t<div id=\"navbar\" class=\"collapse navbar-collapse\">\r\n<!--\r\n\t\t\t<ul class=\"nav navbar-nav\">\r\n\t\t\t\t<li class=\"dropdown\">\r\n\t\t\t\t\t<a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" role=\"button\" aria-expanded=\"false\">Courses <span class=\"caret\"></span></a>\r\n\t\t\t\t\t<ul class=\"dropdown-menu\" role=\"menu\">\r\n\t\t\t\t\t\t<li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/contact']\">Action</a></li>\r\n\t\t\t\t\t\t<li><a href=\"#\">Another action</a></li>\r\n\t\t\t\t\t\t<li><a href=\"#\">Something else here</a></li>\r\n\t\t\t\t\t\t<li class=\"divider\"></li>\r\n\t\t\t\t\t\t<li><a href=\"#\">Separated link</a></li>\r\n\t\t\t\t\t\t<li class=\"divider\"></li>\r\n\t\t\t\t\t\t<li><a href=\"#\">One more separated link</a></li>\r\n\t\t\t\t\t</ul>\r\n\t\t\t\t</li>\r\n\t\t\t</ul>\r\n\r\n-->\r\n\t\t\t<ul class=\"nav navbar-nav navbar-left\">\r\n\t\t\t\t<li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/']\">Home <span class=\"glyphicon glyphicon-home\" aria-hidden=\"true\"></span></a></li>\r\n\t\t\t\t<li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/contact']\">Contact Us</a></li>\r\n\t\t\t\t<li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/after-school-care']\">After-School Care</a></li>\r\n\t\t\t\t<li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/english-writing']\">English Writing</a></li>\r\n\t\t\t\t<li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/intro-to-programming']\">Intro to Programming</a></li>\r\n\t\t\t\t<li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/chess']\">Chess</a></li>\r\n\t\t\t\t<li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/ap-tutoring']\">AP Tutoring</a></li>\r\n\r\n\t\t\t</ul>\r\n\r\n\t\t\t<ul class=\"nav navbar-nav navbar-right\">\r\n\t\t\t\t<li *ngIf=\"authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/dashboard']\">Dashboard</a></li>\r\n\t\t\t\t<li *ngIf=\"authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/profile']\">Profile</a></li>\r\n\t\t\t\t<li *ngIf=\"!authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/login']\">Login</a></li>\r\n\t\t\t\t<li *ngIf=\"!authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/register']\">Register</a></li>\r\n\t\t\t\t<li *ngIf=\"authService.loggedIn()\"><a (click)=\"onLogoutClick()\" href=\"#\">Logout</a></li>\r\n\t\t\t</ul>\r\n\t\t</div><!--/.nav-collapse -->\r\n\t</div>\r\n</nav>\r\n"
 
 /***/ }),
 
 /***/ 698:
 /***/ (function(module, exports) {
 
-module.exports = "<div *ngIf=\"user\">\n\t<h2 class=\"page-header\">Welcome back {{user.name}}</h2>\n\t<ul class=\"list-group\">\n\t\t<li class=\"list-group-item\">Username: {{user.username}}</li>\n\t\t<li class=\"list-group-item\">Email: {{user.email}}</li>\n\t</ul>\n</div>\n"
+module.exports = "<div *ngIf=\"user\">\n\t<h2 class=\"page-header\">Welcome back {{user.name}}.</h2>\n\t<!--\n\t <ul class=\"list-group\">\n\t <li class=\"list-group-item\">Username: {{user.username}}</li>\n\t <li class=\"list-group-item\">Email: {{user.email}}</li>\n\t </ul>\n\t-->\n\t<h4><p>Username: {{user.username}}</p></h4>\n\t<h4><p>Email: {{user.email}}</p></h4>\n\n\n\t<legend><br>Grades</legend>\n\t<table>\n\t\t<tr>\n\t\t\t<th>Week No.</th>\n\t\t\t<th>Essay</th>\n\t\t\t<th>Reading Comprehension</th>\n\t\t\t<th>Vocabulary</th>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Week 1</td>\n\t\t\t<td>{{user.e1}}</td>\n\t\t\t<td>{{user.rc1}}</td>\n\t\t\t<td>{{user.v1}}</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Week 2</td>\n\t\t\t<td>{{user.e2}}</td>\n\t\t\t<td>{{user.rc2}}</td>\n\t\t\t<td>{{user.v2}}</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Week 3</td>\n\t\t\t<td>{{user.e3}}</td>\n\t\t\t<td>{{user.rc3}}</td>\n\t\t\t<td>{{user.v3}}</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Week 4</td>\n\t\t\t<td>{{user.e4}}</td>\n\t\t\t<td>{{user.rc4}}</td>\n\t\t\t<td>{{user.v4}}</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Week 5</td>\n\t\t\t<td>{{user.e5}}</td>\n\t\t\t<td>{{user.rc5}}</td>\n\t\t\t<td>{{user.v5}}</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Week 6</td>\n\t\t\t<td>{{user.e6}}</td>\n\t\t\t<td>{{user.rc6}}</td>\n\t\t\t<td>{{user.v6}}</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Week 7</td>\n\t\t\t<td>{{user.e7}}</td>\n\t\t\t<td>{{user.rc7}}</td>\n\t\t\t<td>{{user.v7}}</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Week 8</td>\n\t\t\t<td>{{user.e8}}</td>\n\t\t\t<td>{{user.rc8}}</td>\n\t\t\t<td>{{user.v8}}</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Week 9</td>\n\t\t\t<td>{{user.e9}}</td>\n\t\t\t<td>{{user.rc9}}</td>\n\t\t\t<td>{{user.v9}}</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Week 10</td>\n\t\t\t<td>{{user.e10}}</td>\n\t\t\t<td>{{user.rc10}}</td>\n\t\t\t<td>{{user.v10}}</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Week 11</td>\n\t\t\t<td>{{user.e11}}</td>\n\t\t\t<td>{{user.rc11}}</td>\n\t\t\t<td>{{user.v11}}</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Week 12</td>\n\t\t\t<td>{{user.e12}}</td>\n\t\t\t<td>{{user.rc12}}</td>\n\t\t\t<td>{{user.v12}}</td>\n\t\t</tr>\n\t</table>\n\n\t<br><br><br>\n</div>\n"
 
 /***/ }),
 
@@ -1010,13 +1015,13 @@ var AuthService = (function () {
     AuthService.prototype.registerUser = function (user) {
         var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["Headers"]();
         headers.append('Content-Type', 'application/json');
-        return this.http.post('users/register', user, { headers: headers })
+        return this.http.post('http://localhost:8080/users/register', user, { headers: headers })
             .map(function (res) { return res.json(); });
     };
     AuthService.prototype.authenticateUser = function (user) {
         var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["Headers"]();
         headers.append('Content-Type', 'application/json');
-        return this.http.post('users/authenticate', user, { headers: headers })
+        return this.http.post('http://localhost:8080/users/authenticate', user, { headers: headers })
             .map(function (res) { return res.json(); });
     };
     AuthService.prototype.getProfile = function () {
@@ -1024,7 +1029,7 @@ var AuthService = (function () {
         this.loadToken();
         headers.append('Authorization', this.authToken);
         headers.append('Content-Type', 'application/json');
-        return this.http.get('users/profile', { headers: headers })
+        return this.http.get('http://localhost:8080/users/profile', { headers: headers })
             .map(function (res) { return res.json(); });
     };
     AuthService.prototype.storeUserData = function (token, user) {

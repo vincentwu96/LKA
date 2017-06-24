@@ -14,7 +14,6 @@ username: String;
 email: String;
 password: String;
 
-
 constructor(
 private validateService: ValidateService,
 private authService: AuthService,
@@ -57,4 +56,5 @@ this.router.navigate(['/register']);
 });
 
 }
+
 }
