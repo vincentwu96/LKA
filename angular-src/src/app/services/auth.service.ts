@@ -55,5 +55,5 @@ logout(){
 	this.user = null;
 	localStorage.clear();
 }
-
 }
+// http://localhost:8080/

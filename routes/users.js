@@ -14,19 +14,16 @@ router.post('/register', (req, res, next) => {
 		email: req.body.email,
 		username: req.body.username,
 		password: req.body.password,
-		/*
-		e1: req.body.e1,
-		e2: req.body.e2,
-		e3: req.body.e3,
-		e4: req.body.e4,
-		e5: req.body.e5,
-		e6: req.body.e6,
-		e7: req.body.e7,
-		e8: req.body.e8,
-		e9: req.body.e9,
-		e10: req.body.e10,
-		e11: req.body.e11,
-		e12: req.body.e12*/
+
+		e1: "---", e2: "---", e3: "---", e4: "---", e5: "---", e6: "---",
+		e7: "---", e8: "---", e9: "---", e10: "---", e11: "---", e12: "---",
+
+		rc1: "---", rc2: "---", rc3: "---", rc4: "---", rc5: "---", rc6: "---",
+		rc7: "---", rc8: "---", rc9: "---", rc10: "---", rc11: "---", rc12: "---",
+
+		v1: "---", v2: "---", v3: "---", v4: "---", v5: "---", v6: "---",
+		v7: "---", v8: "---", v9: "---", v10: "---", v11: "---", v12: "---",
+
 	});
 	User.addUser(newUser, (err, user) =>{
 		if(err){
@@ -63,18 +60,15 @@ router.post('/authenticate', (req, res, next) => {
 						name: user.name,
 						username: user.username,
 						email: user.email,
-						/*e1: user.e1,
-						e2: user.e2,
-						e3: user.e3,
-						e4: user.e4,
-						e5: user.e5,
-						e6: user.e6,
-						e7: user.e7,
-						e8: user.e8,
-						e9: user.e9,
-						e10: user.e10,
-						e11: user.e11,
-						e12: user.e12*/
+
+						e1: "---",e2: "---",e3: "---",e4: "---",e5: "---",e6: "---",
+						e7: "---",e8: "---",e9: "---",e10: "---",e11: "---",e12: "---",
+
+						rc1: "---", rc2: "---", rc3: "---", rc4: "---", rc5: "---", rc6: "---",
+						rc7: "---", rc8: "---", rc9: "---", rc10: "---", rc11: "---", rc12: "---",
+
+						v1: "---", v2: "---", v3: "---", v4: "---", v5: "---", v6: "---",
+						v7: "---", v8: "---", v9: "---", v10: "---", v11: "---", v12: "---",
 					}
 				});
 			}else{

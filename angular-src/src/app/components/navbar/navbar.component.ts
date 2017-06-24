@@ -24,7 +24,7 @@ this.fullImagePath = '/assets/images/logo.jpg'
 
   onLogoutClick(){
 	this.authService.logout();
-	alert('You are logged out');
+	// User logged out
 	this.router.navigate(['/login']);
 	return false;
   }

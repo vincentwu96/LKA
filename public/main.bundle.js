@@ -590,7 +590,7 @@ var NavbarComponent = (function () {
     };
     NavbarComponent.prototype.onLogoutClick = function () {
         this.authService.logout();
-        alert('You are logged out');
+        // User logged out
         this.router.navigate(['/login']);
         return false;
     };
@@ -709,7 +709,7 @@ var RegisterComponent = (function () {
         // Register user
         this.authService.registerUser(user).subscribe(function (data) {
             if (data.success) {
-                alert('You are now registered');
+                // User Registered
                 _this.router.navigate(['/login']);
             }
             else {
@@ -1057,6 +1057,7 @@ var AuthService = (function () {
     return AuthService;
     var _a;
 }());
+// http://localhost:8080/
 //# sourceMappingURL=C:/Users/Wendy/Desktop/LKA/LKA/angular-src/src/auth.service.js.map
 
 /***/ })

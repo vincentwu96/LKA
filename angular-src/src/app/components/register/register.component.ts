@@ -47,7 +47,7 @@ return false;
 // Register user
 this.authService.registerUser(user).subscribe(data => {
 if(data.success){
-alert('You are now registered');
+// User Registered
 this.router.navigate(['/login']);
 }else{
 alert('Something went wrong');
