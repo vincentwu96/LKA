@@ -19,10 +19,6 @@ const UserSchema = mongoose.Schema({
 		type: String,
 		required: true
 	},
-	e1:{type: String}, e2:{type: String}, e3:{type: String},
-	e4:{type: String}, e5:{type: String}, e6:{type: String},
-	e7:{type: String}, e8:{type: String}, e9:{type: String},
-	e10:{type: String},e11:{type: String},e12:{type: String},
 
 	rc1:{type: String}, rc2:{type: String}, rc3:{type: String},
 	rc4:{type: String}, rc5:{type: String}, rc6:{type: String},
@@ -32,7 +28,17 @@ const UserSchema = mongoose.Schema({
 	v1:{type: String}, v2:{type: String}, v3:{type: String},
 	v4:{type: String}, v5:{type: String}, v6:{type: String},
 	v7:{type: String}, v8:{type: String}, v9:{type: String},
-	v10:{type: String},v11:{type: String},v12:{type: String}
+	v10:{type: String},v11:{type: String},v12:{type: String},
+
+	g1:{type: String}, g2:{type: String}, g3:{type: String},
+	g4:{type: String}, g5:{type: String}, g6:{type: String},
+	g7:{type: String}, g8:{type: String}, g9:{type: String},
+	g10:{type: String},g11:{type: String},g12:{type: String},
+
+	e1:{type: String}, e2:{type: String}, e3:{type: String},
+	e4:{type: String}, e5:{type: String}, e6:{type: String},
+	e7:{type: String}, e8:{type: String}, e9:{type: String},
+	e10:{type: String},e11:{type: String},e12:{type: String}
 
 });
 
