@@ -1,12 +1,14 @@
 <nav class="navbar navbar-default">
 	<div class="container-fluid">
 		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expande="false" aria-controls="navbar">
+			<!--
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 				<span class="sr-only">Toggle navigation</span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
+			-->
 			<a class="navbar-brand" href="#"><img [src]="fullImagePath"></a>
 		</div>
 
@@ -15,14 +17,10 @@
 			<ul class="nav navbar-nav navbar-left">
 				<li [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}"><a [routerLink]="['/']">Home <span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
 				<li [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}"><a [routerLink]="['/contact']">Contact Us</a></li>
-				<li [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}"><a [routerLink]="['/after-school-care']">After-School Care</a></li>
+				<li [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}"><a [routerLink]="['/after-school-care']">After School Care</a></li>
 				<li [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}"><a [routerLink]="['/english-writing']">English Writing</a></li>
-				<li [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}"><a [routerLink]="['/intro-to-programming']">Intro to Programming</a></li>
-				<li [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}"><a [routerLink]="['/chess']">Chess</a></li>
-				<!--
-				<li [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}"><a [routerLink]="['/ap-tutoring']">AP Tutoring</a></li>
-				-->
-
+				<li [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}"><a [routerLink]="['/math']">Math</a></li>
+				<li [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}"><a [routerLink]="['/enrichment-programs']">Enrichment Programs</a></li>
 			</ul>
 
 			<ul class="nav navbar-nav navbar-right">

@@ -17,10 +17,9 @@ import {AuthService} from './services/auth.service';
 import {AuthGuard} from './guards/auth.guard';
 import { ContactComponent } from './components/contact/contact.component';
 import { EnglishWritingComponent } from './components/english-writing/english-writing.component';
-import { ChessComponent } from './components/chess/chess.component';
 import { AfterSchoolCareComponent } from './components/after-school-care/after-school-care.component';
-import { IntroToProgrammingComponent } from './components/intro-to-programming/intro-to-programming.component';
-import { ApTutoringComponent } from './components/ap-tutoring/ap-tutoring.component';
+import { MathComponent } from './components/math/math.component';
+import { EnrichmentComponent } from './components/enrichment/enrichment.component';
 
 const appRoutes: Routes = [
 	{path:'', component: HomeComponent},
@@ -32,9 +31,8 @@ const appRoutes: Routes = [
 	{path:'profile', component: ProfileComponent, canActivate:[AuthGuard]},
 	{path:'after-school-care', component: AfterSchoolCareComponent},
 	{path:'english-writing', component: EnglishWritingComponent},
-	{path:'intro-to-programming', component: IntroToProgrammingComponent},
-	{path:'chess', component: ChessComponent},
-	{path:'ap-tutoring', component: ApTutoringComponent},
+	{path:'math', component: MathComponent},
+	{path:'enrichment-programs', component: EnrichmentComponent},
 	]
 
 @NgModule({
@@ -48,10 +46,9 @@ const appRoutes: Routes = [
     ProfileComponent,
     ContactComponent,
     EnglishWritingComponent,
-    ChessComponent,
     AfterSchoolCareComponent,
-    IntroToProgrammingComponent,
-    ApTutoringComponent
+    MathComponent,
+    EnrichmentComponent
   ],
   imports: [
     BrowserModule,
