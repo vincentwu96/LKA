@@ -62,7 +62,7 @@ webpackEmptyContext.id = 386;
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(474);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__environments_environment__ = __webpack_require__(519);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__environments_environment__ = __webpack_require__(518);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_app_module__ = __webpack_require__(505);
 
 
@@ -99,8 +99,8 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-root',
-            template: __webpack_require__(687),
-            styles: [__webpack_require__(674)]
+            template: __webpack_require__(685),
+            styles: [__webpack_require__(673)]
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
@@ -120,21 +120,20 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(207);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__(78);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(504);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_navbar_navbar_component__ = __webpack_require__(515);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_login_login_component__ = __webpack_require__(514);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_register_register_component__ = __webpack_require__(517);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_home_home_component__ = __webpack_require__(512);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_dashboard_dashboard_component__ = __webpack_require__(510);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_profile_profile_component__ = __webpack_require__(516);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_navbar_navbar_component__ = __webpack_require__(514);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_login_login_component__ = __webpack_require__(512);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_register_register_component__ = __webpack_require__(516);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_home_home_component__ = __webpack_require__(511);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_dashboard_dashboard_component__ = __webpack_require__(508);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_profile_profile_component__ = __webpack_require__(515);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__services_validate_service__ = __webpack_require__(331);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__services_auth_service__ = __webpack_require__(80);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__guards_auth_guard__ = __webpack_require__(518);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_contact_contact_component__ = __webpack_require__(509);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_english_writing_english_writing_component__ = __webpack_require__(511);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_chess_chess_component__ = __webpack_require__(508);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_after_school_care_after_school_care_component__ = __webpack_require__(506);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_intro_to_programming_intro_to_programming_component__ = __webpack_require__(513);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__components_ap_tutoring_ap_tutoring_component__ = __webpack_require__(507);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__guards_auth_guard__ = __webpack_require__(517);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_contact_contact_component__ = __webpack_require__(507);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_english_writing_english_writing_component__ = __webpack_require__(509);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_after_school_care_after_school_care_component__ = __webpack_require__(506);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_math_math_component__ = __webpack_require__(513);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_enrichment_enrichment_component__ = __webpack_require__(510);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -165,7 +164,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-
 var appRoutes = [
     { path: '', component: __WEBPACK_IMPORTED_MODULE_9__components_home_home_component__["a" /* HomeComponent */] },
     { path: 'register', component: __WEBPACK_IMPORTED_MODULE_8__components_register_register_component__["a" /* RegisterComponent */] },
@@ -173,11 +171,10 @@ var appRoutes = [
     { path: 'contact', component: __WEBPACK_IMPORTED_MODULE_15__components_contact_contact_component__["a" /* ContactComponent */] },
     { path: 'dashboard', component: __WEBPACK_IMPORTED_MODULE_10__components_dashboard_dashboard_component__["a" /* DashboardComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_14__guards_auth_guard__["a" /* AuthGuard */]] },
     { path: 'profile', component: __WEBPACK_IMPORTED_MODULE_11__components_profile_profile_component__["a" /* ProfileComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_14__guards_auth_guard__["a" /* AuthGuard */]] },
-    { path: 'after-school-care', component: __WEBPACK_IMPORTED_MODULE_18__components_after_school_care_after_school_care_component__["a" /* AfterSchoolCareComponent */] },
+    { path: 'after-school-care', component: __WEBPACK_IMPORTED_MODULE_17__components_after_school_care_after_school_care_component__["a" /* AfterSchoolCareComponent */] },
     { path: 'english-writing', component: __WEBPACK_IMPORTED_MODULE_16__components_english_writing_english_writing_component__["a" /* EnglishWritingComponent */] },
-    { path: 'intro-to-programming', component: __WEBPACK_IMPORTED_MODULE_19__components_intro_to_programming_intro_to_programming_component__["a" /* IntroToProgrammingComponent */] },
-    { path: 'chess', component: __WEBPACK_IMPORTED_MODULE_17__components_chess_chess_component__["a" /* ChessComponent */] },
-    { path: 'ap-tutoring', component: __WEBPACK_IMPORTED_MODULE_20__components_ap_tutoring_ap_tutoring_component__["a" /* ApTutoringComponent */] },
+    { path: 'math', component: __WEBPACK_IMPORTED_MODULE_18__components_math_math_component__["a" /* MathComponent */] },
+    { path: 'enrichment-programs', component: __WEBPACK_IMPORTED_MODULE_19__components_enrichment_enrichment_component__["a" /* EnrichmentComponent */] },
 ];
 var AppModule = (function () {
     function AppModule() {
@@ -194,10 +191,9 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_11__components_profile_profile_component__["a" /* ProfileComponent */],
                 __WEBPACK_IMPORTED_MODULE_15__components_contact_contact_component__["a" /* ContactComponent */],
                 __WEBPACK_IMPORTED_MODULE_16__components_english_writing_english_writing_component__["a" /* EnglishWritingComponent */],
-                __WEBPACK_IMPORTED_MODULE_17__components_chess_chess_component__["a" /* ChessComponent */],
-                __WEBPACK_IMPORTED_MODULE_18__components_after_school_care_after_school_care_component__["a" /* AfterSchoolCareComponent */],
-                __WEBPACK_IMPORTED_MODULE_19__components_intro_to_programming_intro_to_programming_component__["a" /* IntroToProgrammingComponent */],
-                __WEBPACK_IMPORTED_MODULE_20__components_ap_tutoring_ap_tutoring_component__["a" /* ApTutoringComponent */]
+                __WEBPACK_IMPORTED_MODULE_17__components_after_school_care_after_school_care_component__["a" /* AfterSchoolCareComponent */],
+                __WEBPACK_IMPORTED_MODULE_18__components_math_math_component__["a" /* MathComponent */],
+                __WEBPACK_IMPORTED_MODULE_19__components_enrichment_enrichment_component__["a" /* EnrichmentComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -240,8 +236,8 @@ var AfterSchoolCareComponent = (function () {
     AfterSchoolCareComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-after-school-care',
-            template: __webpack_require__(688),
-            styles: [__webpack_require__(675)]
+            template: __webpack_require__(686),
+            styles: [__webpack_require__(674)]
         }), 
         __metadata('design:paramtypes', [])
     ], AfterSchoolCareComponent);
@@ -252,81 +248,6 @@ var AfterSchoolCareComponent = (function () {
 /***/ }),
 
 /***/ 507:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ApTutoringComponent; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var ApTutoringComponent = (function () {
-    function ApTutoringComponent() {
-    }
-    ApTutoringComponent.prototype.ngOnInit = function () {
-    };
-    ApTutoringComponent = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'app-ap-tutoring',
-            template: __webpack_require__(689),
-            styles: [__webpack_require__(676)]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], ApTutoringComponent);
-    return ApTutoringComponent;
-}());
-//# sourceMappingURL=C:/Users/Wendy/Desktop/LKA/LKA/angular-src/src/ap-tutoring.component.js.map
-
-/***/ }),
-
-/***/ 508:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ChessComponent; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var ChessComponent = (function () {
-    function ChessComponent() {
-        this.lat1 = 36.9914;
-        this.lng1 = -122.0609;
-        this.zoom1 = 8;
-        this.lat2 = 36.9643;
-        this.lng2 = 122.0189;
-    }
-    ChessComponent.prototype.ngOnInit = function () {
-    };
-    ChessComponent = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'app-chess',
-            template: __webpack_require__(690),
-            styles: [__webpack_require__(677)]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], ChessComponent);
-    return ChessComponent;
-}());
-//# sourceMappingURL=C:/Users/Wendy/Desktop/LKA/LKA/angular-src/src/chess.component.js.map
-
-/***/ }),
-
-/***/ 509:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -350,8 +271,8 @@ var ContactComponent = (function () {
     ContactComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-contact',
-            template: __webpack_require__(691),
-            styles: [__webpack_require__(678)]
+            template: __webpack_require__(687),
+            styles: [__webpack_require__(675)]
         }), 
         __metadata('design:paramtypes', [])
     ], ContactComponent);
@@ -361,7 +282,7 @@ var ContactComponent = (function () {
 
 /***/ }),
 
-/***/ 510:
+/***/ 508:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -385,8 +306,8 @@ var DashboardComponent = (function () {
     DashboardComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-dashboard',
-            template: __webpack_require__(692),
-            styles: [__webpack_require__(679)]
+            template: __webpack_require__(688),
+            styles: [__webpack_require__(676)]
         }), 
         __metadata('design:paramtypes', [])
     ], DashboardComponent);
@@ -396,7 +317,7 @@ var DashboardComponent = (function () {
 
 /***/ }),
 
-/***/ 511:
+/***/ 509:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -420,8 +341,8 @@ var EnglishWritingComponent = (function () {
     EnglishWritingComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-english-writing',
-            template: __webpack_require__(693),
-            styles: [__webpack_require__(680)]
+            template: __webpack_require__(689),
+            styles: [__webpack_require__(677)]
         }), 
         __metadata('design:paramtypes', [])
     ], EnglishWritingComponent);
@@ -431,7 +352,42 @@ var EnglishWritingComponent = (function () {
 
 /***/ }),
 
-/***/ 512:
+/***/ 510:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EnrichmentComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var EnrichmentComponent = (function () {
+    function EnrichmentComponent() {
+    }
+    EnrichmentComponent.prototype.ngOnInit = function () {
+    };
+    EnrichmentComponent = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'app-enrichment',
+            template: __webpack_require__(690),
+            styles: [__webpack_require__(678)]
+        }), 
+        __metadata('design:paramtypes', [])
+    ], EnrichmentComponent);
+    return EnrichmentComponent;
+}());
+//# sourceMappingURL=C:/Users/Wendy/Desktop/LKA/LKA/angular-src/src/enrichment.component.js.map
+
+/***/ }),
+
+/***/ 511:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -455,8 +411,8 @@ var HomeComponent = (function () {
     HomeComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-home',
-            template: __webpack_require__(694),
-            styles: [__webpack_require__(681)]
+            template: __webpack_require__(691),
+            styles: [__webpack_require__(679)]
         }), 
         __metadata('design:paramtypes', [])
     ], HomeComponent);
@@ -466,42 +422,7 @@ var HomeComponent = (function () {
 
 /***/ }),
 
-/***/ 513:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return IntroToProgrammingComponent; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var IntroToProgrammingComponent = (function () {
-    function IntroToProgrammingComponent() {
-    }
-    IntroToProgrammingComponent.prototype.ngOnInit = function () {
-    };
-    IntroToProgrammingComponent = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'app-intro-to-programming',
-            template: __webpack_require__(695),
-            styles: [__webpack_require__(682)]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], IntroToProgrammingComponent);
-    return IntroToProgrammingComponent;
-}());
-//# sourceMappingURL=C:/Users/Wendy/Desktop/LKA/LKA/angular-src/src/intro-to-programming.component.js.map
-
-/***/ }),
-
-/***/ 514:
+/***/ 512:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -548,8 +469,8 @@ var LoginComponent = (function () {
     LoginComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-login',
-            template: __webpack_require__(696),
-            styles: [__webpack_require__(683)]
+            template: __webpack_require__(692),
+            styles: [__webpack_require__(680)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_auth_service__["a" /* AuthService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_auth_service__["a" /* AuthService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === 'function' && _b) || Object])
     ], LoginComponent);
@@ -560,7 +481,42 @@ var LoginComponent = (function () {
 
 /***/ }),
 
-/***/ 515:
+/***/ 513:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MathComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var MathComponent = (function () {
+    function MathComponent() {
+    }
+    MathComponent.prototype.ngOnInit = function () {
+    };
+    MathComponent = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'app-math',
+            template: __webpack_require__(693),
+            styles: [__webpack_require__(681)]
+        }), 
+        __metadata('design:paramtypes', [])
+    ], MathComponent);
+    return MathComponent;
+}());
+//# sourceMappingURL=C:/Users/Wendy/Desktop/LKA/LKA/angular-src/src/math.component.js.map
+
+/***/ }),
+
+/***/ 514:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -597,8 +553,8 @@ var NavbarComponent = (function () {
     NavbarComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-navbar',
-            template: __webpack_require__(697),
-            styles: [__webpack_require__(684)]
+            template: __webpack_require__(694),
+            styles: [__webpack_require__(682)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_auth_service__["a" /* AuthService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_auth_service__["a" /* AuthService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === 'function' && _b) || Object])
     ], NavbarComponent);
@@ -609,7 +565,7 @@ var NavbarComponent = (function () {
 
 /***/ }),
 
-/***/ 516:
+/***/ 515:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -646,8 +602,8 @@ var ProfileComponent = (function () {
     ProfileComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-profile',
-            template: __webpack_require__(698),
-            styles: [__webpack_require__(685)]
+            template: __webpack_require__(695),
+            styles: [__webpack_require__(683)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_auth_service__["a" /* AuthService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_auth_service__["a" /* AuthService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === 'function' && _b) || Object])
     ], ProfileComponent);
@@ -658,7 +614,7 @@ var ProfileComponent = (function () {
 
 /***/ }),
 
-/***/ 517:
+/***/ 516:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -721,8 +677,8 @@ var RegisterComponent = (function () {
     RegisterComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-register',
-            template: __webpack_require__(699),
-            styles: [__webpack_require__(686)]
+            template: __webpack_require__(696),
+            styles: [__webpack_require__(684)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_validate_service__["a" /* ValidateService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_validate_service__["a" /* ValidateService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_auth_service__["a" /* AuthService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_auth_service__["a" /* AuthService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */]) === 'function' && _c) || Object])
     ], RegisterComponent);
@@ -733,7 +689,7 @@ var RegisterComponent = (function () {
 
 /***/ }),
 
-/***/ 518:
+/***/ 517:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -778,7 +734,7 @@ var AuthGuard = (function () {
 
 /***/ }),
 
-/***/ 519:
+/***/ 518:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -794,31 +750,38 @@ var environment = {
 
 /***/ }),
 
-/***/ 674:
+/***/ 673:
 /***/ (function(module, exports) {
 
 module.exports = ""
 
 /***/ }),
 
-/***/ 675:
+/***/ 674:
 /***/ (function(module, exports) {
 
 module.exports = "/*@media screen and (max-width: 1020px) {\n\t#container, #header, #content, #footer {\n\t\tfloat: none;\n\t\twidth: auto;\n\t}\n\t#subtitle, #share, #slider, #sidebar{\n\t\tdisplay:none;\n\t}\n\tp{ font-size: 2em; }\n}*/\n"
 
 /***/ }),
 
+/***/ 675:
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
 /***/ 676:
 /***/ (function(module, exports) {
 
-module.exports = "@media screen and (max-width: 1020px) {\n\t#container, #header, #content, #footer {\n\t\tfloat: none;\n\t\twidth: auto;\n\t}\n\t#subtitle, #share, #slider, #sidebar{\n\t\tdisplay:none;\n\t}\n\tp{ font-size: 2em; }\n}\n"
+module.exports = ""
 
 /***/ }),
 
 /***/ 677:
 /***/ (function(module, exports) {
 
-module.exports = "#main-container {\r\n        /*border: solid 1px;*/\r\n        height: 73vh;\r\n        /*width: 300vh; */\r\n}\r\n\r\nagm-map {\r\n        height: 100%;\r\n        width: 208vh;\r\n}\r\n/*.col-md-4, */\r\n.col-md-8 {\r\n\r\n        padding-left: 0;\r\n        height: 100%;\r\n}\r\n\r\n.search {\r\n        border-bottom: 0;\r\n        padding: 0;\r\n        margin: 0;\r\n}\r\n\r\n.form-group {\r\n        margin: 0;\r\n}\r\n"
+module.exports = ""
 
 /***/ }),
 
@@ -832,7 +795,7 @@ module.exports = ""
 /***/ 679:
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "/*div {\n\theight: 333px;\n\twidth: 100%;\n}\n\n@media screen and (max-width: 1020px) {\n\t#container, #header, #content, #footer {\n\t\tfloat: none;\n\t\twidth: auto;\n\t}\n\t#subtitle, #share, #slider, #sidebar{\n\t\tdisplay:none;\n\t}\n\tp{ font-size: 2em; }\n}*/\n"
 
 /***/ }),
 
@@ -846,21 +809,21 @@ module.exports = ""
 /***/ 681:
 /***/ (function(module, exports) {
 
-module.exports = "/*div {\n\theight: 333px;\n\twidth: 100%;\n}\n\n@media screen and (max-width: 1020px) {\n\t#container, #header, #content, #footer {\n\t\tfloat: none;\n\t\twidth: auto;\n\t}\n\t#subtitle, #share, #slider, #sidebar{\n\t\tdisplay:none;\n\t}\n\tp{ font-size: 2em; }\n}*/\n"
+module.exports = ""
 
 /***/ }),
 
 /***/ 682:
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = ".dropdown-backdrop {\n\t    z-index:-1;\n}\n"
 
 /***/ }),
 
 /***/ 683:
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "table, td, th {\n\tborder: 1px solid black;\n}\n\ntable {\n\tborder-collapse: collapse;\n\twidth: 700px;\n\t/*width: 100%;*/\n}\n\nth {\n\ttext-align: center;\n\theight: 50px;\n}\ntd, th{\n\n\tpadding: 15px;\n\ttext-align: center;\n}\ntr:nth-child(even) {background-color: #f2f2f2}\ntr:hover {background-color: #f5f5f5}\n"
 
 /***/ }),
 
@@ -874,109 +837,88 @@ module.exports = ""
 /***/ 685:
 /***/ (function(module, exports) {
 
-module.exports = "table, td, th {\n\tborder: 1px solid black;\n}\n\ntable {\n\tborder-collapse: collapse;\n\twidth: 700px;\n\t/*width: 100%;*/\n}\n\nth {\n\ttext-align: center;\n\theight: 50px;\n}\ntd, th{\n\n\tpadding: 15px;\n\ttext-align: center;\n}\ntr:nth-child(even) {background-color: #f2f2f2}\ntr:hover {background-color: #f5f5f5}\n"
+module.exports = "<app-navbar></app-navbar>\n<div class=\"container\">\n\t<router-outlet></router-outlet>\n</div>\n"
 
 /***/ }),
 
 /***/ 686:
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "<Legend>After School Care Program</Legend>\r\n\r\n<div class=\"row\">\r\n\t<div class=\"col-md-4\">\r\n\t\t<h3>Happy and Cheerful Atmosphere</h3>\r\n\t\t<p>At Light of Knowledge Academy, we hire the most experienced and caring teachers. In addition to offering optional English, Math, and Chinese class work, we first ensure that students finish homework from school.</p>\r\n\t</div>\r\n\t<div class=\"col-md-4\">\r\n\t\t<h3>The Best of Both Western and Eastern Cultures</h3>\r\n\t\t<p>In both cultures we recognize the importance of building up good habits for life, thus, we prioritize our student's ability to retain good habits. Additionally, to integrate Western Culture, we cultivate leadership throughout our daily activities. Because of our Eastern influence, we also emphasize building our student's emotional intelligence.</p>\r\n\t</div>\r\n\t<div class=\"col-md-4\">\r\n\t\t<h3>Individualized Curricula</h3><br>\r\n\t\t<p>We offer a 1:8 student to instructor guarantee. Parents will receive weekly progress reports to monitor their child's progress. We strive to help students motivate themselves through friendly competitions.</p>\r\n\t</div>\r\n</div>\r\n\r\n<br>\r\n\r\n<div style=\"position:relative;height:0;padding-bottom:56.25%\"><iframe src=\"https://www.youtube.com/embed/ESNNlA8vq5U?ecver=2\" width=\"640\" height=\"360\" frameborder=\"0\" style=\"position:absolute;width:100%;height:100%;left:0\" allowfullscreen></iframe></div>\r\n\r\n<br><br><br>\r\n\r\n<div class =\"btn-group btn-group-justified\">\r\n\t<a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/after-school-care']\">After School Care</a>\r\n\t<a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/english-writing']\">English Writing</a>\r\n\t<a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/math']\">Math</a>\r\n\t<a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/enrichment-programs']\">Enrichment Programs</a>\r\n</div>\r\n<br><br><br>\r\n"
 
 /***/ }),
 
 /***/ 687:
 /***/ (function(module, exports) {
 
-module.exports = "<app-navbar></app-navbar>\n<div class=\"container\">\n\t<router-outlet></router-outlet>\n</div>\n"
+module.exports = "<form class=\"form-horizontal\">\r\n\t<fieldset>\r\n\t\t<legend>Contact Us</legend>\r\n\r\n\t\t<!--\r\n\t  <div class=\"form-group\">\r\n\t  <label for=\"firstName\" class=\"col-lg-2 control-label\">Parent's First Name</label>\r\n\t  <div class=\"col-lg-10\">\r\n\t  <input type=\"text\" class=\"form-control\" id=\"firstName\" placeholder=\"Parent's First Name\">\r\n\t  </div>\r\n\t  </div>\r\n\t  <div class=\"form-group\">\r\n\t  <label for=\"lastName\" class=\"col-lg-2 control-label\">Parent's Last Name</label>\r\n\t  <div class=\"col-lg-10\">\r\n\t  <input type=\"text\" class=\"form-control\" id=\"lastName\" placeholder=\"Parent's Last Name\">\r\n\t  </div>\r\n\t  </div>\r\n\t  <div class=\"form-group\">\r\n\t  <label for=\"email\" class=\"col-lg-2 control-label\">Email</label>\r\n\t  <div class=\"col-lg-10\">\r\n\t  <input type=\"text\" class=\"form-control\" id=\"email\" placeholder=\"Email\">\r\n\r\n\t  <div class=\"checkbox\">\r\n\t  <label>\r\n\t  <input type=\"checkbox\">\r\n\t  </label>\r\n\t  </div>\r\n\t  </div>\r\n\t  </div>\r\n\t  <div class=\"form-group\">\r\n\t  <label for=\"textArea\" class=\"col-lg-2 control-label\">Questions?</label>\r\n\t  <div class=\"col-lg-10\">\r\n\t  <textarea class=\"form-control\" rows=\"3\" id=\"textArea\"></textarea>\r\n\t  </div>\r\n\t  </div>\r\n\t  <div class=\"form-group\">\r\n\t  <div class=\"col-lg-10 col-lg-offset-2\">\r\n\t  <button type=\"reset\" class=\"btn btn-default\">Cancel</button>\r\n\t  <button type=\"submit\" class=\"btn btn-primary\">Submit</button>\r\n\t  </div>\r\n\t  </div>\r\n\t\t-->\r\n\t\t<iframe src=\"https://docs.google.com/forms/u/0/d/e/1FAIpQLSecWLYKxqpHcrC0a0htLyugwrJxuLUD_X-Xi4Xp6A5DWRXdnw/viewform?embedded=true\" width=\"1140\" height=\"1700\" frameborder=\"0\" marginheight=\"0\" marginwidth=\"0\">Loading...</iframe>\r\n\t</fieldset>\r\n</form>\r\n\r\n\r\n<br>\r\n\r\n<div class =\"btn-group btn-group-justified\">\r\n\t<a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/after-school-care']\">After School Care</a>\r\n\t<a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/english-writing']\">English Writing</a>\r\n\t<a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/math']\">Math</a>\r\n\t<a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/enrichment-programs']\">Enrichment Programs</a>\r\n</div>\r\n\r\n<br>\r\n"
 
 /***/ }),
 
 /***/ 688:
 /***/ (function(module, exports) {
 
-module.exports = "<Legend>After School Care Program</Legend>\r\n\r\n<div class=\"row\">\r\n\t<div class=\"col-md-4\">\r\n\t\t<h3>Happy and Cheerful Atmosphere</h3>\r\n\t\t<p>At Light of Knowledge Academy, we hire the most experienced and caring teachers. In addition to offering optional English, Math, and Chinese class work, we first ensure that students finish homework from school.</p>\r\n\t</div>\r\n\t<div class=\"col-md-4\">\r\n\t\t<h3>The Best of Both Western and Eastern Cultures</h3>\r\n\t\t<p>In both cultures we recognize the importance of building up good habits for life, thus, we prioritize our student's ability to retain good habits. Additionally, to integrate Western Culture, we cultivate leadership throughout our daily activities. Because of our Eastern influence, we also emphasize building our student's emotional intelligence.</p>\r\n\t</div>\r\n\t<div class=\"col-md-4\">\r\n\t\t<h3>Individualized Curricula</h3><br>\r\n\t\t<p>We offer a 1:8 student to instructor guarantee. Parents will receive weekly progress reports to monitor their child's progress. We strive to help students motivate themselves through friendly competitions.</p>\r\n\t</div>\r\n</div>\r\n\r\n<br>\r\n\r\n<div style=\"position:relative;height:0;padding-bottom:56.25%\"><iframe src=\"https://www.youtube.com/embed/ESNNlA8vq5U?ecver=2\" width=\"640\" height=\"360\" frameborder=\"0\" style=\"position:absolute;width:100%;height:100%;left:0\" allowfullscreen></iframe></div>\r\n\r\n<br><br><br>\r\n"
+module.exports = "<h2 class=\"page-header\">Dashboard</h2>\n<a class=\"btn btn-primary\" [routerLink]=\"['/profile']\">Go to your profile</a>\n<p><br>Thank you for creating an account, more functionality will be added soon!</p>\n"
 
 /***/ }),
 
 /***/ 689:
 /***/ (function(module, exports) {
 
-module.exports = "<p>AP Tutoring Description</p>\n"
+module.exports = "<Legend>English Writing</Legend>\n\n<p>My program has two main emphases:</p>\n<p>Learn by doing and Variety.</p>\n<p>What I mean by Learn by Doing is that since all writing is creative and subjective, by putting many rules on how students write, it kills the creative process. Therefore, rather than kill student creativity with oppressive rules, I simply stimulate students' minds with unusual ideas and student-friendly topics, give them a simple format to follow, and tell them to write. I do offer students ways to improve their writing, but if I force them to use my suggestions, their writing becomes fake and contrived, so I don't insist on it. I'm all about watching as students' writing grows organically. It's a slow process but it happens. I'm also a big believer in re-writes. They are important not just to make an essay polished and complete, but for students' self-confidence.</p>\n<p>As far as Variety, I like to give students different types of assignments-reading comprehension, vocabulary and grammar - to prevent boredom from developing. I'm especially fond of reading comprehension because studies have shown that the best way to improve writing is to read professional writing - both fiction and non-fiction. Knowing this, I search out the most interesting, unusual and compelling stories for students to read so that they read professional writing with an active reading mindset, and in the process, mentally absorb a great writer's unique style. It is true that vocabulary exercises are not as closely related to improving writing as reading comprehension, but there have been many times when students have told me they really enjoy reading the stories at the end of each vocabulary chapter, and learning new words is part of the process of building confidence in language, so I continue assigning vocabulary.</p>\n<p>An area that I may experiment with during the 2017-18 school year is reading classic novels and writing literary essays on them. Usually, I save that for the summer, but several parents have asked me to do this during the school year, so I am reconsidering. I hope you better understand my program after reading these paragraphs.</p>\n<br>\n<p>Sincerely,</p>\n<p>Michael N. Merrick</p>\n<p>(Mr. Mike)</p>\n<br>\n<div class =\"btn-group btn-group-justified\">\n\t<a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/after-school-care']\">After School Care</a>\n\t<a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/english-writing']\">English Writing</a>\n\t<a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/math']\">Math</a>\n\t<a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/enrichment-programs']\">Enrichment Programs</a>\n</div>\n<br>\n"
 
 /***/ }),
 
 /***/ 690:
 /***/ (function(module, exports) {
 
-module.exports = "<Legend>Chess</Legend>\r\n<p>Chess Description</p>\r\n"
+module.exports = "<Legend>Introduction to Programming</Legend>\n<p>Introduction to Programming Description</p>\n<br><br><br><br><br>\n<Legend>Chess</Legend>\n<p>Chess Description</p>\n<br><br><br><br><br>\n<Legend>Art</Legend>\n<p>Art Description</p>\n<br><br><br><br><br>\n<div class =\"btn-group btn-group-justified\">\n\t<a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/after-school-care']\">After School Care</a>\n\t<a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/englis-writing']\">English Writing</a>\n\t<a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/math']\">Math</a>\n\t<a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/enrichment-programs']\">Enrichment Programs</a>\n</div>\n<br>\n"
 
 /***/ }),
 
 /***/ 691:
 /***/ (function(module, exports) {
 
-module.exports = "<form class=\"form-horizontal\">\r\n\t<fieldset>\r\n\t\t<legend>Contact Us</legend>\r\n\r\n\t\t<!--\r\n\t\t<div class=\"form-group\">\r\n\t\t\t<label for=\"firstName\" class=\"col-lg-2 control-label\">Parent's First Name</label>\r\n\t\t\t<div class=\"col-lg-10\">\r\n\t\t\t\t<input type=\"text\" class=\"form-control\" id=\"firstName\" placeholder=\"Parent's First Name\">\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div class=\"form-group\">\r\n\t\t\t<label for=\"lastName\" class=\"col-lg-2 control-label\">Parent's Last Name</label>\r\n\t\t\t<div class=\"col-lg-10\">\r\n\t\t\t\t<input type=\"text\" class=\"form-control\" id=\"lastName\" placeholder=\"Parent's Last Name\">\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div class=\"form-group\">\r\n\t\t\t<label for=\"email\" class=\"col-lg-2 control-label\">Email</label>\r\n\t\t\t<div class=\"col-lg-10\">\r\n\t\t\t\t<input type=\"text\" class=\"form-control\" id=\"email\" placeholder=\"Email\">\r\n\r\n\t\t\t\t<div class=\"checkbox\">\r\n\t\t\t\t\t<label>\r\n\t\t\t\t\t\t<input type=\"checkbox\">\r\n\t\t\t\t\t</label>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div class=\"form-group\">\r\n\t\t\t<label for=\"textArea\" class=\"col-lg-2 control-label\">Questions?</label>\r\n\t\t\t<div class=\"col-lg-10\">\r\n\t\t\t\t<textarea class=\"form-control\" rows=\"3\" id=\"textArea\"></textarea>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div class=\"form-group\">\r\n\t\t\t<div class=\"col-lg-10 col-lg-offset-2\">\r\n\t\t\t\t<button type=\"reset\" class=\"btn btn-default\">Cancel</button>\r\n\t\t\t\t<button type=\"submit\" class=\"btn btn-primary\">Submit</button>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t\t-->\r\n\t\t<iframe src=\"https://docs.google.com/forms/u/0/d/e/1FAIpQLSecWLYKxqpHcrC0a0htLyugwrJxuLUD_X-Xi4Xp6A5DWRXdnw/viewform?embedded=true\" width=\"1060\" height=\"1700\" frameborder=\"0\" marginheight=\"0\" marginwidth=\"0\">Loading...</iframe>\r\n\t</fieldset>\r\n</form>\r\n"
+module.exports = "<div class=\"jumbotron text-center\">\r\n\t<h1>Light of Knowledge Academy</h1>\r\n\t<br>\r\n\t<p><a href=\"https://www.google.com/maps/place/20432+Silverado+Ave,+Cupertino,+CA+95014/@37.3149792,-122.0334717,17z/data=!3m1!4b1!4m5!3m4!1s0x808fb5076a61d76f:0x640ac354a2071531!8m2!3d37.3149792!4d-122.031283\">20432 Silverado Ave. Ste. 6 | Cupertino, CA 95014</a>\r\n\t<br>Call us at: (408) 996-1236 | (408) 564-8133 | Text us at: (408) 218-1698\r\n\t<br>Email: <a href=\"mailto:info.lkastaff@gmail.com\" target=\"_top\">info.lkastaff@gmail.com</a> | <a href=\"http://facebook.com/LOKacademy\">Give us a like on our Facebook page!</a></p>\r\n<!--\r\n\t<div>\r\n\t\t<a class=\"btn btn-primary\" [routerLink]=\"['/login']\">Login</a>\r\n\t\t<a class=\"btn btn-default\" [routerLink]=\"['/register']\">Register</a>\r\n\t</div>\r\n-->\r\n</div>\r\n\r\n<!--\r\n<div class=\"row\">\r\n\t<div class=\"col-md-3\">\r\n\t\t<a class=\"btn btn-default\" [routerLink]=\"['/after-school-care']\">After School Care</a>\r\n\t</div>\r\n\t<div class=\"col-md-3\">\r\n\t\t<a class=\"btn btn-default\" [routerLink]=\"['/english-writing']\">English Writing</a>\r\n\r\n\t</div>\r\n\t<div class=\"col-md-3\">\r\n\t\t<a class=\"btn btn-default\" [routerLink]=\"['/math']\">Math</a>\r\n\t</div>\r\n\t<div class=\"col-md-3\">\r\n\t\t<a class=\"btn btn-danger\" [routerLink]=\"['/enrichment-programs']\">Enrichment Programs</a>\r\n\t</div>\r\n</div>\r\n-->\r\n<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>\r\n<div class =\"btn-group btn-group-justified\">\r\n\t<a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/after-school-care']\">After School Care</a>\r\n\t<a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/english-writing']\">English Writing</a>\r\n\t<a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/math']\">Math</a>\r\n\t<a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/enrichment-programs']\">Enrichment Programs</a>\r\n</div>\r\n\r\n\r\n<br><br>\r\n"
 
 /***/ }),
 
 /***/ 692:
 /***/ (function(module, exports) {
 
-module.exports = "<h2 class=\"page-header\">Dashboard</h2>\n<a class=\"btn btn-primary\" [routerLink]=\"['/profile']\">Go to your profile</a>\n<p><br>Thank you for creating an account, more functionality will be added soon!</p>\n"
+module.exports = "<h2 class=\"page-header\">Login</h2>\n<form (submit)=\"onLoginSubmit()\">\n\t<div class=\"form-group\">\n\t\t<!--\n\t\t<label>Username</label>\n\t\t-->\n\t\t<input type=\"text\" class=\"form-control\" [(ngModel)]=\"username\" name=\"username\" placeholder=\"Enter username\" style=\"width: 500px;\">\n\t</div>\n\t<div class=\"form-group\">\n\t\t<!--\n\t\t<label>Password</label>\n\t\t-->\n\t\t<input type=\"password\" class=\"form-control\" [(ngModel)]=\"password\" name=\"password\" placeholder=\"Enter password\" style=\"width: 500px;\">\n\t</div>\n\n\n\t<input type=\"submit\" class=\"btn btn-primary\" value=\"Login\">\n</form>\n\n"
 
 /***/ }),
 
 /***/ 693:
 /***/ (function(module, exports) {
 
-module.exports = "<Legend>English Writing</Legend>\n\n<p>My program has two main emphases:</p>\n<p>Learn by doing and Variety.</p>\n<p>What I mean by Learn by Doing is that since all writing is creative and subjective, by putting many rules on how students write, it kills the creative process. Therefore, rather than kill student creativity with oppressive rules, I simply stimulate students' minds with unusual ideas and student-friendly topics, give them a simple format to follow, and tell them to write. I do offer students ways to improve their writing, but if I force them to use my suggestions, their writing becomes fake and contrived, so I don't insist on it. I'm all about watching as students' writing grows organically. It's a slow process but it happens. I'm also a big believer in re-writes. They are important not just to make an essay polished and complete, but for students' self-confidence.</p>\n<p>As far as Variety, I like to give students different types of assignments-reading comprehension, vocabulary and grammar - to prevent boredom from developing. I'm especially fond of reading comprehension because studies have shown that the best way to improve writing is to read professional writing - both fiction and non-fiction. Knowing this, I search out the most interesting, unusual and compelling stories for students to read so that they read professional writing with an active reading mindset, and in the process, mentally absorb a great writer's unique style. It is true that vocabulary exercises are not as closely related to improving writing as reading comprehension, but there have been many times when students have told me they really enjoy reading the stories at the end of each vocabulary chapter, and learning new words is part of the process of building confidence in language, so I continue assigning vocabulary.</p>\n<p>An area that I may experiment with during the 2017-18 school year is reading classic novels and writing literary essays on them. Usually, I save that for the summer, but several parents have asked me to do this during the school year, so I am reconsidering. I hope you better understand my program after reading these paragraphs.</p>\n<br>\n<p>Sincerely,</p>\n<p>Michael N. Merrick</p>\n<p>(Mr. Mike)</p>\n"
+module.exports = "<Legend>Math</Legend>\n<p>Math Description</p>\n\n\n\n\n<div class =\"btn-group btn-group-justified\">\n\t<a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/after-school-care']\">After School Care</a>\n\t<a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['english-writing']\">English Writing</a>\n\t<a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/math']\">Math</a>\n\t<a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/enrichment-programs']\">Enrichment Programs</a>\n</div>\n"
 
 /***/ }),
 
 /***/ 694:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"jumbotron text-center\">\r\n\t<h1>Light of Knowledge Academy</h1>\r\n\t<br>\r\n\t<p><a href=\"https://www.google.com/maps/place/20432+Silverado+Ave,+Cupertino,+CA+95014/@37.3149792,-122.0334717,17z/data=!3m1!4b1!4m5!3m4!1s0x808fb5076a61d76f:0x640ac354a2071531!8m2!3d37.3149792!4d-122.031283\">20432 Silverado Ave. Ste. 6 | Cupertino, CA 95014</a>\r\n\t<br>Call us at: (408) 996-1236 | (408) 564-8133 | Text us at: (408) 218-1698\r\n\t<br>Email: <a href=\"info.lkastaff@gmail.com\">info.lkastaff@gmail.com</a> | <a href=\"http://facebook.com/LOKacademy\">Give us a like on our Facebook page!</a></p>\r\n<!--\r\n\t<div>\r\n\t\t<a class=\"btn btn-primary\" [routerLink]=\"['/login']\">Login</a>\r\n\t\t<a class=\"btn btn-default\" [routerLink]=\"['/register']\">Register</a>\r\n\t</div>\r\n-->\r\n</div>\r\n\r\n\r\n<div class=\"row\">\r\n\t<div class=\"col-md-4\">\r\n\t\t<h3>Summer Camp</h3>\r\n\r\n\t</div>\r\n\t<div class=\"col-md-4\">\r\n\t\t<h3>English Writing</h3>\r\n\r\n\t</div>\r\n\t<div class=\"col-md-4\">\r\n\t\t<h3>Chess Class</h3>\r\n\r\n\t</div>\r\n</div>\r\n<br><br>\r\n"
+module.exports = "<nav class=\"navbar navbar-default\">\r\n\t<div class=\"container-fluid\">\r\n\t\t<div class=\"navbar-header\">\r\n\t\t\t<!--\r\n\t\t\t<button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#navbar\" aria-expanded=\"false\" aria-controls=\"navbar\">\r\n\t\t\t\t<span class=\"sr-only\">Toggle navigation</span>\r\n\t\t\t\t<span class=\"icon-bar\"></span>\r\n\t\t\t\t<span class=\"icon-bar\"></span>\r\n\t\t\t\t<span class=\"icon-bar\"></span>\r\n\t\t\t</button>\r\n\t\t\t-->\r\n\t\t\t<a class=\"navbar-brand\" href=\"#\"><img [src]=\"fullImagePath\"></a>\r\n\t\t</div>\r\n\r\n\r\n\t\t<div id=\"navbar\" class=\"collapse navbar-collapse\">\r\n\t\t\t<ul class=\"nav navbar-nav navbar-left\">\r\n\t\t\t\t<li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/']\">Home <span class=\"glyphicon glyphicon-home\" aria-hidden=\"true\"></span></a></li>\r\n\t\t\t\t<li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/contact']\">Contact Us</a></li>\r\n\t\t\t\t<li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/after-school-care']\">After School Care</a></li>\r\n\t\t\t\t<li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/english-writing']\">English Writing</a></li>\r\n\t\t\t\t<li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/math']\">Math</a></li>\r\n\t\t\t\t<li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/enrichment-programs']\">Enrichment Programs</a></li>\r\n\t\t\t</ul>\r\n\r\n\t\t\t<ul class=\"nav navbar-nav navbar-right\">\r\n\t\t\t\t<li *ngIf=\"authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/dashboard']\">Dashboard</a></li>\r\n\t\t\t\t<li *ngIf=\"authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/profile']\">Profile</a></li>\r\n\t\t\t\t<li *ngIf=\"!authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/login']\">Login</a></li>\r\n\t\t\t\t<li *ngIf=\"!authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/register']\">Register</a></li>\r\n\t\t\t\t<li *ngIf=\"authService.loggedIn()\"><a (click)=\"onLogoutClick()\" href=\"#\">Logout</a></li>\r\n\t\t\t</ul>\r\n\t\t</div><!--/.nav-collapse -->\r\n\t</div>\r\n</nav>\r\n"
 
 /***/ }),
 
 /***/ 695:
 /***/ (function(module, exports) {
 
-module.exports = "<Legend>Introduction to Programming</Legend>\n<p>Intro to Programming Description</p>\n"
+module.exports = "<div *ngIf=\"user\">\n\t<h2 class=\"page-header\">Welcome back {{user.name}}.</h2>\n\t<!--\n\t <ul class=\"list-group\">\n\t <li class=\"list-group-item\">Username: {{user.username}}</li>\n\t <li class=\"list-group-item\">Email: {{user.email}}</li>\n\t </ul>\n\t-->\n\t<h6><p>Username: {{user.username}}</p></h6>\n\t<h6><p>Email: {{user.email}}</p></h6>\n\t\n\t<br>\n\n\t<legend>Legend</legend>\n\t<h6>Incomplete = I</h6>\n\t<h6>Complete and of Acceptable/Good Quality = C</h6>\n\t<h6>Complete and of Excellent Quality = C*</h6>\n\t<h6>Not Turned In = NTI</h6>\n\t<h6>Not Assigned = NA</h6>\n\t<br>\n\t<b>Note:</b>\n\t<p>For Reading Comprehension, the story number assigned will match the week number.</p>\n\t<p>For Vocabulary, each student works at his/her own pace, so parents will need to check with the teacher if there are missing vocabular assignments.</p>\n\t<p>For Essay, essays are assigned periodically and not weekly due to the need for re-writes. Therefore, a \"C\" indicates that either a first draft or later draft was turned in.</p>\n\t<p>Also, essays are often broken up into two parts, and only one part is due each week.</p>\n\t<p>For Grammar, assignments are assigned at most every other week.</p>\n\n\t<legend><br>Grades</legend>\n\t<table>\n\t\t<tr>\n\t\t\t<th>Week No.</th>\n\t\t\t<th>Reading Comprehension</th>\n\t\t\t<th>Vocabulary</th>\n\t\t\t<th>Essay</th>\n\t\t\t<th>Grammar</th>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Week 1</td>\n\t\t\t<td>{{user.rc1}}</td>\n\t\t\t<td>{{user.v1}}</td>\n\t\t\t<td>{{user.e1}}</td>\n\t\t\t<td>{{user.g1}}</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Week 2</td>\n\t\t\t<td>{{user.rc2}}</td>\n\t\t\t<td>{{user.v2}}</td>\n\t\t\t<td>{{user.e2}}</td>\n\t\t\t<td>NA</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Week 3</td>\n\t\t\t<td>{{user.rc3}}</td>\n\t\t\t<td>{{user.v3}}</td>\n\t\t\t<td>{{user.e3}}</td>\n\t\t\t<td>{{user.g3}}</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Week 4</td>\n\t\t\t<td>{{user.rc4}}</td>\n\t\t\t<td>{{user.v4}}</td>\n\t\t\t<td>{{user.e4}}</td>\n\t\t\t<td>NA</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Week 5</td>\n\t\t\t<td>{{user.rc5}}</td>\n\t\t\t<td>{{user.v5}}</td>\n\t\t\t<td>{{user.e5}}</td>\n\t\t\t<td>{{user.g5}}</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Week 6</td>\n\t\t\t<td>{{user.rc6}}</td>\n\t\t\t<td>{{user.v6}}</td>\n\t\t\t<td>{{user.e6}}</td>\n\t\t\t<td>NA</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Week 7</td>\n\t\t\t<td>{{user.rc7}}</td>\n\t\t\t<td>{{user.v7}}</td>\n\t\t\t<td>{{user.e7}}</td>\n\t\t\t<td>{{user.g7}}</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Week 8</td>\n\t\t\t<td>{{user.rc8}}</td>\n\t\t\t<td>{{user.v8}}</td>\n\t\t\t<td>{{user.e8}}</td>\n\t\t\t<td>NA</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Week 9</td>\n\t\t\t<td>{{user.rc9}}</td>\n\t\t\t<td>{{user.v9}}</td>\n\t\t\t<td>{{user.e9}}</td>\n\t\t\t<td>{{user.g9}}</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Week 10</td>\n\t\t\t<td>{{user.rc10}}</td>\n\t\t\t<td>{{user.v10}}</td>\n\t\t\t<td>{{user.e10}}</td>\n\t\t\t<td>NA</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Week 11</td>\n\t\t\t<td>{{user.rc11}}</td>\n\t\t\t<td>{{user.v11}}</td>\n\t\t\t<td>{{user.e11}}</td>\n\t\t\t<td>{{user.g11}}</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Week 12</td>\n\t\t\t<td>{{user.rc12}}</td>\n\t\t\t<td>{{user.v12}}</td>\n\t\t\t<td>{{user.e12}}</td>\n\t\t\t<td>NA</td>\n\t\t</tr>\n\t</table>\n\t<br><br><br>\n</div>\n"
 
 /***/ }),
 
 /***/ 696:
 /***/ (function(module, exports) {
 
-module.exports = "<h2 class=\"page-header\">Login</h2>\n<form (submit)=\"onLoginSubmit()\">\n\t<div class=\"form-group\">\n\t\t<!--\n\t\t<label>Username</label>\n\t\t-->\n\t\t<input type=\"text\" class=\"form-control\" [(ngModel)]=\"username\" name=\"username\" placeholder=\"Enter username\" style=\"width: 500px;\">\n\t</div>\n\t<div class=\"form-group\">\n\t\t<!--\n\t\t<label>Password</label>\n\t\t-->\n\t\t<input type=\"password\" class=\"form-control\" [(ngModel)]=\"password\" name=\"password\" placeholder=\"Enter password\" style=\"width: 500px;\">\n\t</div>\n\n\n\t<input type=\"submit\" class=\"btn btn-primary\" value=\"Login\">\n</form>\n\n"
-
-/***/ }),
-
-/***/ 697:
-/***/ (function(module, exports) {
-
-module.exports = "<nav class=\"navbar navbar-default\">\r\n\t<div class=\"container-fluid\">\r\n\t\t<div class=\"navbar-header\">\r\n\t\t\t<button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#navbar\" aria-expande=\"false\" aria-controls=\"navbar\">\r\n\t\t\t\t<span class=\"sr-only\">Toggle navigation</span>\r\n\t\t\t\t<span class=\"icon-bar\"></span>\r\n\t\t\t\t<span class=\"icon-bar\"></span>\r\n\t\t\t\t<span class=\"icon-bar\"></span>\r\n\t\t\t</button>\r\n\t\t\t<a class=\"navbar-brand\" href=\"#\"><img [src]=\"fullImagePath\"></a>\r\n\t\t</div>\r\n\r\n\r\n\t\t<div id=\"navbar\" class=\"collapse navbar-collapse\">\r\n\t\t\t<ul class=\"nav navbar-nav navbar-left\">\r\n\t\t\t\t<li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/']\">Home <span class=\"glyphicon glyphicon-home\" aria-hidden=\"true\"></span></a></li>\r\n\t\t\t\t<li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/contact']\">Contact Us</a></li>\r\n\t\t\t\t<li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/after-school-care']\">After-School Care</a></li>\r\n\t\t\t\t<li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/english-writing']\">English Writing</a></li>\r\n\t\t\t\t<li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/intro-to-programming']\">Intro to Programming</a></li>\r\n\t\t\t\t<li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/chess']\">Chess</a></li>\r\n\t\t\t\t<!--\r\n\t\t\t\t<li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/ap-tutoring']\">AP Tutoring</a></li>\r\n\t\t\t\t-->\r\n\r\n\t\t\t</ul>\r\n\r\n\t\t\t<ul class=\"nav navbar-nav navbar-right\">\r\n\t\t\t\t<li *ngIf=\"authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/dashboard']\">Dashboard</a></li>\r\n\t\t\t\t<li *ngIf=\"authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/profile']\">Profile</a></li>\r\n\t\t\t\t<li *ngIf=\"!authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/login']\">Login</a></li>\r\n\t\t\t\t<li *ngIf=\"!authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/register']\">Register</a></li>\r\n\t\t\t\t<li *ngIf=\"authService.loggedIn()\"><a (click)=\"onLogoutClick()\" href=\"#\">Logout</a></li>\r\n\t\t\t</ul>\r\n\t\t</div><!--/.nav-collapse -->\r\n\t</div>\r\n</nav>\r\n"
-
-/***/ }),
-
-/***/ 698:
-/***/ (function(module, exports) {
-
-module.exports = "<div *ngIf=\"user\">\n\t<h2 class=\"page-header\">Welcome back {{user.name}}.</h2>\n\t<!--\n\t <ul class=\"list-group\">\n\t <li class=\"list-group-item\">Username: {{user.username}}</li>\n\t <li class=\"list-group-item\">Email: {{user.email}}</li>\n\t </ul>\n\t-->\n\t<h4><p>Username: {{user.username}}</p></h4>\n\t<h4><p>Email: {{user.email}}</p></h4>\n\t\n\t<br>\n\n\t<legend>Legend</legend>\n\t<h6>Incomplete = I</h6>\n\t<h6>Complete = C</h6>\n\t<br>\n\n\t<legend><br>Grades</legend>\n\t<table>\n\t\t<tr>\n\t\t\t<th>Week No.</th>\n\t\t\t<th>Reading Comprehension</th>\n\t\t\t<th>Vocabulary</th>\n\t\t\t<th>Grammar</th>\n\t\t\t<th>Essay</th>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Week 1</td>\n\t\t\t<td>{{user.rc1}}</td>\n\t\t\t<td>{{user.v1}}</td>\n\t\t\t<td>{{user.g1}}</td>\n\t\t\t<td>{{user.e1}}</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Week 2</td>\n\t\t\t<td>{{user.rc2}}</td>\n\t\t\t<td>{{user.v2}}</td>\n\t\t\t<td>{{user.g2}}</td>\n\t\t\t<td>{{user.e2}}</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Week 3</td>\n\t\t\t<td>{{user.rc3}}</td>\n\t\t\t<td>{{user.v3}}</td>\n\t\t\t<td>{{user.g3}}</td>\n\t\t\t<td>{{user.e3}}</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Week 4</td>\n\t\t\t<td>{{user.rc4}}</td>\n\t\t\t<td>{{user.v4}}</td>\n\t\t\t<td>{{user.g4}}</td>\n\t\t\t<td>{{user.e4}}</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Week 5</td>\n\t\t\t<td>{{user.rc5}}</td>\n\t\t\t<td>{{user.v5}}</td>\n\t\t\t<td>{{user.g5}}</td>\n\t\t\t<td>{{user.e5}}</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Week 6</td>\n\t\t\t<td>{{user.rc6}}</td>\n\t\t\t<td>{{user.v6}}</td>\n\t\t\t<td>{{user.g6}}</td>\n\t\t\t<td>{{user.e6}}</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Week 7</td>\n\t\t\t<td>{{user.rc7}}</td>\n\t\t\t<td>{{user.v7}}</td>\n\t\t\t<td>{{user.g7}}</td>\n\t\t\t<td>{{user.e7}}</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Week 8</td>\n\t\t\t<td>{{user.rc8}}</td>\n\t\t\t<td>{{user.v8}}</td>\n\t\t\t<td>{{user.g8}}</td>\n\t\t\t<td>{{user.e8}}</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Week 9</td>\n\t\t\t<td>{{user.rc9}}</td>\n\t\t\t<td>{{user.v9}}</td>\n\t\t\t<td>{{user.g9}}</td>\n\t\t\t<td>{{user.e9}}</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Week 10</td>\n\t\t\t<td>{{user.rc10}}</td>\n\t\t\t<td>{{user.v10}}</td>\n\t\t\t<td>{{user.g10}}</td>\n\t\t\t<td>{{user.e10}}</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Week 11</td>\n\t\t\t<td>{{user.rc11}}</td>\n\t\t\t<td>{{user.v11}}</td>\n\t\t\t<td>{{user.g11}}</td>\n\t\t\t<td>{{user.e11}}</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Week 12</td>\n\t\t\t<td>{{user.rc12}}</td>\n\t\t\t<td>{{user.v12}}</td>\n\t\t\t<td>{{user.g12}}</td>\n\t\t\t<td>{{user.e12}}</td>\n\t\t</tr>\n\t</table>\n\t<br><br><br>\n</div>\n"
-
-/***/ }),
-
-/***/ 699:
-/***/ (function(module, exports) {
-
 module.exports = "<h2 class=\"page-header\">Register</h2>\n<form (submit)=\"onRegisterSubmit()\">\n\t<div class=\"form-group\">\n\t\t<label>Name</label>\n\t\t<input type=\"text\" [(ngModel)]=\"name\" name=\"name\" class=\"form-control\" placeholder=\"Enter name\" style=\"width: 600px;\">\n\t</div>\n\t<div class=\"form-group\">\n\t\t<label>Username</label>\n\t\t<input type=\"text\" [(ngModel)]=\"username\" name=\"username\" class=\"form-control\" placeholder=\"Enter username\" style=\"width: 600px;\">\n\t</div>\n\t<div class=\"form-group\">\n\t\t<label>Email</label>\n\t\t<input type=\"text\" [(ngModel)]=\"email\" name=\"email\" class=\"form-control\" placeholder=\"Enter email\" style=\"width: 600px;\">\n\t</div>\n\t<div class=\"form-group\">\n\t\t<label>Password</label>\n\t\t<input type=\"password\" [(ngModel)]=\"password\" name=\"password\" class=\"form-control\" placeholder=\"Enter password\" style=\"width: 600px;\">\n\t</div>\n\n\t<input type=\"submit\" class=\"btn btn-primary\" value=\"Submit\">\n</form>\n"
 
 /***/ }),
 
-/***/ 723:
+/***/ 720:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(387);
@@ -990,9 +932,9 @@ module.exports = __webpack_require__(387);
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(207);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(705);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(702);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_jwt__ = __webpack_require__(520);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_jwt__ = __webpack_require__(519);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_jwt___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_angular2_jwt__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuthService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -1062,5 +1004,5 @@ var AuthService = (function () {
 
 /***/ })
 
-},[723]);
+},[720]);
 //# sourceMappingURL=main.bundle.map
