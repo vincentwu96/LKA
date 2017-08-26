@@ -1,15 +1,24 @@
 /*div {
-	height: 333px;
-	width: 100%;
+height: 333px;
+width: 100%;
 }
 
 @media screen and (max-width: 1020px) {
-	#container, #header, #content, #footer {
-		float: none;
-		width: auto;
-	}
-	#subtitle, #share, #slider, #sidebar{
-		display:none;
-	}
-	p{ font-size: 2em; }
+#container, #header, #content, #footer {
+float: none;
+width: auto;
+}
+#subtitle, #share, #slider, #sidebar{
+display:none;
+}
+p{ font-size: 2em; }
 }*/
+
+#home-main {
+	background-image: url("/assets/images/bg.png");
+	background-repeat: repeat-y;
+	background-position: center;
+	background-size: cover;
+	height:94.5%;
+	position: center;
+}

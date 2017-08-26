@@ -16,7 +16,7 @@ constructor(
 private authService:AuthService,
 private router:Router
 ) { 
-this.fullImagePath = '/assets/images/Logo1.jpg'
+this.fullImagePath = '/assets/images/LKA.png'
 }
 
   ngOnInit() {
