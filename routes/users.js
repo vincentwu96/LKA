@@ -10,6 +10,7 @@ const User = require('../models/user');
 // Register
 router.post('/register', (req, res, next) => {
 	let newUser = new User({
+		comments: "Remember to only edit text in between double quotes",
 		name: req.body.name,
 		email: req.body.email,
 		username: req.body.username,
@@ -60,6 +61,7 @@ router.post('/authenticate', (req, res, next) => {
 					token: 'JWT '+token,
 					user: {
 						id:user._id,
+						comments: "Remember to only edit text in between double quotes",
 						name: user.name,
 						username: user.username,
 						email: user.email,
