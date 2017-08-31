@@ -1,16 +1,19 @@
 <!DOCTYPE HTML>
+<head>
 <meta charset="utf-8">
 <meta name="description" content="Official website for Light of Knowledge Academy. Learn more now!"/>
 <title>Register</title>
+</head>
 <h2 class="page-header">Register</h2>
+<div id="register-box">
 <form (submit)="onRegisterSubmit()">
 	<div class="form-group">
 		<label>Name</label>
-		<input type="text" [(ngModel)]="name" name="name" class="form-control" placeholder="Enter name" style="width: 600px;">
+		<input type="text" [(ngModel)]="name" name="name" class="form-control" placeholder="Enter full name" style="width: 600px;">
 	</div>
 	<div class="form-group">
 		<label>Username</label>
-		<input type="text" [(ngModel)]="username" name="username" class="form-control" placeholder="Enter username" style="width: 600px;">
+		<input type="text" [(ngModel)]="username" name="username" class="form-control" placeholder="Enter username (4-20 characters)" style="width: 600px;">
 	</div>
 	<div class="form-group">
 		<label>Email</label>
@@ -18,13 +21,13 @@
 	</div>
 	<div class="form-group">
 		<label>Password</label>
-		<input type="password" [(ngModel)]="password" name="password" class="form-control" placeholder="Enter password" style="width: 600px;">
+		<input type="password" [(ngModel)]="password" name="password" class="form-control" placeholder="Enter password (6-20 characters)" style="width: 600px;">
 	</div>
 
-	<input type="submit" class="btn btn-primary" value="Submit">
+	<input type="submit" class="btn btn-primary" value="Create Account">
 </form>
-
-<br><br><br><br><br><br><br><br><br><br>
+</div>
+<br><br><br><br>
 <!--style="position: absolute; bottom:0%; right: 0%;"-->
 <div class ="btn-group btn-group-justified">
 	<a class="btn btn-default" target="_top" [routerLink]="['/after-school']">After School</a>

@@ -1,1 +1,6 @@
-
+#register-box {
+	border: outset 2px;
+	width: 60%;
+	margin: 0;
+	padding: 30px;
+}

@@ -46,7 +46,7 @@ router.post('/authenticate', (req, res, next) => {
 	User.getUserByUsername(username, (err, user) => {
 		if(err) throw err;
 		if(!user){
-			return res.json({success: false, msg: 'Invalid username or password.'});
+			return res.json({success: false, msg: 'Invalid username or password'});
 		}
 		User.comparePassword(password, user.password, (err, isMatch) => {
 			if(err) throw err;

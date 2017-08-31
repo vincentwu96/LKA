@@ -13,12 +13,3 @@ display:none;
 }
 p{ font-size: 2em; }
 }*/
-
-#home-main {
-	background-image: url("/assets/images/bg.png");
-	background-repeat: repeat-y;
-	background-position: center;
-	background-size: cover;
-	height:94.5%;
-	position: center;
-}
