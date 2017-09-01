@@ -1,15 +1,11 @@
 <!DOCTYPE HTML>
+<head>
 <meta charset="utf-8">
 <meta name="description" content="Official website for Light of Knowledge Academy. Learn more now!"/>
 <title>Profile</title>
+</head>
 <div *ngIf="user">
 	<h2 class="page-header">Welcome back {{user.name}}.</h2>
-	<!--
-	 <ul class="list-group">
-	 <li class="list-group-item">Username: {{user.username}}</li>
-	 <li class="list-group-item">Email: {{user.email}}</li>
-	 </ul>
-	-->
 	<p>Username: {{user.username}}</p>
 	<p>Email: {{user.email}}</p>
 
@@ -51,7 +47,7 @@
 			<td>{{user.rc2}}</td>
 			<td>{{user.v2}}</td>
 			<td>{{user.e2}}</td>
-			<td>NA</td>
+			<td>{{user.g2}}</td>
 		</tr>
 		<tr>
 			<td>Week 3</td>
@@ -65,7 +61,7 @@
 			<td>{{user.rc4}}</td>
 			<td>{{user.v4}}</td>
 			<td>{{user.e4}}</td>
-			<td>NA</td>
+			<td>{{user.g4}}</td>
 		</tr>
 		<tr>
 			<td>Week 5</td>
@@ -79,7 +75,7 @@
 			<td>{{user.rc6}}</td>
 			<td>{{user.v6}}</td>
 			<td>{{user.e6}}</td>
-			<td>NA</td>
+			<td>{{user.g6}}</td>
 		</tr>
 		<tr>
 			<td>Week 7</td>
@@ -93,7 +89,7 @@
 			<td>{{user.rc8}}</td>
 			<td>{{user.v8}}</td>
 			<td>{{user.e8}}</td>
-			<td>NA</td>
+			<td>{{user.g8}}</td>
 		</tr>
 		<tr>
 			<td>Week 9</td>
@@ -107,7 +103,7 @@
 			<td>{{user.rc10}}</td>
 			<td>{{user.v10}}</td>
 			<td>{{user.e10}}</td>
-			<td>NA</td>
+			<td>{{user.g10}}</td>
 		</tr>
 		<tr>
 			<td>Week 11</td>
@@ -121,8 +117,18 @@
 			<td>{{user.rc12}}</td>
 			<td>{{user.v12}}</td>
 			<td>{{user.e12}}</td>
-			<td>NA</td>
+			<td>{{user.g12}}</td>
 		</tr>
 	</table>
 	<br><br><br>
+</div>
+
+<div id="footer">
+	<div class ="btn-group btn-group-justified">
+		<a class="btn btn-default" target="_top" [routerLink]="['/after-school']">After School</a>
+		<a class="btn btn-default" target="_top" [routerLink]="['/english-writing']">English Writing</a>
+		<a class="btn btn-default" target="_top" [routerLink]="['/math']">Math</a>
+		<a class="btn btn-default" target="_top" [routerLink]="['/enrichment-programs']">Enrichment Programs</a>
+		<a class="btn btn-default" target="_top" [routerLink]="['/join']">Join Our Team Today!</a>
+	</div>
 </div>
