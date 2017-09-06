@@ -61,6 +61,7 @@ if(data.success){
 // User Registered
 alert('You are now registered');
 this.router.navigate(['/login']);
+window.scrollTo(0, 0);
 }else{
 alert('Something went wrong');
 this.router.navigate(['/register']);

@@ -17,7 +17,7 @@ fullImagePath: string;
 isIn = false;   // store state
 toggleState() { // click handler
 let bool = this.isIn;
-this.isIn = bool === false ? true : false; 
+this.isIn = !this.isIn;
 }
 
 
