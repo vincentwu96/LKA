@@ -12,9 +12,9 @@ import { HomeComponent } from './components/home/home.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ProfileComponent } from './components/profile/profile.component';
 
-import {ValidateService} from './services/validate.service';
-import {AuthService} from './services/auth.service';
-import {AuthGuard} from './guards/auth.guard';
+import { ValidateService } from './services/validate.service';
+import { AuthService } from './services/auth.service';
+import { AuthGuard } from './guards/auth.guard';
 import { ContactComponent } from './components/contact/contact.component';
 import { EnglishWritingComponent } from './components/english-writing/english-writing.component';
 import { MathComponent } from './components/math/math.component';

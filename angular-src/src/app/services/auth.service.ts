@@ -54,7 +54,8 @@ logout(){
 	this.authToken = null;
 	this.user = null;
 	localStorage.clear();
-	window.scrollTo(0, 0);
+	location.reload();
+	window.scrollTo(0,0);
 }
 }
 // http://localhost:8080/
