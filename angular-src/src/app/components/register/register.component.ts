@@ -34,7 +34,6 @@ password: this.password
 
 // Required Fields
 if(!this.validateService.validateRegister(user)){
-alert('Please fill in all fields');
 return false;
 }
 

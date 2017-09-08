@@ -7,6 +7,7 @@ constructor() { }
 
 validateRegister(user){
 if(user.name == undefined || user.email == undefined || user.username == undefined || user.password == undefined){
+alert('Please fill in all fields');
 return false;
 }else{
 return true;

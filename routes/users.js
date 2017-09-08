@@ -43,7 +43,9 @@ router.post('/register', (req, res, next) => {
 router.post('/authenticate', (req, res, next) => {
 	const username = req.body.username;
 	const password = req.body.password;
-
+	if(password == undefined){	// valid username and undefined password crashes server, bug fixed
+		return res.json({sucess: false, msg: 'Invalid password'});
+	}
 	User.getUserByUsername(username, (err, user) => {
 		if(err) throw err;
 		if(!user){

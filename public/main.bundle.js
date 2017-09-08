@@ -21,6 +21,7 @@ var ValidateService = (function () {
     }
     ValidateService.prototype.validateRegister = function (user) {
         if (user.name == undefined || user.email == undefined || user.username == undefined || user.password == undefined) {
+            alert('Please fill in all fields');
             return false;
         }
         else {
@@ -740,7 +741,6 @@ var RegisterComponent = (function () {
         };
         // Required Fields
         if (!this.validateService.validateRegister(user)) {
-            alert('Please fill in all fields');
             return false;
         }
         // Validate Email
