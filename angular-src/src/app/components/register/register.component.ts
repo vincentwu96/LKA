@@ -54,6 +54,11 @@ if(!this.validateService.validateUsername(user)){
 return false;
 }
 
+// Validate Name
+if(!this.validateService.validateName(user)){
+return false;
+}
+
 // Register user
 this.authService.registerUser(user).subscribe(data => {
 if(data.success){

@@ -1,4 +1,5 @@
 # LKA
+# lightofknowledgeacademy.org
 # To update to heroku from localhost
 # change http://localhost:8080 in auth.service.ts
 # run ng build in angular-src

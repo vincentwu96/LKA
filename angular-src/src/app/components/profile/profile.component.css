@@ -3,9 +3,8 @@ table, td, th {
 }
 
 table {
-	border-collapse: collapse;
-	width: 700px;
-	/*width: 100%;*/
+	
+	width: 100%;
 }
 
 th {
@@ -13,8 +12,7 @@ th {
 	height: 50px;
 }
 td, th{
-
-	padding: 15px;
+	padding: 5px;
 	text-align: center;
 }
 tr:nth-child(even) {background-color: #f2f2f2}

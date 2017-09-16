@@ -28,6 +28,34 @@ var ValidateService = (function () {
             return true;
         }
     };
+    // Check for 2+ words for name
+    ValidateService.prototype.validateName = function (user) {
+        if (user.name.length > 50) {
+            alert('Name can have 50 characters max');
+            return false;
+        }
+        var values = user.name.split(' ').filter(function (v) { return v !== ''; });
+        if (values.length > 1) {
+            return true;
+        }
+        else {
+            alert('Please enter your full name');
+            return false;
+        }
+    };
+    ValidateService.prototype.validateUsername = function (user) {
+        if (user.username.length < 4) {
+            alert('Username is too short');
+            return false;
+        }
+        else if (user.username.length > 20) {
+            alert('Username is too long');
+            return false;
+        }
+        else {
+            return true;
+        }
+    };
     ValidateService.prototype.validateEmail = function (email) {
         var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         return re.test(email);
@@ -39,19 +67,6 @@ var ValidateService = (function () {
         }
         else if (user.password.length > 20) {
             alert('Password is too long');
-            return false;
-        }
-        else {
-            return true;
-        }
-    };
-    ValidateService.prototype.validateUsername = function (user) {
-        if (user.username.length < 4) {
-            alert('Username is too short');
-            return false;
-        }
-        else if (user.username.length > 20) {
-            alert('Username is too long');
             return false;
         }
         else {
@@ -756,6 +771,10 @@ var RegisterComponent = (function () {
         if (!this.validateService.validateUsername(user)) {
             return false;
         }
+        // Validate Name
+        if (!this.validateService.validateName(user)) {
+            return false;
+        }
         // Register user
         this.authService.registerUser(user).subscribe(function (data) {
             if (data.success) {
@@ -950,7 +969,7 @@ module.exports = "#footer {\n\tposition:relative;\n\tbottom:0;\n\tleft:0;\n\trig
 /***/ 677:
 /***/ (function(module, exports) {
 
-module.exports = "#footer {\n\tposition:fixed;\n\tbottom:0;\n\tleft:0;\n\tright:0;\n\theight:auto;\n}\n"
+module.exports = "textarea{\n\tresize: none;\n\tborder: none;\n\twidth: 100%;\n\theight: auto;\n\n}\n\n\n#footer {\n\tposition:fixed;\n\tbottom:0;\n\tleft:0;\n\tright:0;\n\theight:auto;\n}\n\n@media only screen\nand (min-width : 800px) {\n\t#comment-box {\n\t\tborder: 1px solid black;\n\t\twidth: 100%;\n\t\tmargin: 0;\n\t\tpadding: 15px;\n\t}\n}\n"
 
 /***/ }),
 
@@ -1006,7 +1025,7 @@ module.exports = ".horizontal-collapse {\r\n    height: 70px;\r\n  }\r\n  .navba
 /***/ 685:
 /***/ (function(module, exports) {
 
-module.exports = "table, td, th {\n\tborder: 1px solid black;\n}\n\ntable {\n\tborder-collapse: collapse;\n\twidth: 700px;\n\t/*width: 100%;*/\n}\n\nth {\n\ttext-align: center;\n\theight: 50px;\n}\ntd, th{\n\n\tpadding: 15px;\n\ttext-align: center;\n}\ntr:nth-child(even) {background-color: #f2f2f2}\ntr:hover {background-color: #f5f5f5}\n\n#footer {\n\tposition:relative;\n\tbottom:0;\n\tleft:0;\n\tright:0;\n\theight:auto;\n}\n"
+module.exports = "table, td, th {\n\tborder: 1px solid black;\n}\n\ntable {\n\t\n\twidth: 100%;\n}\n\nth {\n\ttext-align: center;\n\theight: 50px;\n}\ntd, th{\n\tpadding: 5px;\n\ttext-align: center;\n}\ntr:nth-child(even) {background-color: #f2f2f2}\ntr:hover {background-color: #f5f5f5}\n\n#footer {\n\tposition:relative;\n\tbottom:0;\n\tleft:0;\n\tright:0;\n\theight:auto;\n}\n"
 
 /***/ }),
 
@@ -1041,7 +1060,7 @@ module.exports = "<!DOCTYPE HTML>\r\n\t<meta charset=\"utf-8\">\r\n\t<meta name=
 /***/ 690:
 /***/ (function(module, exports) {
 
-module.exports = "<div *ngIf=\"user\">\n\t<h2 class=\"page-header\">Welcome back {{user.name}}.</h2>\n</div>\n\t<a class=\"btn btn-danger\" target=\"_top\" [routerLink]=\"['/profile']\">View my profile</a>\n\t<p><br>Stay tuned for more updates!</p>\n\t<!--\n\t <div id=\"footer\">\n\t <div class =\"btn-group btn-group-justified\">\n\t <a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/after-school']\">After School</a>\n\t <a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/english-witing']\">English Writing</a>\n\t <a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/math']\">Math</a>\n\t <a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/enrichment-programs']\">Enrichment Programs</a>\n\t <a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/join']\">Join Our Team Today!</a>\n\t </div>\n\t </div>-->\n"
+module.exports = "<div *ngIf=\"user\">\n\t<h2 class=\"page-header\">Welcome back {{user.name}}.</h2>\n\n\t<a class=\"btn btn-danger\" target=\"_top\" [routerLink]=\"['/profile']\">View my profile</a>\n\t\n\t<Legend><br></Legend>\n\t\n\t<div class=\"panel panel-success\">\n\t\t<div class=\"panel-heading\">\n\t\t\t<h3 class=\"panel-title\">Instructor Comments</h3>\n\t\t</div>\n\t\t<div class=\"panel-body\">\n\t\t\t{{user.generalComments}}\n\t\t</div>\n\t</div>\n</div>\t\n\n<!--\n\t<div id=\"footer\">\n\t<div class =\"btn-group btn-group-justified\">\n\t<a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/after-school']\">After School</a>\n\t<a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/english-witing']\">English Writing</a>\n\t<a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/math']\">Math</a>\n\t<a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/enrichment-programs']\">Enrichment Programs</a>\n\t<a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/join']\">Join Our Team Today!</a>\n\t</div>\n\t</div>-->\n"
 
 /***/ }),
 
@@ -1055,7 +1074,7 @@ module.exports = "<!DOCTYPE HTML>\n\t<head>\n\t<meta charset=\"utf-8\">\n\t<meta
 /***/ 692:
 /***/ (function(module, exports) {
 
-module.exports = "<!DOCTYPE HTML>\n<meta charset=\"utf-8\">\n<meta name=\"description\" content=\"Official website for Light of Knowledge Academy. We offer After School Programs, English Writing, Math Tutoring and much more! Learn more now!\"/>\n<title>Enrichment Programs</title>\n<h2 class=\"page-header\">Chess</h2>\n<h3>Instructor: Albert Rich</h3>\n<ul>\n\t<li>USCF National Master 2004</li>\n\t<li>Peak Rating 2289</li>\n\t<li>USCF Life Member</li>\n\t<li>USCF Certified Chess Coach 2004</li>\n\t<li>1993 US Junior Open 19 year old Champion</li>\n\t<li>Former Top 50 in US for age group</li>\n\t<li>Twice West Valley H.S. Chess League MVP</li>\n\t<li>4 Time Kolty Chess Club Champion</li>\n\t<li>Kolty Club Blitz Champion</li>\n\t<li>=1st 2004 Stamer Memorial</li>\n\t<li>First Place in many other tournaments</li>\n\t<li>3rd 2005 US under 50 Championship</li>\n\t<li>Former #1 ranked human on USCL, USCF's official Internet Chess Server</li>\n\t<li>Several students ranked in US top 100 list </li>\n\t<li>USCF certified Tournament Director</li>\n\t<li>Over 100 tournaments directed</li>\n\t<li>Teaching chess to children since 2003</li>\n</ul>\n<p>Contact Information:</p>\n<a href=\"tel:1-408-348-9658\">(408)348-9658</a>\n<br>\n<a href=\"mailto:albertjrich@yahoo.com\" target=\"_top\">albertjrich@yahoo.com</a>\n<br>\n<h2 class=\"page-header\">Introduction to Programming</h2>\n<p>Introduction to Programming Description</p>\n<br><br><br><br><br>\n<h2 class=\"page-header\">Art</h2>\n<p>Art Description</p>\n<br><br><br><br><br>\n<!--\n<div id=\"footer\">\n<div class =\"btn-group btn-group-justified\">\n\t<a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/after-school']\">After School</a>\n\t<a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/englis-writing']\">English Writing</a>\n\t<a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/math']\">Math</a>\n\t<a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/enrichment-programs']\">Enrichment Programs</a>\n\t<a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/join']\">Join Our Team Today!</a>\n</div>\n</div>-->\n"
+module.exports = "<!DOCTYPE HTML>\n<meta charset=\"utf-8\">\n<meta name=\"description\" content=\"Official website for Light of Knowledge Academy. We offer After School Programs, English Writing, Math Tutoring and much more! Learn more now!\"/>\n<title>Enrichment Programs</title>\n<h2 class=\"page-header\">Chess</h2>\n<h3>Instructor: Albert Rich</h3>\n<ul>\n\t<li>USCF National Master 2004</li>\n\t<li>Peak Rating 2289</li>\n\t<li>USCF Life Member</li>\n\t<li>USCF Certified Chess Coach 2004</li>\n\t<li>1993 US Junior Open 19 year old Champion</li>\n\t<li>Former Top 50 in US for age group</li>\n\t<li>Twice West Valley H.S. Chess League MVP</li>\n\t<li>4 Time Kolty Chess Club Champion</li>\n\t<li>Kolty Club Blitz Champion</li>\n\t<li>=1st 2004 Stamer Memorial</li>\n\t<li>First Place in many other tournaments</li>\n\t<li>3rd 2005 US under 50 Championship</li>\n\t<li>Former #1 ranked human on USCL, USCF's official Internet Chess Server</li>\n\t<li>Several students ranked in US top 100 list </li>\n\t<li>USCF certified Tournament Director</li>\n\t<li>Over 100 tournaments directed</li>\n\t<li>Teaching chess to children since 2003</li>\n</ul>\n<p>Contact Information:</p>\n<a href=\"tel:1-408-348-9658\">(408)348-9658</a>\n<br>\n<a href=\"mailto:albertjrich@yahoo.com\" target=\"_top\">albertjrich@yahoo.com</a>\n<br>\n<h2 class=\"page-header\">Introduction to Programming</h2>\n<p>Under construction</p>\n<br><br><br><br><br>\n<h2 class=\"page-header\">Art</h2>\n<p>Not currently offered</p>\n<br><br><br><br><br>\n<!--\n<div id=\"footer\">\n<div class =\"btn-group btn-group-justified\">\n\t<a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/after-school']\">After School</a>\n\t<a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/englis-writing']\">English Writing</a>\n\t<a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/math']\">Math</a>\n\t<a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/enrichment-programs']\">Enrichment Programs</a>\n\t<a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/join']\">Join Our Team Today!</a>\n</div>\n</div>-->\n"
 
 /***/ }),
 
@@ -1069,7 +1088,7 @@ module.exports = "<!DOCTYPE HTML>\r\n<meta charset=\"utf-8\">\r\n<meta name=\"de
 /***/ 694:
 /***/ (function(module, exports) {
 
-module.exports = "<!DOCTYPE HTML>\n\t<meta charset=\"utf-8\">\n\t<meta name=\"description\" content=\"Official website for Light of Knowledge Academy. We offer After School Programs, English Writing, Math Tutoring and much more! Learn more now!\"/>\n\t<title>Join Our Team Today!</title>\n\t<h2 class=\"page-header\">Join Our Team Today!</h2>\n\t<h3>At Light of Knowledge Academy, we are always seeking talented instructors to come work with us. We currently have one open position:</h3>\n\t<h4 class=\"tab\"><b>Instructor</b></h4>\n\t<h5 class=\"tab\">You will be working with middle school students to help understand and complete homework</h5>\n\t<h5 class=\"tab\">The ideal candidate should also be able to teach Middle School Math and English</h5>\n\t<h5 class=\"tab\">Hours are from 3:30pm to 6:30pm</h5>\n\t<h5 class=\"tab\">The ideal candidate is self-motivated and encourages their students to do the same</h5>\n\t\n\t<h4>Interested? Send us your application at <a href=\"mailto:info.lkastaff@gmail.com\" target=\"_top\">info.lkastaff@gmail.com</a>, and we look forward to hearing from you!</h4>\n\n"
+module.exports = "<!DOCTYPE HTML>\n\t<meta charset=\"utf-8\">\n\t<meta name=\"description\" content=\"Official website for Light of Knowledge Academy. We offer After School Programs, English Writing, Math Tutoring and much more! Learn more now!\"/>\n\t<title>Join Our Team Today!</title>\n\t<h2 class=\"page-header\">Join Our Team Today!</h2>\n\t<h4>At Light of Knowledge Academy, we are always seeking talented instructors to come work with us. We currently have one open position:</h4>\n\t<h5 class=\"tab\"><b>Instructor</b></h5>\n\t<p class=\"tab\">You will be working with middle school students to help understand and complete homework</p>\n\t<p class=\"tab\">The ideal candidate should also be able to teach Middle School Math and English</p>\n\t<p class=\"tab\">Hours are from 3:30pm to 6:30pm</p>\n\t<p class=\"tab\">The ideal candidate is self-motivated and encourages their students to do the same</p>\n\t\n\t<h4>Interested? Send us your application at <a href=\"mailto:info.lkastaff@gmail.com\" target=\"_top\">info.lkastaff@gmail.com</a>, and we look forward to hearing from you!</h4>\n\n"
 
 /***/ }),
 
@@ -1083,7 +1102,7 @@ module.exports = "<!DOCTYPE HTML>\n<meta charset=\"utf-8\">\n<meta name=\"descri
 /***/ 696:
 /***/ (function(module, exports) {
 
-module.exports = "<!DOCTYPE HTML>\n<meta charset=\"utf-8\">\n<meta name=\"description\" content=\"Official website for Light of Knowledge Academy. We offer After School Programs, English Writing, Math Tutoring and much more! Learn more now!\"/>\n<title>Math</title>\n\n<h2 class=\"page-header\">Math</h2>\n<p>Math Description</p>\n<div class=\"modal\">\n\t<div class=\"modal-dialog\">\n\t\t<div class=\"modal-content\">\n\t\t\t<div clas=\"modal-header\">\n\t\t\t\t<button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-hidden=\"true\">&times;</button>\n\t\t\t\t<h4 class=\"modal-title\">Modal title</h4>\n\t\t\t</div>\n\t\t\t<div class=\"modal-body\">\n\t\t\t\t<p>One fine body</p>\n\t\t\t</div>\n\t\t\t<div class=\"modal-footer\">\n\t\t\t\t<button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button>\n\t\t\t\t<button type=\"button\" class=\"btn btn-primary\">Save changes</button>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>\n\n<!--\n\t<div id=\"footer\">\n\t<div class =\"btn-group btn-group-justified\">\n\t<a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/after-school']\">After School</a>\n\t<a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/english-writing']\">English Writing</a>\n\t<a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/math']\">Math</a>\n\t<a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/enrichment-programs']\">Enrichment Programs</a>\n\t<a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/join']\">Join Our Team Today!</a>\n\t</div>\n\t</div>\n\n-->\n"
+module.exports = "<!DOCTYPE HTML>\n<meta charset=\"utf-8\">\n<meta name=\"description\" content=\"Official website for Light of Knowledge Academy. We offer After School Programs, English Writing, Math Tutoring and much more! Learn more now!\"/>\n<title>Math</title>\n\n<h2 class=\"page-header\">Math</h2>\n<p>Under construction</p>\n<div class=\"modal\">\n\t<div class=\"modal-dialog\">\n\t\t<div class=\"modal-content\">\n\t\t\t<div clas=\"modal-header\">\n\t\t\t\t<button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-hidden=\"true\">&times;</button>\n\t\t\t\t<h4 class=\"modal-title\">Modal title</h4>\n\t\t\t</div>\n\t\t\t<div class=\"modal-body\">\n\t\t\t\t<p>One fine body</p>\n\t\t\t</div>\n\t\t\t<div class=\"modal-footer\">\n\t\t\t\t<button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button>\n\t\t\t\t<button type=\"button\" class=\"btn btn-primary\">Save changes</button>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>\n\n<!--\n\t<div id=\"footer\">\n\t<div class =\"btn-group btn-group-justified\">\n\t<a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/after-school']\">After School</a>\n\t<a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/english-writing']\">English Writing</a>\n\t<a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/math']\">Math</a>\n\t<a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/enrichment-programs']\">Enrichment Programs</a>\n\t<a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/join']\">Join Our Team Today!</a>\n\t</div>\n\t</div>\n\n-->\n"
 
 /***/ }),
 
@@ -1097,7 +1116,7 @@ module.exports = "<!DOCTYPE HTML>\r\n<meta charset=\"utf-8\">\r\n<meta name=\"de
 /***/ 698:
 /***/ (function(module, exports) {
 
-module.exports = "<!DOCTYPE HTML>\n<head>\n<meta charset=\"utf-8\">\n<meta name=\"description\" content=\"Official website for Light of Knowledge Academy. Learn more now!\"/>\n<title>Profile</title>\n</head>\n<h2 class=\"page-header\">Profile</h2>\n<div *ngIf=\"user\">\n\t<p>Username: {{user.username}}</p>\n\t<p>Email: {{user.email}}</p>\n\t<legend>Legend</legend>\n\t<p>Complete and of Excellent Qualty = C*</p>\n\t<p>Complete and of Acceptable Quality = C</p>\n\t<p>Late and Finished in Class = LFIC</p>\n\t<p>Incomplete = I</p>\n\t<p>Not Turned In = NTI</p>\n\t<p>Not Assigned = NA</p>\n\t<br>\n\t<b>Note:</b>\n\t<p>For Reading Comprehension, the story number assigned will match the week number.</p>\n\t<p>For Vocabulary, each student works at his/her own pace, so parents will need to check with the teacher if there are missing vocabulary assignments.</p>\n\t<p>For Essay, essays are assigned periodically and not weekly due to the need for re-writes. Therefore, a \"C\" indicates that either a first draft or later draft was turned in.</p>\n\t<p>Also, essays are often broken up into two parts, and only one part is due each week.</p>\n\t<p>For Grammar, assignments are assigned at most every other week.</p>\n\n\t<legend><br>Grades</legend>\n\t<table>\n\t\t<tr>\n\t\t\t<th>Week No.</th>\n\t\t\t<th>Reading Comprehension</th>\n\t\t\t<th>Vocabulary</th>\n\t\t\t<th>Essay</th>\n\t\t\t<th>Grammar</th>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Week 1</td>\n\t\t\t<td>{{user.rc1}}</td>\n\t\t\t<td>{{user.v1}}</td>\n\t\t\t<td>{{user.e1}}</td>\n\t\t\t<td>{{user.g1}}</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Week 2</td>\n\t\t\t<td>{{user.rc2}}</td>\n\t\t\t<td>{{user.v2}}</td>\n\t\t\t<td>{{user.e2}}</td>\n\t\t\t<td>{{user.g2}}</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Week 3</td>\n\t\t\t<td>{{user.rc3}}</td>\n\t\t\t<td>{{user.v3}}</td>\n\t\t\t<td>{{user.e3}}</td>\n\t\t\t<td>{{user.g3}}</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Week 4</td>\n\t\t\t<td>{{user.rc4}}</td>\n\t\t\t<td>{{user.v4}}</td>\n\t\t\t<td>{{user.e4}}</td>\n\t\t\t<td>{{user.g4}}</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Week 5</td>\n\t\t\t<td>{{user.rc5}}</td>\n\t\t\t<td>{{user.v5}}</td>\n\t\t\t<td>{{user.e5}}</td>\n\t\t\t<td>{{user.g5}}</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Week 6</td>\n\t\t\t<td>{{user.rc6}}</td>\n\t\t\t<td>{{user.v6}}</td>\n\t\t\t<td>{{user.e6}}</td>\n\t\t\t<td>{{user.g6}}</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Week 7</td>\n\t\t\t<td>{{user.rc7}}</td>\n\t\t\t<td>{{user.v7}}</td>\n\t\t\t<td>{{user.e7}}</td>\n\t\t\t<td>{{user.g7}}</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Week 8</td>\n\t\t\t<td>{{user.rc8}}</td>\n\t\t\t<td>{{user.v8}}</td>\n\t\t\t<td>{{user.e8}}</td>\n\t\t\t<td>{{user.g8}}</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Week 9</td>\n\t\t\t<td>{{user.rc9}}</td>\n\t\t\t<td>{{user.v9}}</td>\n\t\t\t<td>{{user.e9}}</td>\n\t\t\t<td>{{user.g9}}</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Week 10</td>\n\t\t\t<td>{{user.rc10}}</td>\n\t\t\t<td>{{user.v10}}</td>\n\t\t\t<td>{{user.e10}}</td>\n\t\t\t<td>{{user.g10}}</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Week 11</td>\n\t\t\t<td>{{user.rc11}}</td>\n\t\t\t<td>{{user.v11}}</td>\n\t\t\t<td>{{user.e11}}</td>\n\t\t\t<td>{{user.g11}}</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Week 12</td>\n\t\t\t<td>{{user.rc12}}</td>\n\t\t\t<td>{{user.v12}}</td>\n\t\t\t<td>{{user.e12}}</td>\n\t\t\t<td>{{user.g12}}</td>\n\t\t</tr>\n\t</table>\n\t<br><br><br>\n</div>\n<!--\n<div id=\"footer\">\n\t<div class =\"btn-group btn-group-justified\">\n\t\t<a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/after-school']\">After School</a>\n\t\t<a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/english-writing']\">English Writing</a>\n\t\t<a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/math']\">Math</a>\n\t\t<a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/enrichment-programs']\">Enrichment Programs</a>\n\t\t<a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/join']\">Join Our Team Today!</a>\n\t</div>\n</div>-->\n"
+module.exports = "<!DOCTYPE HTML>\n<head>\n<meta charset=\"utf-8\">\n<meta name=\"description\" content=\"Official website for Light of Knowledge Academy. Learn more now!\"/>\n<title>Profile</title>\n</head>\n<h2 class=\"page-header\">Profile</h2>\n<div *ngIf=\"user\">\n\t<p>Username: {{user.username}}</p>\n\t<p>Email: {{user.email}}</p>\n\t<legend>Legend</legend>\n\t<p>Complete and of Excellent Quality = C*</p>\n\t<p>Complete and of Acceptable Quality = C</p>\n\t<p>Late = L</p>\n\t<p>Incomplete = INC</p>\n\t<p>Not Turned In = NTI</p>\n\t<p>Not Assigned = NA</p>\n\t<!--\n\t<div class=\"panel panel-primary\">\n\t\t<div class=\"panel-heading\">\n\t\t\t<h3 class=\"panel-title\">Legend</h3>\n\t\t</div>\n\t\t<div class=\"panel-body\">\n\t\t\tComplete and of Excellent Quality = C*<br>\n\t\t\tComplete and of Acceptable Quality = C<br>\n\t\t\tLate and Finished in Class = L<br>\n\t\t\tIncomplete = INC<br>\n\t\t\tNot Turned In = NTI<br>\n\t\t\tNot Assigned = NA\n\t\t</div>\n\t</div>\n\t-->\n\t<br>\n\t<b>Note:</b>\n\t<p>For Vocabulary, each student works at his/her own pace, so parents will need to check with the teacher if there are missing vocabulary assignments.</p>\n\t<p>For Essay, essays are assigned periodically and not weekly, due to the need for re-writes. Therefore, a \"C\" indicates that either a first draft or later draft was turned in.</p>\n\t<p>Essays are often broken up into parts, and only one part is due each week.</p>\n\t<p>When fractions are used, the denominator represents the total number of assignments given, and the numerator represents the number of assignments completed and turned in.</p>\n\n\t<legend><br>Student Performance Report</legend>\n\t<table>\n\t\t<tr>\n\t\t\t<th>Month</th>\n\t\t\t<th>Reading Comprehension</th>\n\t\t\t<th>Vocabulary</th>\n\t\t\t<th>Essays</th>\n\t\t\t<th>Session Comments</th>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>September</td>\n\t\t\t<td>{{user.rc1}}</td>\n\t\t\t<td>{{user.v1}}</td>\n\t\t\t<td>{{user.e1}}</td>\n\t\t\t<td width=\"700px\">{{user.c1}}</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>October</td>\n\t\t\t<td>{{user.rc2}}</td>\n\t\t\t<td>{{user.v2}}</td>\n\t\t\t<td>{{user.e2}}</td>\n\t\t\t<td>{{user.c2}}</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>November</td>\n\t\t\t<td>{{user.rc3}}</td>\n\t\t\t<td>{{user.v3}}</td>\n\t\t\t<td>{{user.e3}}</td>\n\t\t\t<td>{{user.c3}}</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>January</td>\n\t\t\t<td>{{user.rc4}}</td>\n\t\t\t<td>{{user.v4}}</td>\n\t\t\t<td>{{user.e4}}</td>\n\t\t\t<td>{{user.c4}}</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>February</td>\n\t\t\t<td>{{user.rc5}}</td>\n\t\t\t<td>{{user.v5}}</td>\n\t\t\t<td>{{user.e5}}</td>\n\t\t\t<td>{{user.c5}}</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>March</td>\n\t\t\t<td>{{user.rc6}}</td>\n\t\t\t<td>{{user.v6}}</td>\n\t\t\t<td>{{user.e6}}</td>\n\t\t\t<td>{{user.c6}}</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>April</td>\n\t\t\t<td>{{user.rc7}}</td>\n\t\t\t<td>{{user.v7}}</td>\n\t\t\t<td>{{user.e7}}</td>\n\t\t\t<td>{{user.c7}}</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>May</td>\n\t\t\t<td>{{user.rc8}}</td>\n\t\t\t<td>{{user.v8}}</td>\n\t\t\t<td>{{user.e8}}</td>\n\t\t\t<td>{{user.c8}}</td>\n\t\t</tr>\n\t</table>\n\t<br><br><br>\n</div>\n<!--\n<div id=\"footer\">\n\t<div class =\"btn-group btn-group-justified\">\n\t\t<a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/after-school']\">After School</a>\n\t\t<a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/english-writing']\">English Writing</a>\n\t\t<a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/math']\">Math</a>\n\t\t<a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/enrichment-programs']\">Enrichment Programs</a>\n\t\t<a class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/join']\">Join Our Team Today!</a>\n\t</div>\n</div>-->\n"
 
 /***/ }),
 
