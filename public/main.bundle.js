@@ -220,6 +220,7 @@ var appRoutes = [
     { path: 'math', component: __WEBPACK_IMPORTED_MODULE_17__components_math_math_component__["a" /* MathComponent */] },
     { path: 'enrichment-programs', component: __WEBPACK_IMPORTED_MODULE_18__components_enrichment_enrichment_component__["a" /* EnrichmentComponent */] },
     { path: 'join', component: __WEBPACK_IMPORTED_MODULE_20__components_join_join_component__["a" /* JoinComponent */] },
+    { path: '**', redirectTo: '' },
 ];
 var AppModule = (function () {
     function AppModule() {

@@ -34,6 +34,7 @@ const appRoutes: Routes = [
 	{path:'math', component: MathComponent},
 	{path:'enrichment-programs', component: EnrichmentComponent},
 	{path:'join', component: JoinComponent},
+	{path:'**', redirectTo: ''},
 	]
 
 @NgModule({
