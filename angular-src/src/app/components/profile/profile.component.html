@@ -1,117 +1,95 @@
 <!DOCTYPE HTML>
 <head>
-<meta charset="utf-8">
-<meta name="description" content="Official website for Light of Knowledge Academy. Learn more now!"/>
-<title>Profile</title>
+	<meta charset="utf-8">
+	<meta name="description" content="Official website for Light of Knowledge Academy. Learn more now!"/>
+	<title>Profile</title>
 </head>
-<h2 class="page-header">Profile</h2>
-<div *ngIf="user">
-	<p>Username: {{user.username}}</p>
-	<p>Email: {{user.email}}</p>
-	<legend>Legend</legend>
-	<p>Complete and of Excellent Quality = C*</p>
-	<p>Complete and of Acceptable Quality = C</p>
-	<p>Late = L</p>
-	<p>Incomplete = INC</p>
-	<p>Not Turned In = NTI</p>
-	<p>Not Assigned = NA</p>
-	<!--
-	<div class="panel panel-primary">
-		<div class="panel-heading">
-			<h3 class="panel-title">Legend</h3>
-		</div>
-		<div class="panel-body">
-			Complete and of Excellent Quality = C*<br>
-			Complete and of Acceptable Quality = C<br>
-			Late and Finished in Class = L<br>
-			Incomplete = INC<br>
-			Not Turned In = NTI<br>
-			Not Assigned = NA
-		</div>
-	</div>
-	-->
-	<br>
-	<b>Note:</b>
-	<p>For Vocabulary, each student works at his/her own pace, so parents will need to check with the teacher if there are missing vocabulary assignments.</p>
-	<p>For Essay, essays are assigned periodically and not weekly, due to the need for re-writes. Therefore, a "C" indicates that either a first draft or later draft was turned in.</p>
-	<p>Essays are often broken up into parts, and only one part is due each week.</p>
-	<p>When fractions are used, the denominator represents the total number of assignments given, and the numerator represents the number of assignments completed and turned in.</p>
+<body>
+	<h2 class="page-header">Profile</h2>
+	<div *ngIf="user">
+		<p>Username: {{user.username}}</p>
+		<p>Email: {{user.email}}</p>
+		<legend>Legend</legend>
+		<p>Complete and of Excellent Quality = C*</p>
+		<p>Complete and of Acceptable Quality = C</p>
+		<p>Late = L</p>
+		<p>Incomplete = INC</p>
+		<p>Not Turned In = NTI</p>
+		<p>Not Assigned = NA</p>
 
-	<legend><br>Student Performance Report</legend>
-	<table>
-		<tr>
-			<th>Month</th>
-			<th>Reading Comprehension</th>
-			<th>Vocabulary</th>
-			<th>Essays</th>
-			<th>Session Comments</th>
-		</tr>
-		<tr>
-			<td>September</td>
-			<td>{{user.rc1}}</td>
-			<td>{{user.v1}}</td>
-			<td>{{user.e1}}</td>
-			<td width="700px">{{user.c1}}</td>
-		</tr>
-		<tr>
-			<td>October</td>
-			<td>{{user.rc2}}</td>
-			<td>{{user.v2}}</td>
-			<td>{{user.e2}}</td>
-			<td>{{user.c2}}</td>
-		</tr>
-		<tr>
-			<td>November</td>
-			<td>{{user.rc3}}</td>
-			<td>{{user.v3}}</td>
-			<td>{{user.e3}}</td>
-			<td>{{user.c3}}</td>
-		</tr>
-		<tr>
-			<td>January</td>
-			<td>{{user.rc4}}</td>
-			<td>{{user.v4}}</td>
-			<td>{{user.e4}}</td>
-			<td>{{user.c4}}</td>
-		</tr>
-		<tr>
-			<td>February</td>
-			<td>{{user.rc5}}</td>
-			<td>{{user.v5}}</td>
-			<td>{{user.e5}}</td>
-			<td>{{user.c5}}</td>
-		</tr>
-		<tr>
-			<td>March</td>
-			<td>{{user.rc6}}</td>
-			<td>{{user.v6}}</td>
-			<td>{{user.e6}}</td>
-			<td>{{user.c6}}</td>
-		</tr>
-		<tr>
-			<td>April</td>
-			<td>{{user.rc7}}</td>
-			<td>{{user.v7}}</td>
-			<td>{{user.e7}}</td>
-			<td>{{user.c7}}</td>
-		</tr>
-		<tr>
-			<td>May</td>
-			<td>{{user.rc8}}</td>
-			<td>{{user.v8}}</td>
-			<td>{{user.e8}}</td>
-			<td>{{user.c8}}</td>
-		</tr>
-	</table>
-	<br><br><br>
-</div>
-<!--
-<div id="footer">
-	<div class ="btn-group btn-group-justified">
-		<a class="btn btn-default" target="_top" [routerLink]="['/after-school']">After School</a>
-		<a class="btn btn-default" target="_top" [routerLink]="['/english-writing']">English Writing</a>
-		<a class="btn btn-default" target="_top" [routerLink]="['/math']">Math</a>
-		<a class="btn btn-default" target="_top" [routerLink]="['/enrichment-programs']">Enrichment Programs</a>
-		<a class="btn btn-default" target="_top" [routerLink]="['/join']">Join Our Team Today!</a>
+		<br>
+		<b>Note:</b>
+		<p>For Vocabulary, each student works at his/her own pace, so parents will need to check with the teacher if there are missing vocabulary assignments.</p>
+		<p>For Essays, essays are assigned periodically and not weekly, due to the need for re-writes. Therefore, a "C" indicates that either a first draft or later draft was turned in.</p>
+		<p>Essays are often broken up into parts, and only one part is due each week.</p>
+		<p>When fractions are used, the denominator represents the total number of assignments given, and the numerator represents the number of assignments completed and turned in.</p>
+
+		<legend><br>Student Performance Report</legend>
+		<table>
+			<tr>
+				<th>Month</th>
+				<th>Reading Comprehension</th>
+				<th>Vocabulary</th>
+				<th>Essays</th>
+				<th>Session Comments</th>
+			</tr>
+			<tr>
+				<td>September</td>
+				<td>{{user.rc1}}</td>
+				<td>{{user.v1}}</td>
+				<td>{{user.e1}}</td>
+				<td width="700px">{{user.c1}}</td>
+			</tr>
+			<tr>
+				<td>October</td>
+				<td>{{user.rc2}}</td>
+				<td>{{user.v2}}</td>
+				<td>{{user.e2}}</td>
+				<td>{{user.c2}}</td>
+			</tr>
+			<tr>
+				<td>November</td>
+				<td>{{user.rc3}}</td>
+				<td>{{user.v3}}</td>
+				<td>{{user.e3}}</td>
+				<td>{{user.c3}}</td>
+			</tr>
+			<tr>
+				<td>January</td>
+				<td>{{user.rc4}}</td>
+				<td>{{user.v4}}</td>
+				<td>{{user.e4}}</td>
+				<td>{{user.c4}}</td>
+			</tr>
+			<tr>
+				<td>February</td>
+				<td>{{user.rc5}}</td>
+				<td>{{user.v5}}</td>
+				<td>{{user.e5}}</td>
+				<td>{{user.c5}}</td>
+			</tr>
+			<tr>
+				<td>March</td>
+				<td>{{user.rc6}}</td>
+				<td>{{user.v6}}</td>
+				<td>{{user.e6}}</td>
+				<td>{{user.c6}}</td>
+			</tr>
+			<tr>
+				<td>April</td>
+				<td>{{user.rc7}}</td>
+				<td>{{user.v7}}</td>
+				<td>{{user.e7}}</td>
+				<td>{{user.c7}}</td>
+			</tr>
+			<tr>
+				<td>May</td>
+				<td>{{user.rc8}}</td>
+				<td>{{user.v8}}</td>
+				<td>{{user.e8}}</td>
+				<td>{{user.c8}}</td>
+			</tr>
+		</table>
+		<br><br><br>
 	</div>
-</div>-->
+</body>

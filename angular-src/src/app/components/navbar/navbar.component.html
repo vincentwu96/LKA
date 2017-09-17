@@ -1,36 +1,39 @@
 <!DOCTYPE HTML>
-<meta charset="utf-8">
-<meta name="description" content="Official website for Light of Knowledge Academy. Learn more now!"/>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Official website for Light of Knowledge Academy. Learn more now!"/>
+</head>
+<body>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" (click)="toggleState()">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a target="_top" title="Home" class="navbar-brand" href="#"><img [src]="fullImagePath"></a>
+			</div>
 
-<nav class="navbar navbar-default">
-	<div class="container-fluid">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" (click)="toggleState()">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<a target="_top" title="Home" class="navbar-brand" href="#"><img [src]="fullImagePath"></a>
-		</div>
+			<div id="navbar" class="collapse navbar-collapse in" [ngClass]="{ 'in':isIn }">
+				<ul class="nav navbar-nav navbar-left">
+					<li [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}"><a target="_top" [routerLink]="['/']">Home <span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
+					<li [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}"><a target="_top" [routerLink]="['/after-school']">After School</a></li>
+					<li [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}"><a target="_top" [routerLink]="['/english-writing']">English Writing</a></li>
+					<li [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}"><a target="_top" [routerLink]="['/math']">Math</a></li>
+					<li [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}"><a target="_top" [routerLink]="['/enrichment-programs']">Enrichment Programs</a></li>
+					<li [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}"><a target="_top" [routerLink]="['/contact']">Contact Us <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span></a></li>
+				</ul>
 
-		<div id="navbar" class="collapse navbar-collapse in" [ngClass]="{ 'in':isIn }">
-			<ul class="nav navbar-nav navbar-left">
-				<li [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}"><a target="_top" [routerLink]="['/']">Home <span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
-				<li [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}"><a target="_top" [routerLink]="['/after-school']">After School</a></li>
-				<li [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}"><a target="_top" [routerLink]="['/english-writing']">English Writing</a></li>
-				<li [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}"><a target="_top" [routerLink]="['/math']">Math</a></li>
-				<li [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}"><a target="_top" [routerLink]="['/enrichment-programs']">Enrichment Programs</a></li>
-				<li [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}"><a target="_top" [routerLink]="['/contact']">Contact Us <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span></a></li>
-			</ul>
-			
-			<ul class="nav navbar-nav navbar-right">
-				<li *ngIf="authService.loggedIn()" [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}"><a target="_top" [routerLink]="['/dashboard']">Dashboard</a></li>
-				<li *ngIf="authService.loggedIn()" [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}"><a target="_top" [routerLink]="['/profile']">Profile</a></li>
-				<li *ngIf="!authService.loggedIn()" [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}"><a target="_top" [routerLink]="['/login']">Login</a></li>
-				<li *ngIf="!authService.loggedIn()" [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}"><a target="_top" [routerLink]="['/register']">Register</a></li>
-				<li *ngIf="authService.loggedIn()"><a (click)="onLogoutClick()" href="#">Logout</a></li>
-			</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li *ngIf="authService.loggedIn()" [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}"><a target="_top" [routerLink]="['/dashboard']">Dashboard</a></li>
+					<li *ngIf="authService.loggedIn()" [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}"><a target="_top" [routerLink]="['/profile']">Profile</a></li>
+					<li *ngIf="!authService.loggedIn()" [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}"><a target="_top" [routerLink]="['/login']">Login</a></li>
+					<li *ngIf="!authService.loggedIn()" [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}"><a target="_top" [routerLink]="['/register']">Register</a></li>
+					<li *ngIf="authService.loggedIn()"><a (click)="onLogoutClick()" href="#">Logout</a></li>
+				</ul>
+			</div>
 		</div>
-	</div>
-</nav>
+	</nav>
+</body>

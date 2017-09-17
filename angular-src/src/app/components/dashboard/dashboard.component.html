@@ -1,27 +1,24 @@
-<div *ngIf="user">
-	<h2 class="page-header">Welcome back {{user.name}}.</h2>
+<!DOCTYPE HTML>
+<head>
+	<meta charset="utf-8">
+	<meta name=description" content="Official website for Light of Knowledge Academy. We offer After School Programs, English Writing, Math Tutoring and much more! Learn more now!"/>
+	<title>Dashboard</title>
+</head>
+<body>
+	<div *ngIf="user">
+		<h2 class="page-header">Welcome back {{user.name}}.</h2>
 
-	<a class="btn btn-danger" target="_top" [routerLink]="['/profile']">View my profile</a>
-	
-	<Legend><br></Legend>
-	
-	<div class="panel panel-success">
-		<div class="panel-heading">
-			<h3 class="panel-title">Instructor Comments</h3>
-		</div>
-		<div class="panel-body">
-			{{user.generalComments}}
+		<a class="btn btn-info" target="_top" [routerLink]="['/profile']">View my profile</a>
+
+		<Legend><br></Legend>
+
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h3 class="panel-title">Instructor Comments&nbsp;&nbsp;<span class="glyphicon glyphicon-comment" aria-hidden="true"></span></h3>
+			</div>
+			<div class="panel-body">
+				{{user.generalComments}}
+			</div>
 		</div>
 	</div>
-</div>	
-
-<!--
-	<div id="footer">
-	<div class ="btn-group btn-group-justified">
-	<a class="btn btn-default" target="_top" [routerLink]="['/after-school']">After School</a>
-	<a class="btn btn-default" target="_top" [routerLink]="['/english-witing']">English Writing</a>
-	<a class="btn btn-default" target="_top" [routerLink]="['/math']">Math</a>
-	<a class="btn btn-default" target="_top" [routerLink]="['/enrichment-programs']">Enrichment Programs</a>
-	<a class="btn btn-default" target="_top" [routerLink]="['/join']">Join Our Team Today!</a>
-	</div>
-	</div>-->
+</body>
