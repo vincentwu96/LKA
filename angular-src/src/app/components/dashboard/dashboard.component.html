@@ -8,8 +8,10 @@
 	<div *ngIf="user">
 		<h2 class="page-header">Welcome back {{user.name}}.</h2>
 
-		<a class="btn btn-info" target="_top" [routerLink]="['/profile']">View my profile</a>
-
+		<a class="btn btn-primary" target="_top" [routerLink]="['/profile']">View my profile</a>
+		
+		<p><br>Stay tuned for more updates!</p>
+		<!--
 		<Legend><br></Legend>
 
 		<div class="panel panel-primary">
@@ -20,5 +22,6 @@
 				{{user.generalComments}}
 			</div>
 		</div>
+		-->
 	</div>
 </body>

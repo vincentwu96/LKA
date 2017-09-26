@@ -4,7 +4,7 @@ table, td, th {
 
 table {
 	
-	width: 100%;
+	width: auto;
 }
 
 th {
@@ -12,7 +12,7 @@ th {
 	height: 50px;
 }
 td, th{
-	padding: 5px;
+	padding: 10px;
 	text-align: center;
 }
 tr:nth-child(even) {background-color: #f2f2f2}
