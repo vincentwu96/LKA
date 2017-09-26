@@ -277,9 +277,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var AfterComponent = (function () {
     function AfterComponent() {
-        this.pic1 = '/assets/images/pic1.jpg',
-            this.pic2 = '/assets/images/pic2.jpg',
-            this.pic3 = '/assets/images/pic3.jpg';
+        this.pic1 = '/assets/images/pic1.JPG',
+            this.pic2 = '/assets/images/pic2.JPG',
+            this.pic3 = '/assets/images/pic3.JPG';
     }
     AfterComponent.prototype.ngOnInit = function () {
     };
