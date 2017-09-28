@@ -9,13 +9,16 @@
 		<h1>Light of Knowledge Academy</h1>
 		<br>
 		<p><a target="_blank" title="Open in Google Maps" href="https://www.google.com/maps/place/20432+Silverado+Ave,+Cupertino,+CA+95014/@37.3149792,-122.0334717,17z/data=!3m1!4b1!4m5!3m4!1s0x808fb5076a61d76f:0x640ac354a2071531!8m2!3d37.3149792!4d-122.031283">20432 Silverado Ave. Ste. 6 | Cupertino, CA 95014</a>
-		<br>Call us at: <a href="tel:4089961236">(408) 996-1236</a> | Text us at: <a href="tel: 4082181698">(408) 218-1698</a>
-		<br>Email: <a href="mailto:info.lkastaff@gmail.com" target="_top">info.lkastaff@gmail.com</a> | <a target="_blank" title="Open in new tab" href="http://facebook.com/LOKacademy">Give us a like on our Facebook page!</a></p>
+		<br>Call us at: <a title="Phone" href="tel:4089961236">(408) 996-1236</a> | Text us at: <a title="Text" href="tel: 4082181698">(408) 218-1698</a>
+		<br>Email: <a title="Email" href="mailto:info.lkastaff@gmail.com" target="_top">info.lkastaff@gmail.com</a> | <a target="_blank" title="Open in new tab" href="http://facebook.com/LOKacademy">Give us a like on our Facebook page!</a></p>
 
 		<div>
-			<a class="btn btn-info" target="_top" [routerLink]="['/login']">Login</a>
-			<a class="btn btn-primary" target="_top" [routerLink]="['/register']">Register</a>
-			<a class="btn btn-default" target="_top" title="Join our team today!" [routerLink]="['/join']">Careers</a>
+			
+			<!--<a class="btn btn-info" target="_top" [routerLink]="['/login']">Login</a>-->
+			<a *ngIf="!authService.loggedIn()" [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}" class="btn btn-default" target="_top" [routerLink]="['/login']">Login</a>
+			<a *ngIf="!authService.loggedIn()" [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}" class="btn btn-info" target="_top" [routerLink]="['/register']">Register</a>
+			<!--<a class="btn btn-primary" target="_top" [routerLink]="['/register']">Register</a>-->
+			<a class="btn btn-primary" target="_top" title="Join our team today!" [routerLink]="['/join']">Careers</a>
 		</div>
 	</div>
 	<img [src]="fullImagePath" width="100%">

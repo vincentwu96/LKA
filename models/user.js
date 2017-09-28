@@ -37,15 +37,19 @@ const UserSchema = mongoose.Schema({
 	c1:{type: String}, c2:{type: String}, c3:{type: String}, c4:{type: String},
 	c5:{type: String}, c6:{type: String}, c7:{type: String}, c8:{type: String},
 
+	// Writing Conventions
 	wc1:{type: String}, wc2:{type: String}, wc3:{type: String}, wc4:{type: String},
 	wc5:{type: String}, wc6:{type: String}, wc7:{type: String}, wc8:{type: String},
 
+	// Paragraph Coherence/Unity
 	pcu1:{type: String}, pcu2:{type: String}, pcu3:{type: String}, pcu4:{type: String},
 	pcu5:{type: String}, pcu6:{type: String}, pcu7:{type: String}, pcu8:{type: String},
 
+	// Sentence Variety
 	sv1:{type: String}, sv2:{type: String}, sv3:{type: String}, sv4:{type: String},
 	sv5:{type: String}, sv6:{type: String}, sv7:{type: String}, sv8:{type: String},
 
+	// Ideas/Depth/Length
 	idl1:{type: String}, idl2:{type: String}, idl3:{type: String}, idl4:{type: String},
 	idl5:{type: String}, idl6:{type: String}, idl7:{type: String}, idl8:{type: String}
 });

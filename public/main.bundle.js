@@ -160,7 +160,7 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(465);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(207);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__(64);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__(55);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(504);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_navbar_navbar_component__ = __webpack_require__(515);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_login_login_component__ = __webpack_require__(513);
@@ -169,7 +169,7 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_dashboard_dashboard_component__ = __webpack_require__(508);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_profile_profile_component__ = __webpack_require__(516);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__services_validate_service__ = __webpack_require__(331);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__services_auth_service__ = __webpack_require__(66);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__services_auth_service__ = __webpack_require__(56);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__guards_auth_guard__ = __webpack_require__(518);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_contact_contact_component__ = __webpack_require__(507);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_english_writing_english_writing_component__ = __webpack_require__(509);
@@ -337,8 +337,8 @@ var ContactComponent = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_auth_service__ = __webpack_require__(66);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(64);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_auth_service__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(55);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DashboardComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -456,6 +456,8 @@ var EnrichmentComponent = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_auth_service__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(55);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomeComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -467,11 +469,26 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
+
 var HomeComponent = (function () {
-    function HomeComponent() {
+    function HomeComponent(authService, router) {
+        this.authService = authService;
+        this.router = router;
+        this.isIn = false; // store state
         this.fullImagePath = '/assets/images/bg.png';
     }
+    HomeComponent.prototype.toggleState = function () {
+        var bool = this.isIn;
+        this.isIn = !this.isIn;
+    };
     HomeComponent.prototype.ngOnInit = function () {
+    };
+    HomeComponent.prototype.onLogoutClick = function () {
+        this.authService.logout();
+        // User logged out
+        this.router.navigate(['/login']);
+        return false;
     };
     HomeComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
@@ -479,9 +496,10 @@ var HomeComponent = (function () {
             template: __webpack_require__(693),
             styles: [__webpack_require__(680)]
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_auth_service__["a" /* AuthService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_auth_service__["a" /* AuthService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === 'function' && _b) || Object])
     ], HomeComponent);
     return HomeComponent;
+    var _a, _b;
 }());
 //# sourceMappingURL=C:/Users/Wendy/Desktop/LKA/LKA/angular-src/src/home.component.js.map
 
@@ -527,8 +545,8 @@ var JoinComponent = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_auth_service__ = __webpack_require__(66);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(64);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_auth_service__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(55);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -622,8 +640,8 @@ var MathComponent = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_auth_service__ = __webpack_require__(66);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(64);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_auth_service__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(55);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NavbarComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -676,8 +694,8 @@ var NavbarComponent = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_auth_service__ = __webpack_require__(66);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(64);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_auth_service__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(55);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProfileComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -726,8 +744,8 @@ var ProfileComponent = (function () {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_validate_service__ = __webpack_require__(331);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_auth_service__ = __webpack_require__(66);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(64);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_auth_service__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(55);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RegisterComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -813,8 +831,8 @@ var RegisterComponent = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(64);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_auth_service__ = __webpack_require__(66);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_auth_service__ = __webpack_require__(56);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuthGuard; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -869,7 +887,7 @@ var environment = {
 
 /***/ }),
 
-/***/ 66:
+/***/ 56:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1085,7 +1103,7 @@ module.exports = "<!DOCTYPE HTML>\n<head>\n\t<meta charset=\"utf-8\">\n\t<meta n
 /***/ 693:
 /***/ (function(module, exports) {
 
-module.exports = "<!DOCTYPE HTML>\r\n<head>\r\n\t<meta charset=\"utf-8\">\r\n\t<meta name=\"description\" content=\"Official website for Light of Knowledge Academy. We offer After School Programs, English Writing, Math Tutoring and much more! Learn more now!\"/>\r\n\t<title>Home Page</title>\r\n</head>\r\n<body>\r\n\t<div class=\"jumbotron text-center\">\r\n\t\t<h1>Light of Knowledge Academy</h1>\r\n\t\t<br>\r\n\t\t<p><a target=\"_blank\" title=\"Open in Google Maps\" href=\"https://www.google.com/maps/place/20432+Silverado+Ave,+Cupertino,+CA+95014/@37.3149792,-122.0334717,17z/data=!3m1!4b1!4m5!3m4!1s0x808fb5076a61d76f:0x640ac354a2071531!8m2!3d37.3149792!4d-122.031283\">20432 Silverado Ave. Ste. 6 | Cupertino, CA 95014</a>\r\n\t\t<br>Call us at: <a href=\"tel:4089961236\">(408) 996-1236</a> | Text us at: <a href=\"tel: 4082181698\">(408) 218-1698</a>\r\n\t\t<br>Email: <a href=\"mailto:info.lkastaff@gmail.com\" target=\"_top\">info.lkastaff@gmail.com</a> | <a target=\"_blank\" title=\"Open in new tab\" href=\"http://facebook.com/LOKacademy\">Give us a like on our Facebook page!</a></p>\r\n\r\n\t\t<div>\r\n\t\t\t<a class=\"btn btn-info\" target=\"_top\" [routerLink]=\"['/login']\">Login</a>\r\n\t\t\t<a class=\"btn btn-primary\" target=\"_top\" [routerLink]=\"['/register']\">Register</a>\r\n\t\t\t<a class=\"btn btn-default\" target=\"_top\" title=\"Join our team today!\" [routerLink]=\"['/join']\">Careers</a>\r\n\t\t</div>\r\n\t</div>\r\n\t<img [src]=\"fullImagePath\" width=\"100%\">\r\n</body>\r\n"
+module.exports = "<!DOCTYPE HTML>\r\n<head>\r\n\t<meta charset=\"utf-8\">\r\n\t<meta name=\"description\" content=\"Official website for Light of Knowledge Academy. We offer After School Programs, English Writing, Math Tutoring and much more! Learn more now!\"/>\r\n\t<title>Home Page</title>\r\n</head>\r\n<body>\r\n\t<div class=\"jumbotron text-center\">\r\n\t\t<h1>Light of Knowledge Academy</h1>\r\n\t\t<br>\r\n\t\t<p><a target=\"_blank\" title=\"Open in Google Maps\" href=\"https://www.google.com/maps/place/20432+Silverado+Ave,+Cupertino,+CA+95014/@37.3149792,-122.0334717,17z/data=!3m1!4b1!4m5!3m4!1s0x808fb5076a61d76f:0x640ac354a2071531!8m2!3d37.3149792!4d-122.031283\">20432 Silverado Ave. Ste. 6 | Cupertino, CA 95014</a>\r\n\t\t<br>Call us at: <a title=\"Phone\" href=\"tel:4089961236\">(408) 996-1236</a> | Text us at: <a title=\"Text\" href=\"tel: 4082181698\">(408) 218-1698</a>\r\n\t\t<br>Email: <a title=\"Email\" href=\"mailto:info.lkastaff@gmail.com\" target=\"_top\">info.lkastaff@gmail.com</a> | <a target=\"_blank\" title=\"Open in new tab\" href=\"http://facebook.com/LOKacademy\">Give us a like on our Facebook page!</a></p>\r\n\r\n\t\t<div>\r\n\t\t\t\r\n\t\t\t<!--<a class=\"btn btn-info\" target=\"_top\" [routerLink]=\"['/login']\">Login</a>-->\r\n\t\t\t<a *ngIf=\"!authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\" class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/login']\">Login</a>\r\n\t\t\t<a *ngIf=\"!authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\" class=\"btn btn-info\" target=\"_top\" [routerLink]=\"['/register']\">Register</a>\r\n\t\t\t<!--<a class=\"btn btn-primary\" target=\"_top\" [routerLink]=\"['/register']\">Register</a>-->\r\n\t\t\t<a class=\"btn btn-primary\" target=\"_top\" title=\"Join our team today!\" [routerLink]=\"['/join']\">Careers</a>\r\n\t\t</div>\r\n\t</div>\r\n\t<img [src]=\"fullImagePath\" width=\"100%\">\r\n</body>\r\n"
 
 /***/ }),
 

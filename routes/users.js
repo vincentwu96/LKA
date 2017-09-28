@@ -40,9 +40,9 @@ router.post('/register', (req, res, next) => {
 	});
 	User.addUser(newUser, (err, user) =>{
 		if(err){
-			res.json({success: false, msg:'Failed to register user'});
+			res.json({success: false, msg:'Something went wrong'});
 		}else{
-			res.json({success: true, msg:'User registered'});
+			res.json({success: true, msg:'Registration successful'});
 		}
 	});
 
@@ -53,7 +53,7 @@ router.post('/authenticate', (req, res, next) => {
 	const username = req.body.username;
 	const password = req.body.password;
 	if(password == undefined){
-		return res.json({sucess: false, msg: 'Invalid password'});
+		return res.json({sucess: false, msg: 'Invalid username or password'});
 	}
 	User.getUserByUsername(username, (err, user) => {
 		if(err) throw err;

@@ -14,6 +14,7 @@ export class ValidateService {
 		}
 	}
 
+
 	// Check for 2+ words for name
 	validateName(user){
 		if(user.name.length>50){
