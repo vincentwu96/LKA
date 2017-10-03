@@ -40,7 +40,7 @@ router.post('/register', (req, res, next) => {
 	});
 	User.addUser(newUser, (err, user) =>{
 		if(err){
-			res.json({success: false, msg:'Something went wrong'});
+			res.json({success: false, msg:'Username taken, please try another'});
 		}else{
 			res.json({success: true, msg:'Registration successful'});
 		}

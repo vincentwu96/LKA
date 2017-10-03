@@ -8,6 +8,7 @@ export class AuthService {
 authToken: any;
 user: any;
 
+// http://localhost:8080/
 
 constructor(private http:Http) { }
 

@@ -912,6 +912,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 var AuthService = (function () {
+    // http://localhost:8080/
     function AuthService(http) {
         this.http = http;
     }
