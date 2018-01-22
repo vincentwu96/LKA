@@ -912,6 +912,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 var AuthService = (function () {
+    // to update live site:
+    // delete 'http://localhost:8080/
+    // ng build in 'angular-src' folder
+    // push to github and heroku
+    // heroku ps:scale web=1
     // http://localhost:8080/
     function AuthService(http) {
         this.http = http;
