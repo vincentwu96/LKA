@@ -8,6 +8,12 @@ export class AuthService {
 authToken: any;
 user: any;
 
+// to update live site:
+// delete 'http://localhost:8080/
+// ng build in 'angular-src' folder
+// push to github and heroku
+// heroku ps:scale web=1
+
 // http://localhost:8080/
 
 constructor(private http:Http) { }
