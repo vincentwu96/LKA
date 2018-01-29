@@ -40,6 +40,9 @@ router.post('/register', (req, res, next) => {
 	});
 	User.addUser(newUser, (err, user) =>{
 		if(err){
+			/*if (err.name === 'MongoError' && err.code === 11000){
+				res.json({success: false, msg:'Username taken, please try another'});
+			}*/
 			res.json({success: false, msg:'Username taken, please try another'});
 		}else{
 			res.json({success: true, msg:'Registration successful'});

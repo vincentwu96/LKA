@@ -11,3 +11,6 @@ and (min-width : 800px) {
 	}
 }
 
+p.s, label.s{
+	font-size: 110%;
+}

@@ -1,3 +1,7 @@
+p.s, li.s, strong.s, b.s, Legend.s{
+	        font-size: 110%;
+}
+
 table, td, th {
 	border: 1px solid black;
 }

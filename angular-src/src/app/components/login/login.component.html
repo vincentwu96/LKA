@@ -9,16 +9,16 @@
 	<div id="login-box">
 		<form (submit)="onLoginSubmit()">
 			<div class="form-group">
-				<label>Username</label>
+				<label class="s">Username</label>
 				<input type="text" class="form-control" [(ngModel)]="username" name="username" placeholder="Enter username" >
 			</div>
 				<div class="form-group">
-					<label>Password</label>
+					<label class="s">Password</label>
 					<input type="password" class="form-control" [(ngModel)]="password" name="password" placeholder="Enter password">
 				</div>
 				<input type="submit" class="btn btn-primary" title="Submit" value="Submit">
 		</form>
 		<br>
-		<p>Don't have an account yet? Click <a target="_top" title="Register" [routerLink]="['/register']">here</a> to create one.</p>
+		<p class="s">Don't have an account yet? Click <a target="_top" title="Register" [routerLink]="['/register']">here</a> to create one.</p>
 	</div>
 </body>
