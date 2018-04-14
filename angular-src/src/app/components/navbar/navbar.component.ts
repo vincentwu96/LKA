@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {AuthService} from '../../services/auth.service';
 import {Router} from '@angular/router';
-import {FlashMessagesService} from 'angular2-flash-messages';
 
 @Component({
 selector: 'app-navbar',
@@ -19,8 +18,7 @@ this.isIn = !this.isIn;
 
 constructor(
 private authService:AuthService,
-private router:Router,
-private flashMessage:FlashMessagesService
+private router:Router
 ) { 
 this.fullImagePath = '/assets/images/LKA.png'
 }
@@ -32,8 +30,6 @@ onLogoutClick(){
 this.authService.logout();
 // User logged out
 this.router.navigate(['/login']);
-window.scrollTo(0, 0);
-this.flashMessage.show('You are now logged out', {cssClass: 'alert-success', timeout: 10000});
 return false;
 }
 }
