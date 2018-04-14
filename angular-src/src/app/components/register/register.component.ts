@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {ValidateService} from '../../services/validate.service';
 import {AuthService} from '../../services/auth.service'
 import {Router} from '@angular/router';
+import {FlashMessagesService} from 'angular2-flash-messages';
 
 @Component({
 selector: 'app-register',
@@ -18,7 +19,8 @@ export class RegisterComponent implements OnInit {
 	constructor(
 		private validateService: ValidateService,
 		private authService: AuthService,
-		private router: Router
+		private router: Router,
+		private flashMessage:FlashMessagesService
 	) { }
 
 	ngOnInit() {
@@ -37,14 +39,8 @@ export class RegisterComponent implements OnInit {
 			return false;
 		}
 
-		// Validate Email
-		if(!this.validateService.validateEmail(user.email)){
-			alert('Please use a valid email');
-			return false;
-		}
-
-		// Validate Password
-		if(!this.validateService.validatePassword(user)){
+		// Validate Name
+		if(!this.validateService.validateName(user)){
 			return false;
 		}
 
@@ -53,8 +49,15 @@ export class RegisterComponent implements OnInit {
 			return false;
 		}
 
-		// Validate Name
-		if(!this.validateService.validateName(user)){
+		// Validate Email
+		if(!this.validateService.validateEmail(user.email)){
+			window.scrollTo(0, 0);
+			this.flashMessage.show('Please use a valid email', {cssClass: 'alert-warning', timeout: 3000});
+			return false;
+		}
+
+		// Validate Password
+		if(!this.validateService.validatePassword(user)){
 			return false;
 		}
 
@@ -62,11 +65,12 @@ export class RegisterComponent implements OnInit {
 		this.authService.registerUser(user).subscribe(data => {
 			if(data.success){
 				// User Registered
-				alert('You are now registered');
+				this.flashMessage.show('You are now registered', {cssClass: 'alert-success', timeout: 3000});
 				this.router.navigate(['/login']);
 				window.scrollTo(0, 0);
 			}else{
-				alert('Something went wrong');
+				window.scrollTo(0, 0);
+				this.flashMessage.show('Username is already taken', {cssClass: 'alert-warning', timeout: 3000});
 				this.router.navigate(['/register']);
 			}
 		});

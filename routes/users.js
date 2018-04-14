@@ -40,10 +40,7 @@ router.post('/register', (req, res, next) => {
 	});
 	User.addUser(newUser, (err, user) =>{
 		if(err){
-			/*if (err.name === 'MongoError' && err.code === 11000){
-				res.json({success: false, msg:'Username taken, please try another'});
-			}*/
-			res.json({success: false, msg:'Username taken, please try another'});
+			res.json({success: false, msg:'Something went wrong'});
 		}else{
 			res.json({success: true, msg:'Registration successful'});
 		}
@@ -103,7 +100,7 @@ router.post('/authenticate', (req, res, next) => {
 					}
 				});
 			}else{
-				return res.json({sucess: false, msg: 'Invalid password'});
+				return res.json({sucess: false, msg: 'Invalid username or password'});
 			}
 		});
 	});

@@ -1,13 +1,15 @@
 import { Injectable } from '@angular/core';
+import {FlashMessagesService} from 'angular2-flash-messages';
 
 @Injectable()
 export class ValidateService {
 
-	constructor() { }
+	constructor(private flashMessage:FlashMessagesService) { }
 
 	validateRegister(user){
 		if(user.name == undefined || user.email == undefined || user.username == undefined || user.password == undefined){
-			alert('Please fill in all fields');
+			window.scrollTo(0, 0);
+			this.flashMessage.show('Please fill in all fields', {cssClass: 'alert-danger', timeout: 3000});
 			return false;
 		}else{
 			return true;
@@ -18,24 +20,28 @@ export class ValidateService {
 	// Check for 2+ words for name
 	validateName(user){
 		if(user.name.length>50){
-			alert('Name can have 50 characters max');
+			window.scrollTo(0, 0);
+			this.flashMessage.show('Name is limited to 50 characters', {cssClass: 'alert-warning', timeout: 3000});
 			return false;
 		}
 		var values = user.name.split(' ').filter(function(v){return v!==''});
 		if(values.length > 1){
 			return true;
 		}else{
-			alert('Please enter your full name');
+			window.scrollTo(0, 0);
+			this.flashMessage.show('Please enter your full name', {cssClass: 'alert-warning', timeout: 3000});
 			return false;
 		}
 	}
 
 	validateUsername(user){
 		if(user.username.length<4){
-			alert('Username is too short');
+			window.scrollTo(0, 0);
+			this.flashMessage.show('Username is too short', {cssClass: 'alert-warning', timeout: 3000});
 			return false;
 		}else if(user.username.length>20){
-			alert('Username is too long');
+			window.scrollTo(0, 0);
+			this.flashMessage.show('Username is too long', {cssClass: 'alert-warning', timeout: 3000});
 			return false;
 		}else{
 			return true;
@@ -49,10 +55,12 @@ export class ValidateService {
 
 	validatePassword(user){
 		if(user.password.length<6){
-			alert('Password is too short');
+			window.scrollTo(0, 0);
+			this.flashMessage.show('Password is too short', {cssClass: 'alert-warning', timeout: 3000});
 			return false;
 		}else if(user.password.length>20){
-			alert('Password is too long');
+			window.scrollTo(0, 0);
+			this.flashMessage.show('Password is too long', {cssClass: 'alert-warning', timeout: 3000});
 			return false;
 		}else{
 			return true;

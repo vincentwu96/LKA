@@ -21,6 +21,7 @@ import { MathComponent } from './components/math/math.component';
 import { EnrichmentComponent } from './components/enrichment/enrichment.component';
 import { AfterComponent } from './components/after/after.component';
 import { JoinComponent } from './components/join/join.component';
+import {FlashMessagesModule} from 'angular2-flash-messages';
 
 const appRoutes: Routes = [
 	{path:'', component: HomeComponent},
@@ -58,6 +59,7 @@ const appRoutes: Routes = [
     FormsModule,
     HttpModule,
     RouterModule.forRoot(appRoutes),
+    FlashMessagesModule
   ],
   providers: [ValidateService, AuthService, AuthGuard],
   bootstrap: [AppComponent]

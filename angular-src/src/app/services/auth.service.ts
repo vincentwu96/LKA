@@ -65,4 +65,3 @@ logout(){
 	window.scrollTo(0,0);
 }
 }
-// http://localhost:8080/
