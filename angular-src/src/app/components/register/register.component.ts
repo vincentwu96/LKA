@@ -15,7 +15,7 @@ export class RegisterComponent implements OnInit {
 	username: String;
 	email: String;
 	password: String;
-	
+
 	constructor(
 		private validateService: ValidateService,
 		private authService: AuthService,
@@ -33,7 +33,7 @@ export class RegisterComponent implements OnInit {
 			username: this.username,
 			password: this.password
 		}
-	
+
 		// Required Fields
 		if(!this.validateService.validateRegister(user)){
 			return false;

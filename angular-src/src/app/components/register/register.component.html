@@ -7,16 +7,6 @@
 <body>
 	<h2 class="page-header">Register</h2>
 
-	<div class="alert alert-dismissible alert-warning" *ngIf="checkFields">
-		<button type="button" class="close" data-dismiss="alert">&times;</button>
-		<strong>Please fill in all fields</strong>
-	</div>
-
-	<div class="alert alert-dismissible alert-warning" *ngIf="checkEmail">
-		<button type="button" class="close" data-dismiss="alert">&times;</button>
-		<strong>Please use a valid email</strong>
-	</div>
-
 	<div id="register-box">
 		<form (submit)="onRegisterSubmit()">
 			<div class="form-group">
@@ -42,4 +32,3 @@
 	</div>
 	<br><br>
 </body>
-
