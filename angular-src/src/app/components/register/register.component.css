@@ -10,7 +10,3 @@ and (min-width : 800px) {
 		display:inline-block;
 	}
 }
-
-p.s, label.s{
-	font-size: 110%;
-}

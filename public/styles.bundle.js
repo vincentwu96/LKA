@@ -35,7 +35,7 @@ exports = module.exports = __webpack_require__(678)();
 
 
 // module
-exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\n\n#flashMessages .flash-message { display:none; }\n#flashMessages .flash-message:last-child { display:block; }\n", ""]);
+exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\n\n#flashMessages .flash-message{\n\tdisplay:none;\n}\n#flashMessages .flash-message:last-child{\n\tdisplay:block;\n}\n\np,ol,label,strong{\n\tfont-size: 110%;\n}\n", ""]);
 
 // exports
 

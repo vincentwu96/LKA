@@ -21,7 +21,9 @@ import { MathComponent } from './components/math/math.component';
 import { EnrichmentComponent } from './components/enrichment/enrichment.component';
 import { AfterComponent } from './components/after/after.component';
 import { JoinComponent } from './components/join/join.component';
-import {FlashMessagesModule} from 'angular2-flash-messages';
+import { FlashMessagesModule } from 'angular2-flash-messages';
+import { enableProdMode } from '@angular/core';
+// import { PdfJsViewerModule } from 'ng2-pdfjs-viewer';
 
 const appRoutes: Routes = [
 	{path:'', component: HomeComponent},
@@ -38,6 +40,7 @@ const appRoutes: Routes = [
 	{path:'**', redirectTo: ''},
 	]
 
+enableProdMode();
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,7 +55,7 @@ const appRoutes: Routes = [
     AfterComponent,
     MathComponent,
     EnrichmentComponent,
-    JoinComponent,
+    JoinComponent
   ],
   imports: [
     BrowserModule,
@@ -60,8 +63,10 @@ const appRoutes: Routes = [
     HttpModule,
     RouterModule.forRoot(appRoutes),
     FlashMessagesModule
+		//PdfJsViewerModule
   ],
   providers: [ValidateService, AuthService, AuthGuard],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }

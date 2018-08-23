@@ -1,4 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 
-#flashMessages .flash-message { display:none; }
-#flashMessages .flash-message:last-child { display:block; }
+#flashMessages .flash-message{
+	display:none;
+}
+#flashMessages .flash-message:last-child{
+	display:block;
+}
+
+p,ol,label,strong{
+	font-size: 110%;
+}

@@ -16,9 +16,11 @@ export class ValidateService {
 		}
 	}
 
-
 	// Check for 2+ words for name
 	validateName(user){
+		// capitalize all first letters in the name
+		//user.name = user.name.toLowerCase().replace(/^(.)|\s(.)/g, ($1) => $1.toUpperCase());
+
 		if(user.name.length>50){
 			window.scrollTo(0, 0);
 			this.flashMessage.show('Name is limited to 50 characters', {cssClass: 'alert-warning', timeout: 3000});
