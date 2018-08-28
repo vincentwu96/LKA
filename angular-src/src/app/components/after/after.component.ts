@@ -11,10 +11,9 @@ export class AfterComponent implements OnInit {
 	pic3: string;
 
 	constructor() {
-		this.pic1 = '/assets/images/pic1.JPG',
-		this.pic2 = '/assets/images/pic2.JPG',
-		this.pic3 = '/assets/images/pic3.JPG'
-	
+		this.pic1 = '/assets/images/after/pic1.JPG',
+		this.pic2 = '/assets/images/after/pic2.JPG',
+		this.pic3 = '/assets/images/after/pic3.JPG'
 	}
 
   ngOnInit() {

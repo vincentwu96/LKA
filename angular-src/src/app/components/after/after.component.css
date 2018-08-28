@@ -4,6 +4,18 @@
 	margin-right: auto;
 }
 
-#box{
-	border: groove 2px;
+@media only screen
+and (min-width : 1024px) {
+	#info-box {
+		height: 450px;
+	}
+	#images{
+		width:265px;
+		height:215px;
+
+	}
+}
+.panel > .panel-heading {
+    background-color: #00008B;
+    color: white;
 }

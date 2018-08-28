@@ -93,7 +93,7 @@ var ValidateService = (function () {
     return ValidateService;
     var _a;
 }());
-//# sourceMappingURL=C:/Users/Wendy/Desktop/LKA/LKA/angular-src/src/validate.service.js.map
+//# sourceMappingURL=C:/Users/Wendy/Desktop/lka/lka/angular-src/src/validate.service.js.map
 
 /***/ }),
 
@@ -128,7 +128,7 @@ if (__WEBPACK_IMPORTED_MODULE_2__environments_environment__["a" /* environment *
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["enableProdMode"])();
 }
 __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_3__app_app_module__["a" /* AppModule */]);
-//# sourceMappingURL=C:/Users/Wendy/Desktop/LKA/LKA/angular-src/src/main.js.map
+//# sourceMappingURL=C:/Users/Wendy/Desktop/lka/lka/angular-src/src/main.js.map
 
 /***/ }),
 
@@ -162,7 +162,7 @@ var AppComponent = (function () {
     ], AppComponent);
     return AppComponent;
 }());
-//# sourceMappingURL=C:/Users/Wendy/Desktop/LKA/LKA/angular-src/src/app.component.js.map
+//# sourceMappingURL=C:/Users/Wendy/Desktop/lka/lka/angular-src/src/app.component.js.map
 
 /***/ }),
 
@@ -276,7 +276,7 @@ var AppModule = (function () {
     ], AppModule);
     return AppModule;
 }());
-//# sourceMappingURL=C:/Users/Wendy/Desktop/LKA/LKA/angular-src/src/app.module.js.map
+//# sourceMappingURL=C:/Users/Wendy/Desktop/lka/lka/angular-src/src/app.module.js.map
 
 /***/ }),
 
@@ -298,9 +298,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var AfterComponent = (function () {
     function AfterComponent() {
-        this.pic1 = '/assets/images/pic1.JPG',
-            this.pic2 = '/assets/images/pic2.JPG',
-            this.pic3 = '/assets/images/pic3.JPG';
+        this.pic1 = '/assets/images/after/pic1.JPG',
+            this.pic2 = '/assets/images/after/pic2.JPG',
+            this.pic3 = '/assets/images/after/pic3.JPG';
     }
     AfterComponent.prototype.ngOnInit = function () {
     };
@@ -314,7 +314,7 @@ var AfterComponent = (function () {
     ], AfterComponent);
     return AfterComponent;
 }());
-//# sourceMappingURL=C:/Users/Wendy/Desktop/LKA/LKA/angular-src/src/after.component.js.map
+//# sourceMappingURL=C:/Users/Wendy/Desktop/lka/lka/angular-src/src/after.component.js.map
 
 /***/ }),
 
@@ -349,7 +349,7 @@ var ContactComponent = (function () {
     ], ContactComponent);
     return ContactComponent;
 }());
-//# sourceMappingURL=C:/Users/Wendy/Desktop/LKA/LKA/angular-src/src/contact.component.js.map
+//# sourceMappingURL=C:/Users/Wendy/Desktop/lka/lka/angular-src/src/contact.component.js.map
 
 /***/ }),
 
@@ -398,7 +398,7 @@ var DashboardComponent = (function () {
     return DashboardComponent;
     var _a, _b;
 }());
-//# sourceMappingURL=C:/Users/Wendy/Desktop/LKA/LKA/angular-src/src/dashboard.component.js.map
+//# sourceMappingURL=C:/Users/Wendy/Desktop/lka/lka/angular-src/src/dashboard.component.js.map
 
 /***/ }),
 
@@ -433,7 +433,7 @@ var EnglishWritingComponent = (function () {
     ], EnglishWritingComponent);
     return EnglishWritingComponent;
 }());
-//# sourceMappingURL=C:/Users/Wendy/Desktop/LKA/LKA/angular-src/src/english-writing.component.js.map
+//# sourceMappingURL=C:/Users/Wendy/Desktop/lka/lka/angular-src/src/english-writing.component.js.map
 
 /***/ }),
 
@@ -455,7 +455,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var EnrichmentComponent = (function () {
     function EnrichmentComponent() {
+        this.chesspng = 'assets/images/enrichment/chess.png',
+            this.competitivepng = 'assets/images/enrichment/competitive.png',
+            this.intropng = 'assets/images/enrichment/intro.png';
     }
+    EnrichmentComponent.prototype.scroll = function (el) {
+        el.scrollIntoView();
+    };
     EnrichmentComponent.prototype.ngOnInit = function () {
     };
     EnrichmentComponent = __decorate([
@@ -468,7 +474,7 @@ var EnrichmentComponent = (function () {
     ], EnrichmentComponent);
     return EnrichmentComponent;
 }());
-//# sourceMappingURL=C:/Users/Wendy/Desktop/LKA/LKA/angular-src/src/enrichment.component.js.map
+//# sourceMappingURL=C:/Users/Wendy/Desktop/lka/lka/angular-src/src/enrichment.component.js.map
 
 /***/ }),
 
@@ -522,7 +528,7 @@ var HomeComponent = (function () {
     return HomeComponent;
     var _a, _b;
 }());
-//# sourceMappingURL=C:/Users/Wendy/Desktop/LKA/LKA/angular-src/src/home.component.js.map
+//# sourceMappingURL=C:/Users/Wendy/Desktop/lka/lka/angular-src/src/home.component.js.map
 
 /***/ }),
 
@@ -557,7 +563,7 @@ var JoinComponent = (function () {
     ], JoinComponent);
     return JoinComponent;
 }());
-//# sourceMappingURL=C:/Users/Wendy/Desktop/LKA/LKA/angular-src/src/join.component.js.map
+//# sourceMappingURL=C:/Users/Wendy/Desktop/lka/lka/angular-src/src/join.component.js.map
 
 /***/ }),
 
@@ -623,7 +629,7 @@ var LoginComponent = (function () {
     return LoginComponent;
     var _a, _b, _c;
 }());
-//# sourceMappingURL=C:/Users/Wendy/Desktop/LKA/LKA/angular-src/src/login.component.js.map
+//# sourceMappingURL=C:/Users/Wendy/Desktop/lka/lka/angular-src/src/login.component.js.map
 
 /***/ }),
 
@@ -645,6 +651,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var MathComponent = (function () {
     function MathComponent() {
+        this.geometry = '/assets/images/math/geometry.png',
+            this.algii = '/assets/images/math/algii.png',
+            this.trig = '/assets/images/math/trig.png',
+            this.phys = '/assets/images/math/phys.png',
+            this.chem = '/assets/images/math/chem.png',
+            this.sat = '/assets/images/math/sat.png';
     }
     MathComponent.prototype.ngOnInit = function () {
     };
@@ -658,7 +670,7 @@ var MathComponent = (function () {
     ], MathComponent);
     return MathComponent;
 }());
-//# sourceMappingURL=C:/Users/Wendy/Desktop/LKA/LKA/angular-src/src/math.component.js.map
+//# sourceMappingURL=C:/Users/Wendy/Desktop/lka/lka/angular-src/src/math.component.js.map
 
 /***/ }),
 
@@ -712,7 +724,7 @@ var NavbarComponent = (function () {
     return NavbarComponent;
     var _a, _b;
 }());
-//# sourceMappingURL=C:/Users/Wendy/Desktop/LKA/LKA/angular-src/src/navbar.component.js.map
+//# sourceMappingURL=C:/Users/Wendy/Desktop/lka/lka/angular-src/src/navbar.component.js.map
 
 /***/ }),
 
@@ -761,7 +773,7 @@ var ProfileComponent = (function () {
     return ProfileComponent;
     var _a, _b;
 }());
-//# sourceMappingURL=C:/Users/Wendy/Desktop/LKA/LKA/angular-src/src/profile.component.js.map
+//# sourceMappingURL=C:/Users/Wendy/Desktop/lka/lka/angular-src/src/profile.component.js.map
 
 /***/ }),
 
@@ -855,7 +867,7 @@ var RegisterComponent = (function () {
     return RegisterComponent;
     var _a, _b, _c, _d;
 }());
-//# sourceMappingURL=C:/Users/Wendy/Desktop/LKA/LKA/angular-src/src/register.component.js.map
+//# sourceMappingURL=C:/Users/Wendy/Desktop/lka/lka/angular-src/src/register.component.js.map
 
 /***/ }),
 
@@ -900,7 +912,7 @@ var AuthGuard = (function () {
     return AuthGuard;
     var _a, _b;
 }());
-//# sourceMappingURL=C:/Users/Wendy/Desktop/LKA/LKA/angular-src/src/auth.guard.js.map
+//# sourceMappingURL=C:/Users/Wendy/Desktop/lka/lka/angular-src/src/auth.guard.js.map
 
 /***/ }),
 
@@ -916,7 +928,7 @@ var AuthGuard = (function () {
 var environment = {
     production: false
 };
-//# sourceMappingURL=C:/Users/Wendy/Desktop/LKA/LKA/angular-src/src/environment.js.map
+//# sourceMappingURL=C:/Users/Wendy/Desktop/lka/lka/angular-src/src/environment.js.map
 
 /***/ }),
 
@@ -1001,7 +1013,7 @@ var AuthService = (function () {
     return AuthService;
     var _a;
 }());
-//# sourceMappingURL=C:/Users/Wendy/Desktop/LKA/LKA/angular-src/src/auth.service.js.map
+//# sourceMappingURL=C:/Users/Wendy/Desktop/lka/lka/angular-src/src/auth.service.js.map
 
 /***/ }),
 
@@ -1015,7 +1027,7 @@ module.exports = ""
 /***/ 681:
 /***/ (function(module, exports) {
 
-module.exports = ".center {\n\tdisplay: block;\n\tmargin-left: auto;\n\tmargin-right: auto;\n}\n\n#box{\n\tborder: groove 2px;\n}\n"
+module.exports = ".center {\n\tdisplay: block;\n\tmargin-left: auto;\n\tmargin-right: auto;\n}\n\n@media only screen\nand (min-width : 1024px) {\n\t#info-box {\n\t\theight: 450px;\n\t}\n\t#images{\n\t\twidth:265px;\n\t\theight:215px;\n\n\t}\n}\n.panel > .panel-heading {\n    background-color: #00008B;\n    color: white;\n}\n"
 
 /***/ }),
 
@@ -1043,7 +1055,7 @@ module.exports = ""
 /***/ 685:
 /***/ (function(module, exports) {
 
-module.exports = "ul.s{\r\n  font-size: 110%;\r\n}\r\n"
+module.exports = "ul.s{\r\n  font-size: 110%;\r\n}\r\n\r\n.center {\r\n\tdisplay: block;\r\n\tmargin-left: auto;\r\n\tmargin-right: auto;\r\n}\r\n\r\nbutton {\r\n  width: 95%;\r\n\tdisplay: block;\r\n\tmargin-left: auto;\r\n\tmargin-right: auto;\r\n  margin-bottom: 5px;\r\n}\r\n\r\n@media only screen\r\nand (min-width : 1024px) {\r\n\t#info-box {\r\n\t\theight: 250px;\r\n\t}\r\n\t#images{\r\n\t\theight:165px;\r\n    width:235px;\r\n\t}\r\n}\r\n.panel > .panel-heading {\r\n    background-color: #00008B;\r\n    color: white;\r\n}\r\n"
 
 /***/ }),
 
@@ -1057,7 +1069,7 @@ module.exports = ""
 /***/ 687:
 /***/ (function(module, exports) {
 
-module.exports = ".tab {\n\tmargin-left: 40px;\n\tfont-size: 110%;\n}\n"
+module.exports = "ul.s{\n\tfont-size: 110%;\n}\n\n.panel{\n\twidth:65%;\n}\n"
 
 /***/ }),
 
@@ -1071,7 +1083,7 @@ module.exports = "@media only screen\nand (min-width : 800px) {\n\t#login-box {\
 /***/ 689:
 /***/ (function(module, exports) {
 
-module.exports = "li.s{\n\tfont-size: 110%;\n}\n"
+module.exports = "ul.s{\n\tfont-size: 110%;\n}\n.center {\n\tdisplay: block;\n\tmargin-left: auto;\n\tmargin-right: auto;\n}\n\n@media only screen\nand (min-width : 1024px) {\n\t#info-box {\n\t\theight: 450px;\n\t}\n\t#images{\n\t\twidth:265px;\n\t\theight:180px;\n\t}\n}\n.panel > .panel-heading {\n    background-color: #00008B;\n    color: white;\n}\n"
 
 /***/ }),
 
@@ -1106,7 +1118,7 @@ module.exports = "<app-navbar></app-navbar>\n<div class=\"container\">\n\t<flash
 /***/ 694:
 /***/ (function(module, exports) {
 
-module.exports = "<!DOCTYPE HTML>\r\n<head>\r\n\t<meta charset=\"utf-8\">\r\n\t<meta name=\"description\" content=\"Come in today to learn more about our After School Programs!\"/>\r\n\t<title>After School Program</title>\r\n</head>\r\n<body>\r\n\t<h2 class=\"page-header\">After School Program</h2>\r\n\r\n\t<div class=\"row\">\r\n\r\n<!--\r\n\t\t<div class=\"col-md-4\">\r\n\t\t\t<h3><font color=\"#00008B\">Happy and Cheerful Atmosphere</font></h3>\r\n\t\t\t<img [src]=\"pic1\">\r\n\t\t\t<p><br>At Light of Knowledge Academy, we hire the most experienced and caring teachers. In addition to offering optional English, Math, and Chinese class work, we first ensure that students finish homework from school.</p>\r\n\t\t</div>\r\n\t\t<div class=\"col-md-4\">\r\n\t\t\t<h3><font color=\"#00008B\">The Best of Both Western and Eastern Cultures</font></h3>\r\n\t\t\t<img [src]=\"pic2\">\r\n\t\t\t<p><br>We recognize the importance of building up good life-long habits. Thus, we prioritize our students' abilities to retain good habits. To integrate Western Culture, we cultivate leadership throughout our daily activities. Because of our Eastern influence, we emphasize building students' emotional intelligence.</p>\r\n\t\t</div>\r\n\t\t<div class=\"col-md-4\">\r\n\t\t\t<h3><font color=\"#00008B\">Individualized Curricula</font></h3><br>\r\n\t\t\t<img class=\"center\" [src]=\"pic3\">\r\n\t\t\t<p><br>We offer a 1:10 student to instructor guarantee. We tailor our style and pace of instruction according to each student's abilities and personalities. We also strive to help students motivate themselves through friendly competitions.</p>\r\n\t\t</div>\r\n\t-->\r\n<div class=\"col-md-4\">\r\n\t\t<div class=\"panel panel-info\">\r\n\t\t  <div class=\"panel-heading\">\r\n\t\t    <h3 class=\"panel-title\">Happy and Cheerful Atmosphere</h3>\r\n\t\t  </div>\r\n\t\t  <div class=\"panel-body\">\r\n\t\t\t\t<img [src]=\"pic1\">\r\n\t\t\t\t<p></p>\r\n\t\t    <p>At Light of Knowledge Academy, we hire the most experienced and caring teachers. In addition to offering optional English, Math, and Chinese class work, we first ensure that students finish homework from school.</p>\r\n\t\t  </div>\r\n\t\t</div>\r\n</div>\r\n\r\n<div class=\"col-md-4\">\r\n<div class=\"panel panel-info\">\r\n  <div class=\"panel-heading\">\r\n    <h3 class=\"panel-title\">The Best of Both Western and Eastern Cultures</h3>\r\n  </div>\r\n  <div class=\"panel-body\">\r\n\t\t<img [src]=\"pic2\">\r\n\t\t<p><br></p>\r\n    <p>We recognize the importance of building up good life-long habits. Thus, we prioritize our students' abilities to retain good habits. To integrate Western Culture, we cultivate leadership throughout our daily activities. Because of our Eastern influence, we emphasize building students' emotional intelligence.</p>\r\n  </div>\r\n</div>\r\n</div>\r\n<div class=\"col-md-4\">\r\n\r\n\r\n<div class=\"panel panel-info\">\r\n  <div class=\"panel-heading\">\r\n    <h3 class=\"panel-title\">Individualized Curricula</h3>\r\n  </div>\r\n  <div class=\"panel-body\">\r\n\t\t<img class=\"center\" [src]=\"pic3\">\r\n    <p>We offer a 1:10 student to instructor guarantee. We tailor our style and pace of instruction according to each student's abilities and personalities. We also strive to help students motivate themselves through friendly competitions.</p>\r\n  </div>\r\n</div>\r\n</div>\r\n\r\n\r\n\r\n\r\n\r\n\t</div>\r\n\r\n\t<br>\r\n\r\n\t<div style=\"position:relative;height:0;padding-bottom:56.25%\"><iframe src=\"https://www.youtube.com/embed/ESNNlA8vq5U?ecver=2\" width=\"640\" height=\"360\" frameborder=\"0\" style=\"position:absolute;width:100%;height:100%;left:0\" allowfullscreen></iframe></div>\r\n\t<br>\r\n</body>\r\n"
+module.exports = "<!DOCTYPE HTML>\r\n<head>\r\n\t<meta charset=\"utf-8\">\r\n\t<meta name=\"description\" content=\"Come in today to learn more about our After School Programs!\"/>\r\n\t<title>After School Program</title>\r\n</head>\r\n<body>\r\n\t<h2 class=\"page-header\">After School Program</h2>\r\n\r\n\t<div class=\"row\">\r\n\r\n\t\t<div class=\"col-md-4\">\r\n\t\t\t<div class=\"panel panel-info\">\r\n\t\t\t\t<div class=\"panel-heading\">\r\n\t\t\t\t\t<h3 class=\"panel-title\">Happy and Cheerful Atmosphere</h3>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"panel-body\" id=\"info-box\">\r\n\t\t\t\t\t<img class=\"center\" [src]=\"pic1\" id=\"images\">\r\n\t\t\t\t\t<br>\r\n\t\t\t\t\t<p>At Light of Knowledge Academy, we hire the most experienced and caring teachers. In addition to offering optional English, Math, and Chinese class work, we first ensure that students finish homework from school.</p>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\r\n\t\t<div class=\"col-md-4\">\r\n\t\t\t<div class=\"panel panel-info\">\r\n\t\t\t\t<div class=\"panel-heading\">\r\n\t\t\t\t\t<h3 class=\"panel-title\">The Best of Both Western and Eastern Cultures</h3>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"panel-body\" id=\"info-box\">\r\n\t\t\t\t\t<img class=\"center\" [src]=\"pic2\" id=\"images\">\r\n\t\t\t\t\t<br>\r\n\t\t\t\t\t<p>We recognize the importance of building up good life-long habits. Thus, we prioritize our students' abilities to retain good habits. To integrate Western Culture, we cultivate leadership throughout our daily activities. Because of our Eastern influence, we emphasize building students' emotional intelligence.</p>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div class=\"col-md-4\">\r\n\r\n\r\n\t\t\t<div class=\"panel panel-info\">\r\n\t\t\t\t<div class=\"panel-heading\">\r\n\t\t\t\t\t<h3 class=\"panel-title\">Individualized Curricula</h3>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"panel-body\" id=\"info-box\">\r\n\t\t\t\t\t<img class=\"center\" [src]=\"pic3\" id=\"images\">\r\n\t\t\t\t\t<br>\r\n\t\t\t\t\t<p>We offer a 1:10 student to instructor guarantee. We tailor our style and pace of instruction according to each student's abilities and personalities. We also strive to help students motivate themselves through friendly competitions.</p>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</div>\r\n\r\n\t<br>\r\n\r\n\t<div style=\"position:relative;height:0;padding-bottom:56.25%\"><iframe src=\"https://www.youtube.com/embed/ESNNlA8vq5U?ecver=2\" width=\"640\" height=\"360\" frameborder=\"0\" style=\"position:absolute;width:100%;height:100%;left:0\" allowfullscreen></iframe></div>\r\n\t<br>\r\n</body>\r\n"
 
 /***/ }),
 
@@ -1134,21 +1146,21 @@ module.exports = "<!DOCTYPE HTML>\n<head>\n\t<meta charset=\"utf-8\">\n\t<meta n
 /***/ 698:
 /***/ (function(module, exports) {
 
-module.exports = "<!DOCTYPE HTML>\n<head>\n\t<meta charset=\"utf-8\">\n\t<meta name=\"description\" content=\"Official website for Light of Knowledge Academy. We offer After School Programs, English Writing, Math Tutoring and much more! Learn more now!\"/>\n\t<title>Enrichment Programs</title>\n</head>\n<body>\n\t<h2 class=\"page-header\">Chess</h2>\n\t<h3>Instructor: Albert Rich</h3>\n\t<ul class=\"s\">\n\t\t<li>USCF National Master 2004</li>\n\t\t<li>Peak Rating 2289</li>\n\t\t<li>USCF Life Member</li>\n\t\t<li>USCF Certified Chess Coach 2004</li>\n\t\t<li>1993 US Junior Open 19 year old Champion</li>\n\t\t<li>Former Top 50 in US for age group</li>\n\t\t<li>Twice West Valley H.S. Chess League MVP</li>\n\t\t<li>4 Time Kolty Chess Club Champion</li>\n\t\t<li>Kolty Club Blitz Champion</li>\n\t\t<li>=1st 2004 Stamer Memorial</li>\n\t\t<li>First Place in many other tournaments</li>\n\t\t<li>3rd 2005 US under 50 Championship</li>\n\t\t<li>Former #1 ranked human on USCL, USCF's official Internet Chess Server</li>\n\t\t<li>Several students ranked in US top 100 list </li>\n\t\t<li>USCF certified Tournament Director</li>\n\t\t<li>Over 100 tournaments directed</li>\n\t\t<li>Teaching chess to children since 2003</li>\n\t</ul>\n\t<p>Contact Information:<br>\n\t<a href=\"tel:1-408-348-9658\">(408)348-9658</a>\n\t<br>\n\t<a href=\"mailto:albertjrich@yahoo.com\" target=\"_top\">albertjrich@yahoo.com</a>\n\t</p>\n\t<br>\n\n<h2 class=\"page-header\">Competitive Programming</h2>\n\t<p>This course will help students improve their skills in competitive programming, specifically USACO, as well as their problem solving and coding skills. The topics covered in this course are common interview questions in the field of Computer Science. Tentative topics include:</p>\n\t<ul class=\"s\">\n\t\t<li>Prefix Sums</li>\n\t\t<li>Sorting Algorithms</li>\n\t\t<li>Graph Theory</li>\n\t\t<li>Tree Traversal Algorithms</li>\n\t\t<li>Greedy Algorithms</li>\n\t\t<li>Hashing</li>\n\t\t<li>Dynamic Programming</li>\n\t\t<li>Computational Geometry</li>\n\t</ul>\n\n\t<br>\n\n\t<h2 class=\"page-header\">Introduction to Programming</h2>\n\t\t<h3>Java Greenfoot Summer Course</h3>\n\t\t<h3>Instructor: Martin Ly</h3>\n\t\t<p>This course is suitable for entry level students who are interested in learning Java programming and basic game development. Prior experience is not required.\n\t\tThe course will introduce the object-oriented Java programming language from the bottom up. Students will learn about good programming practices.\n\t\t<br>\n\t\tIn this course, students will:</p>\n\t\t<ul class=\"s\">\n\t\t\t<li>Learn Java syntax and their applications such as integrating input/output, calculations, logic/looping flow and control, object-oriented programming,\n\t\t\texception handling, multi-threading, etc.</li>\n\t\t\t<li>How to build a fully developed application or program using Java based on a simple idea or concept</li>\n\t\t\t<li>Follow step by step game examples and exercises, then applying these fundamental concepts to create more complicated applications</li>\n\t\t\t<li>Learn how to use a graphics editor to design simple 2D images</li>\n\t\t\t<li>Intermediate students will be encouraged to use Netbean and begin learning about topics covered in AP Computer Science</li>\n\t\t</ul>\n\n\n\t<h3>Android App Development Summer Course</h3>\n\t<p>Children of all ages can use our easy-to-learn online development tool to develop an Android application\n\tWe utilize user-friendly visual block programming, making this a great course for those without prior programming experience. Millions of applications and games can be built\n\tutilizing the built in abilities of the Android phone including the GPS tracking system, connection to the Web, gyro/magneto sensors, texting capabilities, email sending/receiving,\n\tvoice recognition, clock, etc.\n\t<br>\n\tIn this course, students will:</p>\n\t<ul class=\"s\">\n\t\t<li>Learn all the functions and elements of blocks</li>\n\t\t<li>Learn programming logic control and flow</li>\n\t\t<li>How to create a user interface and set its layout</li>\n\t\t<li>Learn about program animations and graphics, sensors and storage</li>\n\t\t<li>Follow simple steps to create basic applications and games</li>\n\t\t<li>Turn ideas into live applications</li>\n\t\t<li>Learn in small classes of 4 to 5 students</li>\n\t\t<li>Most suitable for students in grades 4 to 7</li>\n\t\t<li>Students will need to bring their own laptop, and have access to a Android phone/tablet that runs on the Android OS</li>\n\n\t</ul>\n\n\t<br><br><br><br><br>\n</body>\n"
+module.exports = "<!DOCTYPE HTML>\n<head>\n\t<meta charset=\"utf-8\">\n\t<meta name=\"description\" content=\"Official website for Light of Knowledge Academy. We offer After School Programs, English Writing, Math Tutoring and much more! Learn more now!\"/>\n\t<title>Enrichment Programs</title>\n</head>\n<body>\n\t<h2 class=\"page-header\">Enrichment Programs</h2>\n\n\n\n\n\t<div class=\"row\">\n\t\t<div class=\"col-md-4\">\n\t\t\t<div class=\"panel panel-primary\">\n\t\t\t\t<div class=\"panel-heading\">\n\t\t\t\t\t<h3 class=\"panel-title\">Chess</h3>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"panel-body\" id=\"info-box\">\n\t\t\t\t\t<img class=\"center\" [src]=\"chesspng\" id=\"images\">\n\t\t\t\t\t<br>\n\t\t\t\t\t<button class=\"btn btn-success\" (click)=\"scroll(chess)\">View Course</button>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\n\t\t<div class=\"col-md-4\">\n\t\t\t<div class=\"panel panel-primary\">\n\t\t\t\t<div class=\"panel-heading\">\n\t\t\t\t\t<h3 class=\"panel-title\">Competitive Programming</h3>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"panel-body\" id=\"info-box\">\n\t\t\t\t\t<img class=\"center\" [src]=\"competitivepng\" id=\"images\">\n\t\t\t\t\t<br>\n\t\t\t\t\t<button class=\"btn btn-success\" (click)=\"scroll(competitive)\">View Course</button>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"col-md-4\">\n\n\n\t\t\t<div class=\"panel panel-primary\">\n\t\t\t\t<div class=\"panel-heading\">\n\t\t\t\t\t<h3 class=\"panel-title\">Introduction to Programming</h3>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"panel-body\" id=\"info-box\">\n\t\t\t\t\t<img class=\"center\" [src]=\"intropng\" id=\"images\">\n\t\t\t\t\t<br>\n\t\t\t\t\t<button class=\"btn btn-success\" (click)=\"scroll(intro)\">View Course</button>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\n\t<h2 class=\"page-header\" #chess>Chess</h2>\n\t<h3>Instructor: Albert Rich</h3>\n\t<ul class=\"s\">\n\t\t<li>USCF National Master 2004</li>\n\t\t<li>Peak Rating 2289</li>\n\t\t<li>USCF Life Member</li>\n\t\t<li>USCF Certified Chess Coach 2004</li>\n\t\t<li>1993 US Junior Open 19 year old Champion</li>\n\t\t<li>Former Top 50 in US for age group</li>\n\t\t<li>Twice West Valley H.S. Chess League MVP</li>\n\t\t<li>4 Time Kolty Chess Club Champion</li>\n\t\t<li>Kolty Club Blitz Champion</li>\n\t\t<li>=1st 2004 Stamer Memorial</li>\n\t\t<li>First Place in many other tournaments</li>\n\t\t<li>3rd 2005 US under 50 Championship</li>\n\t\t<li>Former #1 ranked human on USCL, USCF's official Internet Chess Server</li>\n\t\t<li>Several students ranked in US top 100 list </li>\n\t\t<li>USCF certified Tournament Director</li>\n\t\t<li>Over 100 tournaments directed</li>\n\t\t<li>Teaching chess to children since 2003</li>\n\t</ul>\n\t<p>Contact Information:<br>\n\t<a href=\"tel:1-408-348-9658\">(408)348-9658</a>\n\t<br>\n\t<a href=\"mailto:albertjrich@yahoo.com\" target=\"_top\">albertjrich@yahoo.com</a>\n\t</p>\n\t<br>\n\n<h2 class=\"page-header\" #competitive>Competitive Programming</h2>\n\t<p>This course will help students improve their skills in competitive programming, specifically USACO, as well as their problem solving and coding skills. The topics covered in this course are common interview questions in the field of Computer Science. Tentative topics include:</p>\n\t<ul class=\"s\">\n\t\t<li>Prefix Sums</li>\n\t\t<li>Sorting Algorithms</li>\n\t\t<li>Graph Theory</li>\n\t\t<li>Tree Traversal Algorithms</li>\n\t\t<li>Greedy Algorithms</li>\n\t\t<li>Hashing</li>\n\t\t<li>Dynamic Programming</li>\n\t\t<li>Computational Geometry</li>\n\t</ul>\n\n\t<br>\n\n\t<h2 class=\"page-header\" #intro>Introduction to Programming</h2>\n\t\t<h3>Java Greenfoot Summer Course</h3>\n\t\t<h3>Instructor: Martin Ly</h3>\n\t\t<p>This course is suitable for entry level students who are interested in learning Java programming and basic game development. Prior experience is not required.\n\t\tThe course will introduce the object-oriented Java programming language from the bottom up. Students will learn about good programming practices.\n\t\t<br>\n\t\tIn this course, students will:</p>\n\t\t<ul class=\"s\">\n\t\t\t<li>Learn Java syntax and their applications such as integrating input/output, calculations, logic/looping flow and control, object-oriented programming,\n\t\t\texception handling, multi-threading, etc.</li>\n\t\t\t<li>How to build a fully developed application or program using Java based on a simple idea or concept</li>\n\t\t\t<li>Follow step by step game examples and exercises, then applying these fundamental concepts to create more complicated applications</li>\n\t\t\t<li>Learn how to use a graphics editor to design simple 2D images</li>\n\t\t\t<li>Intermediate students will be encouraged to use Netbean and begin learning about topics covered in AP Computer Science</li>\n\t\t</ul>\n\n\n\t<h3>Android App Development Summer Course</h3>\n\t<p>Children of all ages can use our easy-to-learn online development tool to develop an Android application\n\tWe utilize user-friendly visual block programming, making this a great course for those without prior programming experience. Millions of applications and games can be built\n\tutilizing the built in abilities of the Android phone including the GPS tracking system, connection to the Web, gyro/magneto sensors, texting capabilities, email sending/receiving,\n\tvoice recognition, clock, etc.\n\t<br>\n\tIn this course, students will:</p>\n\t<ul class=\"s\">\n\t\t<li>Learn all the functions and elements of blocks</li>\n\t\t<li>Learn programming logic control and flow</li>\n\t\t<li>How to create a user interface and set its layout</li>\n\t\t<li>Learn about program animations and graphics, sensors and storage</li>\n\t\t<li>Follow simple steps to create basic applications and games</li>\n\t\t<li>Turn ideas into live applications</li>\n\t\t<li>Learn in small classes of 4 to 5 students</li>\n\t\t<li>Most suitable for students in grades 4 to 7</li>\n\t\t<li>Students will need to bring their own laptop, and have access to a Android phone/tablet that runs on the Android OS</li>\n\n\t</ul>\n\n\t<br><br><br><br><br>\n</body>\n"
 
 /***/ }),
 
 /***/ 699:
 /***/ (function(module, exports) {
 
-module.exports = "<!DOCTYPE HTML>\r\n<head>\r\n\t<meta charset=\"utf-8\">\r\n\t<meta name=\"description\" content=\"Official website for Light of Knowledge Academy. We offer After School Programs, English Writing, Math Tutoring and much more! Learn more now!\"/>\r\n\t<title>Home Page</title>\r\n</head>\r\n<body>\r\n\t<div class=\"jumbotron text-center\">\r\n\t\t<h1>Light of Knowledge Academy</h1>\r\n\t\t<br>\r\n\t\t<p><a target=\"_blank\" title=\"Open in Google Maps\" href=\"https://www.google.com/maps/place/20432+Silverado+Ave,+Cupertino,+CA+95014/@37.3149792,-122.0334717,17z/data=!3m1!4b1!4m5!3m4!1s0x808fb5076a61d76f:0x640ac354a2071531!8m2!3d37.3149792!4d-122.031283\">20432 Silverado Ave. Ste. 6 | Cupertino, CA 95014</a>\r\n\t\t<br>Call us at: <a title=\"Phone\" href=\"tel:4089961236\">(408) 996-1236</a> | Text us at: <a title=\"Text\" href=\"tel: 4082181698\">(408) 218-1698</a>\r\n\t\t<br>Email: <a title=\"Email\" href=\"mailto:info.lkastaff@gmail.com\" target=\"_top\">info.lkastaff@gmail.com</a> | <a target=\"_blank\" title=\"Open in new tab\" href=\"http://facebook.com/LOKacademy\">Give us a like on our Facebook page!</a></p>\r\n\r\n\t\t<div>\r\n\t\t\t<a *ngIf=\"!authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\" class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/login']\">Login</a>\r\n\t\t\t<a *ngIf=\"!authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\" class=\"btn btn-info\" target=\"_top\" [routerLink]=\"['/register']\">Register</a>\r\n\t\t\t<a class=\"btn btn-primary\" target=\"_top\" title=\"Join our team today!\" [routerLink]=\"['/join']\">Careers</a>\r\n\t\t</div>\r\n\t</div>\r\n\t<img [src]=\"fullImagePath\" width=\"100%\">\r\n</body>\r\n"
+module.exports = "<!DOCTYPE HTML>\r\n<head>\r\n\t<meta charset=\"utf-8\">\r\n\t<meta name=\"description\" content=\"Official website for Light of Knowledge Academy. We offer After School Programs, English Writing, Math Tutoring and much more! Learn more now!\"/>\r\n\t<title>Home Page</title>\r\n</head>\r\n<body>\r\n\t<div class=\"jumbotron text-center\">\r\n\t\t<h1>Light of Knowledge Academy</h1>\r\n\t\t<br>\r\n\t\t<p><a target=\"_blank\" title=\"Open in Google Maps\" href=\"https://www.google.com/maps/place/Light+Of+Knowledge/@37.3151035,-122.0332689,17z/data=!3m1!4b1!4m5!3m4!1s0x808fb5076a23cba5:0x64257984edd56321!8m2!3d37.3150993!4d-122.0310802\">20432 Silverado Ave. Ste. 6 | Cupertino, CA 95014</a>\r\n\t\t<br>Call us at: <a title=\"Phone\" href=\"tel:4089961236\">(408) 996-1236</a> | Text us at: <a title=\"Text\" href=\"tel: 4082181698\">(408) 218-1698</a>\r\n\t\t<br>Email: <a title=\"Email\" href=\"mailto:info.lkastaff@gmail.com\" target=\"_top\">info.lkastaff@gmail.com</a> | <a target=\"_blank\" title=\"Open in new tab\" href=\"http://facebook.com/LOKacademy\">Give us a like on our Facebook page!</a></p>\r\n\r\n\t\t<div>\r\n\t\t\t<a *ngIf=\"!authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\" class=\"btn btn-default\" target=\"_top\" [routerLink]=\"['/login']\">Login</a>\r\n\t\t\t<a *ngIf=\"!authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\" class=\"btn btn-info\" target=\"_top\" [routerLink]=\"['/register']\">Register</a>\r\n\t\t\t<a class=\"btn btn-primary\" target=\"_top\" title=\"Join our team today!\" [routerLink]=\"['/join']\">Careers</a>\r\n\t\t</div>\r\n\t</div>\r\n\t<img [src]=\"fullImagePath\" width=\"100%\">\r\n</body>\r\n"
 
 /***/ }),
 
 /***/ 700:
 /***/ (function(module, exports) {
 
-module.exports = "<!DOCTYPE HTML>\n<head>\n\t<meta charset=\"utf-8\">\n\t<meta name=\"description\" content=\"Official website for Light of Knowledge Academy. We offer After School Programs, English Writing, Math Tutoring and much more! Learn more now!\"/>\n\t<title>Join Our Team Today!</title>\n</head>\n<body>\n\t<h2 class=\"page-header\">Join Our Team Today!</h2>\n\t<p>At Light of Knowledge Academy, we are always seeking talented instructors to come work with us. We currently have one open position:<p>\n\t<h5 class=\"tab\"><b>Instructor</b></h5>\n\t<p class=\"tab\">You will be working with middle school students to help understand and complete homework</p>\n\t<p class=\"tab\">The ideal candidate should also be able to teach Middle School Math and English</p>\n\t<p class=\"tab\">Hours are from 3:30pm to 6:30pm</p>\n\t<p class=\"tab\">The ideal candidate is self-motivated and encourages their students to do the same</p>\n\n\t<p>Interested? Send us your application at <a href=\"mailto:info.lkastaff@gmail.com\" target=\"_top\">info.lkastaff@gmail.com</a>, and we look forward to hearing from you!</p>\n</body>\n"
+module.exports = "<!DOCTYPE HTML>\n<head>\n\t<meta charset=\"utf-8\">\n\t<meta name=\"description\" content=\"Official website for Light of Knowledge Academy. We offer After School Programs, English Writing, Math Tutoring and much more! Learn more now!\"/>\n\t<title>Join Our Team Today!</title>\n</head>\n<body>\n\t<h2 class=\"page-header\">Join Our Team Today!</h2>\n\t<p>At Light of Knowledge Academy, we are always seeking talented instructors to come work with us. We currently have one open position:<p>\n\t\t\t<div class=\"panel panel-primary\">\n\t\t\t\t<div class=\"panel-heading\">\n\t\t\t\t\t<h3 class=\"panel-title\">Instructor</h3>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"panel-body\">\n\t\t\t\t\t<strong>Job Description</strong>\n\t\t\t\t\t<ul class=\"s\">\n\t\t\t\t\t\t<li>You will be working with middle school students to help them understand and complete homework</li>\n\t\t\t\t\t\t<li>The ideal candidate should also be able to teach Middle School Math and English</li>\n\t\t\t\t\t\t<li>The ideal candidate is self-motivated and encourages their students to do the same</li>\n\t\t\t\t\t\t<li>Hours are from 3:30pm to 6:30pm</li>\n\t\t\t\t\t</ul>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t<p>Interested? Send us your application at <a href=\"mailto:info.lkastaff@gmail.com\" target=\"_top\">info.lkastaff@gmail.com</a>, and we look forward to hearing from you!</p>\n\t</body>\n"
 
 /***/ }),
 
@@ -1162,7 +1174,7 @@ module.exports = "<!DOCTYPE HTML>\n<head>\n\t<meta charset=\"utf-8\">\n\t<meta n
 /***/ 702:
 /***/ (function(module, exports) {
 
-module.exports = "<!DOCTYPE HTML>\n<head>\n\t<meta charset=\"utf-8\">\n\t<meta name=\"description\" content=\"Official website for Light of Knowledge Academy. We offer After School Programs, English Writing, Math Tutoring and much more! Learn more now!\"/>\n\t<title>Math</title>\n</head>\n<body>\n\t<h2 class=\"page-header\">Math</h2>\n\t<p>Courses Offered:</p>\n\t<ul>\n\t\t<li class=\"s\">Geometry</li>\n\t\t<li class=\"s\">Algebra II</li>\n\t\t<li class=\"s\">Trigonometry</li>\n\t</ul>\n\t<p>We also offer other math intensive courses such as AP Physics, AP/Honors Chemistry, and SAT Preparation Courses.</p>\n</body>\n"
+module.exports = "<!DOCTYPE HTML>\n<head>\n\t<meta charset=\"utf-8\">\n\t<meta name=\"description\" content=\"Official website for Light of Knowledge Academy. We offer After School Programs, English Writing, Math Tutoring and much more! Learn more now!\"/>\n\t<title>Math</title>\n</head>\n<body>\n\t<h2 class=\"page-header\">Math</h2>\n\n\t<div class=\"row\">\n\t\t<div class=\"col-md-4\">\n\t\t\t<div class=\"panel panel-primary\">\n\t\t\t\t<div class=\"panel-heading\">\n\t\t\t\t\t<h3 class=\"panel-title\">Geometry</h3>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"panel-body\" id=\"info-box\">\n\t\t\t\t\t<img class=\"center\" [src]=\"geometry\" id=\"images\">\n\t\t\t\t\t<p></p>\n\t\t\t\t\t<p>In our Geometry course, some of the topics we will cover include:</p>\n\t\t\t\t\t<ul class=\"s\">\n\t\t\t\t\t\t<li>Congruent and Similar Figures</li>\n\t\t\t\t\t\t<li>Perimeter and Circumference</li>\n\t\t\t\t\t\t<li>Surface Area</li>\n\t\t\t\t\t\t<li>Areas of Irregular Shapes</li>\n\t\t\t\t\t\t<li>3D Objects and their volumes</li>\n\t\t\t\t\t\t<li>Pythagorean Theorem</li>\n\t\t\t\t\t</ul>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\n\t\t<div class=\"col-md-4\">\n\t\t\t<div class=\"panel panel-primary\">\n\t\t\t\t<div class=\"panel-heading\">\n\t\t\t\t\t<h3 class=\"panel-title\">Algebra II</h3>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"panel-body\" id=\"info-box\">\n\t\t\t\t\t<img class=\"center\" [src]=\"algii\" id=\"images\">\n\t\t\t\t\t<p></p>\n\t\t\t\t\t<p>In our Algebra II course, some of the topics we will cover include:</p>\n\t\t\t\t\t<ul class=\"s\">\n\t\t\t\t\t\t<li>Functions</li>\n\t\t\t\t\t\t<li>Complex Numbers</li>\n\t\t\t\t\t\t<li>Polynomial Arithmetic</li>\n\t\t\t\t\t\t<li>Exponential Growth</li>\n\t\t\t\t\t\t<li>Logarithms</li>\n\t\t\t\t\t\t<li>Graphs of Polynomials</li>\n\t\t\t\t\t</ul>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"col-md-4\">\n\n\n\t\t\t<div class=\"panel panel-primary\">\n\t\t\t\t<div class=\"panel-heading\">\n\t\t\t\t\t<h3 class=\"panel-title\">Trigonometry</h3>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"panel-body\" id=\"info-box\">\n\t\t\t\t\t<img class=\"center\" [src]=\"trig\">\n\t\t\t\t\t<p>In our Trigonometry course, some of the topics we will cover include:</p>\n\t\t\t\t\t<ul class=\"s\">\n\t\t\t\t\t\t<li>Radians</li>\n\t\t\t\t\t\t<li>Pythagorean Identity</li>\n\t\t\t\t\t\t<li>Trigonometric values of special angles</li>\n\t\t\t\t\t\t<li>Sine, cosine, tangent graphs</li>\n\t\t\t\t\t\t<li>Trigonometric identities</li>\n\t\t\t\t\t\t<li>Sinusoidal functions</li>\n\t\t\t\t\t</ul>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\n\t<Legend>Other Math Intensive Courses</Legend>\n\n\t<div class=\"row\">\n\t\t<div class=\"col-md-4\">\n\t\t\t<div class=\"panel panel-primary\">\n\t\t\t\t<div class=\"panel-heading\">\n\t\t\t\t\t<h3 class=\"panel-title\">AP Physics</h3>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"panel-body\" id=\"info-box\">\n\t\t\t\t\t<img class=\"center\" [src]=\"phys\" id=\"images\">\n\t\t\t\t\t<p></p>\n\t\t\t\t\t<p>In our AP Physics course, some of the topics we will cover include:</p>\n\t\t\t\t\t<ul class=\"s\">\n\t\t\t\t\t\t<li>Newton's Three Laws of Motion</li>\n\t\t\t\t\t\t<li>Kinematics</li>\n\t\t\t\t\t\t<li>Torque</li>\n\t\t\t\t\t\t<li>Work, Power, Energy</li>\n\t\t\t\t\t\t<li>Gravitational and Circular Motion</li>\n\t\t\t\t\t\t<li>Linear Momentum</li>\n\t\t\t\t\t</ul>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\n\t\t<div class=\"col-md-4\">\n\t\t\t<div class=\"panel panel-primary\">\n\t\t\t\t<div class=\"panel-heading\">\n\t\t\t\t\t<h3 class=\"panel-title\">AP/Honors Chemistry</h3>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"panel-body\" id=\"info-box\">\n\t\t\t\t\t<img class=\"center\" [src]=\"chem\" id=\"images\">\n\t\t\t\t\t<p></p>\n\t\t\t\t\t<p>In our AP/Honors Chemistry course, some of the topics we will cover include:</p>\n\t\t\t\t\t<ul class=\"s\">\n\t\t\t\t\t\t<li>Scientific Method</li>\n\t\t\t\t\t\t<li>Atomic Theory</li>\n\t\t\t\t\t\t<li>Chemical Bonding</li>\n\t\t\t\t\t\t<li>Molecular Gemoetry</li>\n\t\t\t\t\t\t<li>Molecular Models</li>\n\t\t\t\t\t\t<li>Mass spectrometry</li>\n\t\t\t\t\t</ul>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"col-md-4\">\n\n\n\t\t\t<div class=\"panel panel-primary\">\n\t\t\t\t<div class=\"panel-heading\">\n\t\t\t\t\t<h3 class=\"panel-title\">SAT Preparation Courses</h3>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"panel-body\" id=\"info-box\">\n\t\t\t\t\t<img class=\"center\" [src]=\"sat\" id=\"images\">\n\t\t\t\t\t<p></p>\n\t\t\t\t\t<p>Our SAT Preparation course will cover the main sections of the SAT test:</p>\n\t\t\t\t\t<ul class=\"s\">\n\t\t\t\t\t\t<li>Reading</li>\n\t\t\t\t\t\t<li>Writing and Language</li>\n\t\t\t\t\t\t<li>Math (No Calculator)</li>\n\t\t\t\t\t\t<li>Math (Calculator Allowed)</li>\n\t\t\t\t\t\t<li>Essay (Optional)</li>\n\t\t\t\t\t</ul>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\t<!--\n\t<h2 class=\"page-header\">Math</h2>\n\t<p>Courses Offered:</p>\n\t<ul>\n\t<li class=\"s\">Geometry</li>\n\t<li class=\"s\">Algebra II</li>\n\t<li class=\"s\">Trigonometry</li>\n</ul>\n<p>We also offer other math intensive courses such as AP Physics, AP/Honors Chemistry, and SAT Preparation Courses.</p>\n-->\n</body>\n"
 
 /***/ }),
 
