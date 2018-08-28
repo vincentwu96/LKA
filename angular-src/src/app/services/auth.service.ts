@@ -9,8 +9,9 @@ authToken: any;
 user: any;
 
 // to update live site:
-// delete 'http://localhost:8080/
+// delete 'http://localhost:8080/'
 // ng build in 'angular-src' folder
+// cd ..
 // push to github and heroku
 // heroku ps:scale web=1
 

@@ -958,8 +958,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var AuthService = (function () {
     // to update live site:
-    // delete 'http://localhost:8080/
+    // delete 'http://localhost:8080/'
     // ng build in 'angular-src' folder
+    // cd ..
     // push to github and heroku
     // heroku ps:scale web=1
     // http://localhost:8080/
@@ -1069,7 +1070,7 @@ module.exports = ""
 /***/ 687:
 /***/ (function(module, exports) {
 
-module.exports = "ul.s{\n\tfont-size: 110%;\n}\n\n.panel{\n\twidth:65%;\n}\n"
+module.exports = "ul.s{\n\tfont-size: 110%;\n}\n\n@media only screen\nand (min-width : 1024px) {\n\t.panel{\n\t\twidth:65%;\n\t}\n}\n"
 
 /***/ }),
 
