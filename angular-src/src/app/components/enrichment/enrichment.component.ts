@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EnrichmentComponent implements OnInit {
   scroll(el) {
-    el.scrollIntoView();
+    el.scrollIntoView({behavior: "smooth", block: "start"});
   }
   chesspng: string;
   competitivepng: string;

@@ -7,159 +7,179 @@
 <body>
 	<h2 class="page-header">Profile</h2>
 	<div *ngIf="user">
-		<p>Username: {{user.username}}</p>
-		<p>Email: {{user.email}}</p>
-		<legend>Legend</legend>
-		<p>Complete and of Excellent Quality = C*</p>
-		<p>Complete and of Acceptable Quality = C</p>
-		<p>Incomplete = INC</p>
+		<div class="panel panel-info">
+			<div class="panel-heading">
+				<h3 class="panel-title">User Details</h3>
+			</div>
+			<div class="panel-body">
+				<p><b>Username:</b> {{user.username}}</p>
+				<p><b>Email:</b> {{user.email}}</p>
+			</div>
+		</div>
 
-		<!--
-		<br>
-		<strong>Essay Evaluation Criteria</strong>
-		<p>Writing Conventions = WC</p>
-		<p>Paragraph Coherence/Unity = PCU</p>
-		<p>Sentence Variety = SV</p>
-		<p>Ideas/Depth/Length = IDL</p>
-		-->
+		<Legend>Student Performance</Legend>
 
-		<br>
-		<strong>For the Monthly Evaluative Essay Report, each of the following categories will be graded on a 1 to 6 scale:</strong>
-		<p>Writing Conventions - Writer uses formal standard English and avoids banned words and overly informal language</p>
-		<p>Paragraph Coherence/Unity - All sentences are arranged in a logical order and belong in the paragraph</p>
-		<p>Sentence Variety - Sentence openers are not repetitive within a paragraph</p>
-		<p>Ideas/Depth/Length - Writer includes original ideas and does not settle for a superficial discussion of the topic; each paragraph is at least 8 sentences long</p>
+		<div class="row">
+			<div class="col-md-8">
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						<h3 class="panel-title">How Student Performance Scores are Calculated</h3>
+					</div>
+					<div class="panel-body">
+						<strong>For the Monthly Evaluative Essay Report, each of the following categories will be graded on a 1 to 6 scale:</strong>
+						<p><b>Writing Convention</b> - Writer uses formal standard English and avoids banned words and overly informal language</p>
+						<p><b>Paragraph Coherence/Unity</b> - All sentences are arranged in a logical order and belong in the paragraph</p>
+						<p><b>Sentence Variety</b> - Sentence openers are not repetitive within a paragraph</p>
+						<p><b>Ideas/Depth/Length</b> - Writer includes original ideas and does not settle for a superficial discussion of the topic; each paragraph is at least 8 sentences long</p>
+						<b class="s">Note:</b>
+						<p>For Vocabulary, each student works at his/her own pace, so parents will need to check with the teacher if there are missing vocabulary assignments.</p>
+						<p>Essays are often broken up into parts, and only one part is due each week.</p>
+						<p>When fractions are used, the denominator represents the total number of assignments given, and the numerator represents the number of assignments completed and turned in.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						<h3 class="panel-title">Legend</h3>
+					</div>
+					<div class="panel-body">
+						<p>Complete and of Excellent Quality = C*</p>
+						<p>Complete and of Acceptable Quality = C</p>
+						<p>Incomplete = INC</p>
+					</div>
+				</div>
+			</div>
+		</div>
 
-		<br>
-		<b class="s">Note:</b>
-		<p>For Vocabulary, each student works at his/her own pace, so parents will need to check with the teacher if there are missing vocabulary assignments.</p>
-		<p>Essays are often broken up into parts, and only one part is due each week.</p>
-		<p>When fractions are used, the denominator represents the total number of assignments given, and the numerator represents the number of assignments completed and turned in.</p>
-
-		<legend><br>Student Performance Report</legend>
-		<table>
-			<tr>
-				<th>Month</th>
-				<th>Reading Comprehension</th>
-				<th>Vocabulary</th>
-				<th>Session Comments</th>
-			</tr>
-			<tr>
-				<td>September</td>
-				<td>{{user.rc1}}</td>
-				<td>{{user.v1}}</td>
-				<td width="700px">{{user.c1}}</td>
-			</tr>
-			<tr>
-				<td>October</td>
-				<td>{{user.rc2}}</td>
-				<td>{{user.v2}}</td>
-				<td>{{user.c2}}</td>
-			</tr>
-			<tr>
-				<td>November</td>
-				<td>{{user.rc3}}</td>
-				<td>{{user.v3}}</td>
-				<td>{{user.c3}}</td>
-			</tr>
-			<tr>
-				<td>January</td>
-				<td>{{user.rc4}}</td>
-				<td>{{user.v4}}</td>
-				<td>{{user.c4}}</td>
-			</tr>
-			<tr>
-				<td>February</td>
-				<td>{{user.rc5}}</td>
-				<td>{{user.v5}}</td>
-				<td>{{user.c5}}</td>
-			</tr>
-			<tr>
-				<td>March</td>
-				<td>{{user.rc6}}</td>
-				<td>{{user.v6}}</td>
-				<td>{{user.c6}}</td>
-			</tr>
-			<tr>
-				<td>April</td>
-				<td>{{user.rc7}}</td>
-				<td>{{user.v7}}</td>
-				<td>{{user.c7}}</td>
-			</tr>
-			<tr>
-				<td>May</td>
-				<td>{{user.rc8}}</td>
-				<td>{{user.v8}}</td>
-				<td>{{user.c8}}</td>
-			</tr>
-		</table>
+		<legend>Student Performance Report</legend>
+		<div class="table-responsive">
+			<table class="table table-bordered">
+				<tr>
+					<th>Month</th>
+					<th>Reading Comprehension</th>
+					<th>Vocabulary</th>
+					<th>Session Comments</th>
+				</tr>
+				<tr>
+					<td>September</td>
+					<td>{{user.rc1}}</td>
+					<td>{{user.v1}}</td>
+					<td width="700px">{{user.c1}}</td>
+				</tr>
+				<tr>
+					<td>October</td>
+					<td>{{user.rc2}}</td>
+					<td>{{user.v2}}</td>
+					<td>{{user.c2}}</td>
+				</tr>
+				<tr>
+					<td>November</td>
+					<td>{{user.rc3}}</td>
+					<td>{{user.v3}}</td>
+					<td>{{user.c3}}</td>
+				</tr>
+				<tr>
+					<td>January</td>
+					<td>{{user.rc4}}</td>
+					<td>{{user.v4}}</td>
+					<td>{{user.c4}}</td>
+				</tr>
+				<tr>
+					<td>February</td>
+					<td>{{user.rc5}}</td>
+					<td>{{user.v5}}</td>
+					<td>{{user.c5}}</td>
+				</tr>
+				<tr>
+					<td>March</td>
+					<td>{{user.rc6}}</td>
+					<td>{{user.v6}}</td>
+					<td>{{user.c6}}</td>
+				</tr>
+				<tr>
+					<td>April</td>
+					<td>{{user.rc7}}</td>
+					<td>{{user.v7}}</td>
+					<td>{{user.c7}}</td>
+				</tr>
+				<tr>
+					<td>May</td>
+					<td>{{user.rc8}}</td>
+					<td>{{user.v8}}</td>
+					<td>{{user.c8}}</td>
+				</tr>
+			</table>
+		</div>
 		<br>
 		<Legend>Monthly Evaluative Essay Report</Legend>
-		<table width="500px">
-			<tr>
-				<th>Month</th>
-				<th>Writing Conventions</th>
-				<th>Paragraph Coherence/Unity</th>
-				<th>Sentence Variety</th>
-				<th>Ideas/Depth/Length</th>
-			</tr>
-			<tr>
-				<td>September</td>
-				<td>{{user.wc1}}</td>
-				<td>{{user.pcu1}}</td>
-				<td>{{user.sv1}}</td>
-				<td>{{user.idl1}}</td>
-			</tr>
-			<tr>
-				<td>October</td>
-				<td>{{user.wc2}}</td>
-				<td>{{user.pcu2}}</td>
-				<td>{{user.sv2}}</td>
-				<td>{{user.idl2}}</td>
-			</tr>
-			<tr>
-				<td>November</td>
-				<td>{{user.wc3}}</td>
-				<td>{{user.pcu3}}</td>
-				<td>{{user.sv3}}</td>
-				<td>{{user.idl3}}</td>
-			</tr>
-			<tr>
-				<td>January</td>
-				<td>{{user.wc4}}</td>
-				<td>{{user.pcu4}}</td>
-				<td>{{user.sv4}}</td>
-				<td>{{user.idl4}}</td>
-			</tr>
-			<tr>
-				<td>February</td>
-				<td>{{user.wc5}}</td>
-				<td>{{user.pcu5}}</td>
-				<td>{{user.sv5}}</td>
-				<td>{{user.idl5}}</td>
-			</tr>
-			<tr>
-				<td>March</td>
-				<td>{{user.wc6}}</td>
-				<td>{{user.pcu6}}</td>
-				<td>{{user.sv6}}</td>
-				<td>{{user.idl6}}</td>
-			</tr>
-			<tr>
-				<td>April</td>
-				<td>{{user.wc7}}</td>
-				<td>{{user.pcu7}}</td>
-				<td>{{user.sv7}}</td>
-				<td>{{user.idl7}}</td>
-			</tr>
-			<tr>
-				<td>May</td>
-				<td>{{user.wc8}}</td>
-				<td>{{user.pcu8}}</td>
-				<td>{{user.sv8}}</td>
-				<td>{{user.idl8}}</td>
-			</tr>
-		</table>
+		<div class="table-responsive">
+			<table class="table table-bordered">
+				<tr>
+					<th>Month</th>
+					<th>Writing Conventions</th>
+					<th>Paragraph Coherence/Unity</th>
+					<th>Sentence Variety</th>
+					<th>Ideas/Depth/Length</th>
+				</tr>
+				<tr>
+					<td>September</td>
+					<td>{{user.wc1}}</td>
+					<td>{{user.pcu1}}</td>
+					<td>{{user.sv1}}</td>
+					<td>{{user.idl1}}</td>
+				</tr>
+				<tr>
+					<td>October</td>
+					<td>{{user.wc2}}</td>
+					<td>{{user.pcu2}}</td>
+					<td>{{user.sv2}}</td>
+					<td>{{user.idl2}}</td>
+				</tr>
+				<tr>
+					<td>November</td>
+					<td>{{user.wc3}}</td>
+					<td>{{user.pcu3}}</td>
+					<td>{{user.sv3}}</td>
+					<td>{{user.idl3}}</td>
+				</tr>
+				<tr>
+					<td>January</td>
+					<td>{{user.wc4}}</td>
+					<td>{{user.pcu4}}</td>
+					<td>{{user.sv4}}</td>
+					<td>{{user.idl4}}</td>
+				</tr>
+				<tr>
+					<td>February</td>
+					<td>{{user.wc5}}</td>
+					<td>{{user.pcu5}}</td>
+					<td>{{user.sv5}}</td>
+					<td>{{user.idl5}}</td>
+				</tr>
+				<tr>
+					<td>March</td>
+					<td>{{user.wc6}}</td>
+					<td>{{user.pcu6}}</td>
+					<td>{{user.sv6}}</td>
+					<td>{{user.idl6}}</td>
+				</tr>
+				<tr>
+					<td>April</td>
+					<td>{{user.wc7}}</td>
+					<td>{{user.pcu7}}</td>
+					<td>{{user.sv7}}</td>
+					<td>{{user.idl7}}</td>
+				</tr>
+				<tr>
+					<td>May</td>
+					<td>{{user.wc8}}</td>
+					<td>{{user.pcu8}}</td>
+					<td>{{user.sv8}}</td>
+					<td>{{user.idl8}}</td>
+				</tr>
+			</table>
+		</div>
 		<br><br><br>
 	</div>
 </body>
