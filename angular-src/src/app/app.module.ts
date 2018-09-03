@@ -23,7 +23,7 @@ import { AfterComponent } from './components/after/after.component';
 import { JoinComponent } from './components/join/join.component';
 import { FlashMessagesModule } from 'angular2-flash-messages';
 import { enableProdMode } from '@angular/core';
-// import { PdfJsViewerModule } from 'ng2-pdfjs-viewer';
+//import { PdfJsViewerModule } from 'ng2-pdfjs-viewer';
 
 const appRoutes: Routes = [
 	{path:'', component: HomeComponent},

@@ -93,7 +93,7 @@ var ValidateService = (function () {
     return ValidateService;
     var _a;
 }());
-//# sourceMappingURL=C:/Users/Wendy/Desktop/LKA/LKA/angular-src/src/validate.service.js.map
+//# sourceMappingURL=C:/Users/Wendy/Desktop/lka/lka/angular-src/src/validate.service.js.map
 
 /***/ }),
 
@@ -128,7 +128,7 @@ if (__WEBPACK_IMPORTED_MODULE_2__environments_environment__["a" /* environment *
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["enableProdMode"])();
 }
 __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_3__app_app_module__["a" /* AppModule */]);
-//# sourceMappingURL=C:/Users/Wendy/Desktop/LKA/LKA/angular-src/src/main.js.map
+//# sourceMappingURL=C:/Users/Wendy/Desktop/lka/lka/angular-src/src/main.js.map
 
 /***/ }),
 
@@ -162,7 +162,7 @@ var AppComponent = (function () {
     ], AppComponent);
     return AppComponent;
 }());
-//# sourceMappingURL=C:/Users/Wendy/Desktop/LKA/LKA/angular-src/src/app.component.js.map
+//# sourceMappingURL=C:/Users/Wendy/Desktop/lka/lka/angular-src/src/app.component.js.map
 
 /***/ }),
 
@@ -226,7 +226,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-// import { PdfJsViewerModule } from 'ng2-pdfjs-viewer';
+//import { PdfJsViewerModule } from 'ng2-pdfjs-viewer';
 var appRoutes = [
     { path: '', component: __WEBPACK_IMPORTED_MODULE_9__components_home_home_component__["a" /* HomeComponent */] },
     { path: 'register', component: __WEBPACK_IMPORTED_MODULE_8__components_register_register_component__["a" /* RegisterComponent */] },
@@ -276,7 +276,7 @@ var AppModule = (function () {
     ], AppModule);
     return AppModule;
 }());
-//# sourceMappingURL=C:/Users/Wendy/Desktop/LKA/LKA/angular-src/src/app.module.js.map
+//# sourceMappingURL=C:/Users/Wendy/Desktop/lka/lka/angular-src/src/app.module.js.map
 
 /***/ }),
 
@@ -314,7 +314,7 @@ var AfterComponent = (function () {
     ], AfterComponent);
     return AfterComponent;
 }());
-//# sourceMappingURL=C:/Users/Wendy/Desktop/LKA/LKA/angular-src/src/after.component.js.map
+//# sourceMappingURL=C:/Users/Wendy/Desktop/lka/lka/angular-src/src/after.component.js.map
 
 /***/ }),
 
@@ -349,7 +349,7 @@ var ContactComponent = (function () {
     ], ContactComponent);
     return ContactComponent;
 }());
-//# sourceMappingURL=C:/Users/Wendy/Desktop/LKA/LKA/angular-src/src/contact.component.js.map
+//# sourceMappingURL=C:/Users/Wendy/Desktop/lka/lka/angular-src/src/contact.component.js.map
 
 /***/ }),
 
@@ -398,7 +398,7 @@ var DashboardComponent = (function () {
     return DashboardComponent;
     var _a, _b;
 }());
-//# sourceMappingURL=C:/Users/Wendy/Desktop/LKA/LKA/angular-src/src/dashboard.component.js.map
+//# sourceMappingURL=C:/Users/Wendy/Desktop/lka/lka/angular-src/src/dashboard.component.js.map
 
 /***/ }),
 
@@ -433,7 +433,7 @@ var EnglishWritingComponent = (function () {
     ], EnglishWritingComponent);
     return EnglishWritingComponent;
 }());
-//# sourceMappingURL=C:/Users/Wendy/Desktop/LKA/LKA/angular-src/src/english-writing.component.js.map
+//# sourceMappingURL=C:/Users/Wendy/Desktop/lka/lka/angular-src/src/english-writing.component.js.map
 
 /***/ }),
 
@@ -474,7 +474,7 @@ var EnrichmentComponent = (function () {
     ], EnrichmentComponent);
     return EnrichmentComponent;
 }());
-//# sourceMappingURL=C:/Users/Wendy/Desktop/LKA/LKA/angular-src/src/enrichment.component.js.map
+//# sourceMappingURL=C:/Users/Wendy/Desktop/lka/lka/angular-src/src/enrichment.component.js.map
 
 /***/ }),
 
@@ -528,7 +528,7 @@ var HomeComponent = (function () {
     return HomeComponent;
     var _a, _b;
 }());
-//# sourceMappingURL=C:/Users/Wendy/Desktop/LKA/LKA/angular-src/src/home.component.js.map
+//# sourceMappingURL=C:/Users/Wendy/Desktop/lka/lka/angular-src/src/home.component.js.map
 
 /***/ }),
 
@@ -563,7 +563,7 @@ var JoinComponent = (function () {
     ], JoinComponent);
     return JoinComponent;
 }());
-//# sourceMappingURL=C:/Users/Wendy/Desktop/LKA/LKA/angular-src/src/join.component.js.map
+//# sourceMappingURL=C:/Users/Wendy/Desktop/lka/lka/angular-src/src/join.component.js.map
 
 /***/ }),
 
@@ -629,7 +629,7 @@ var LoginComponent = (function () {
     return LoginComponent;
     var _a, _b, _c;
 }());
-//# sourceMappingURL=C:/Users/Wendy/Desktop/LKA/LKA/angular-src/src/login.component.js.map
+//# sourceMappingURL=C:/Users/Wendy/Desktop/lka/lka/angular-src/src/login.component.js.map
 
 /***/ }),
 
@@ -670,7 +670,7 @@ var MathComponent = (function () {
     ], MathComponent);
     return MathComponent;
 }());
-//# sourceMappingURL=C:/Users/Wendy/Desktop/LKA/LKA/angular-src/src/math.component.js.map
+//# sourceMappingURL=C:/Users/Wendy/Desktop/lka/lka/angular-src/src/math.component.js.map
 
 /***/ }),
 
@@ -724,7 +724,7 @@ var NavbarComponent = (function () {
     return NavbarComponent;
     var _a, _b;
 }());
-//# sourceMappingURL=C:/Users/Wendy/Desktop/LKA/LKA/angular-src/src/navbar.component.js.map
+//# sourceMappingURL=C:/Users/Wendy/Desktop/lka/lka/angular-src/src/navbar.component.js.map
 
 /***/ }),
 
@@ -773,7 +773,7 @@ var ProfileComponent = (function () {
     return ProfileComponent;
     var _a, _b;
 }());
-//# sourceMappingURL=C:/Users/Wendy/Desktop/LKA/LKA/angular-src/src/profile.component.js.map
+//# sourceMappingURL=C:/Users/Wendy/Desktop/lka/lka/angular-src/src/profile.component.js.map
 
 /***/ }),
 
@@ -867,7 +867,7 @@ var RegisterComponent = (function () {
     return RegisterComponent;
     var _a, _b, _c, _d;
 }());
-//# sourceMappingURL=C:/Users/Wendy/Desktop/LKA/LKA/angular-src/src/register.component.js.map
+//# sourceMappingURL=C:/Users/Wendy/Desktop/lka/lka/angular-src/src/register.component.js.map
 
 /***/ }),
 
@@ -912,7 +912,7 @@ var AuthGuard = (function () {
     return AuthGuard;
     var _a, _b;
 }());
-//# sourceMappingURL=C:/Users/Wendy/Desktop/LKA/LKA/angular-src/src/auth.guard.js.map
+//# sourceMappingURL=C:/Users/Wendy/Desktop/lka/lka/angular-src/src/auth.guard.js.map
 
 /***/ }),
 
@@ -928,7 +928,7 @@ var AuthGuard = (function () {
 var environment = {
     production: false
 };
-//# sourceMappingURL=C:/Users/Wendy/Desktop/LKA/LKA/angular-src/src/environment.js.map
+//# sourceMappingURL=C:/Users/Wendy/Desktop/lka/lka/angular-src/src/environment.js.map
 
 /***/ }),
 
@@ -1014,7 +1014,7 @@ var AuthService = (function () {
     return AuthService;
     var _a;
 }());
-//# sourceMappingURL=C:/Users/Wendy/Desktop/LKA/LKA/angular-src/src/auth.service.js.map
+//# sourceMappingURL=C:/Users/Wendy/Desktop/lka/lka/angular-src/src/auth.service.js.map
 
 /***/ }),
 
@@ -1049,7 +1049,7 @@ module.exports = "\r\n"
 /***/ 684:
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "th {\r\n\ttext-align: center;\r\n\theight: 50px;\r\n}\r\ntd, th{\r\n\tpadding: 10px;\r\n\ttext-align: center;\r\n}\r\ntr:nth-child(even) {background-color: #f2f2f2}\r\ntr:hover {background-color: #f5f5f5}\r\n\r\ntr{\r\n\tfont-size: 110%;\r\n}\r\n"
 
 /***/ }),
 
@@ -1091,7 +1091,7 @@ module.exports = "ul.s{\r\n\tfont-size: 110%;\r\n}\r\n.center {\r\n\tdisplay: bl
 /***/ 690:
 /***/ (function(module, exports) {
 
-module.exports = ".horizontal-collapse {\r\n\theight: 70px;\r\n}\r\n.navbar-collapse.in {\r\n\toverflow-y: hidden;\r\n}\r\n"
+module.exports = ".horizontal-collapse {\r\n\theight: 70px;\r\n}\r\n.navbar-collapse.in {\r\n\toverflow-y: hidden;\r\n}\r\n\r\n.navbar-nav li a:hover, .navbar-nav > .active > a {\r\n  color: white !important;\r\n  background-color:#3b3b99 !important;\r\n}\r\n"
 
 /***/ }),
 
@@ -1140,7 +1140,7 @@ module.exports = "<!DOCTYPE HTML>\r\n<head>\r\n\t<meta charset=\"utf-8\">\r\n\t<
 /***/ 697:
 /***/ (function(module, exports) {
 
-module.exports = "<!DOCTYPE HTML>\r\n<head>\r\n\t<meta charset=\"utf-8\">\r\n\t<meta name=\"description\" content=\"Official website for Light of Knowledge Academy. We offer After School Programs, English Writing, Math Tutoring and much more! Learn more now!\"/>\r\n\t<title>English Writing</title>\r\n</head>\r\n<body>\r\n\t<h2 class=\"page-header\">English Writing</h2>\r\n\t<h5>New Teaching Strategies for the 2018-2019 School Year</h5>\r\n\t<p>Hello Parents and Students!</p>\r\n\t<p>In my English writing class this year, I am using some new and creative ideas to stimulate students to think more deeply about text that they read, to participate with more vigor during discussions, and eventually, to lead their own discussion regarding ideas and concepts that come up in the reading.\r\n\t\tSome of the strategies I will use are</p>\r\n\t\t<ol>\r\n\t\t\t<li>Socratic seminar, which is an activity designed to stimulate deeper, more philosophical thinking about complex issues.</li>\r\n\t\t\t<li>Town Hall Circle, which is a group activity designed to help students see different perspectives on an issue.</li>\r\n\t\t\t<li>Café Conversations, in which each student plays a role of a given character in a fictional or non-fiction story.</li>\r\n\t\t\t<li>Text to Self, Text to Text, and Text to World, a writing and discussion activity that helps students make connections between what they are reading in this class with what they are reading in other classes, and to think more deeply about what they are reading.</li>\r\n\t\t\t<li>“Keep it or Junk it”, which is a discussion-based, note-taking strategy that will help students write better essays.</li>\r\n\t\t</ol>\r\n\t\t<p>I will try out each of these activities and then repeat the activities that are the most popular and successful.  Also, in each of these exercises, students will be challenged to become directly involved with the text by reading text, answering questions about it, and then participating in various types of speaking and listening activities during class.  Also, the writing assignment for each week will be closely related to these exercises.     I look forward to the opportunity to use these new ideas in class this year!!!</p>\r\n\t\t<p>Sincerely,</p>\r\n\t\t<p>Michael N. Merrick (Mr. Mike)</p>\r\n\r\n\t\t<hr>\r\n\r\n\t\t<p>My program has two main emphases:</p>\r\n\t\t<p>Learn by Doing and Variety.</p>\r\n\r\n\t\t<p>What I mean by Learn by Doing is that since all writing is creative and subjective, I stimulate students' minds with student-friendly topics, give them a simple format to follow, and tell them to write. I do offer students ways to improve their writing, but I don't expect them to write exactly the same way as I do because I want  students' writing to grow organically and not artificially. It's a slow process but it happens. I'm also a big believer in re-writes. They are important,  not just to make an essay polished and complete, but for students' self-confidence.</p>\r\n\r\n\t\t<p>As far as Variety, I like to give students different types of assignments, such as reading comprehension, vocabulary and grammar. Reading comprehension is important because many studies have shown that one of the best ways to improve student writing is to read professional writing - both fiction and non-fiction-regularly.  Knowing this, I search out compelling stories for students to read so that they absorb a great writer's unique writing style. I am also using  new writing exercises this year that will push students to write with better sentence variety and better paragraph coherence and flow.  Vocabulary development is also very important; I expect students to complete at least one vocabulary chapter per week.  Last, I also assign periodic grammar exercises because students don't receive enough grammar instruction in school and knowledge of the rules of  grammar is a very important part of creating well-written essays.</p>\r\n\t\t<p>I hope this helps you understand my program better.</p>\r\n\t\t<p>Sincerely,</p>\r\n\t\t<p>Michael N. Merrick (Mr. Mike)</p>\r\n\r\n\t\t<!--\r\n\t\tDon't need PDFs anymore but leaving it here in case\r\n\t\t<div style=\"width: 100%; height: 1400px\">\r\n\t\t<ng2-pdfjs-viewer pdfSrc=\"../../pdfjs/web/TestPDF.pdf\">Resume</ng2-pdfjs-viewer>\r\n\t\t</div>\r\n\t\t-->\r\n\r\n<br><br><br>\r\n</body>\r\n"
+module.exports = "<!DOCTYPE HTML>\r\n<head>\r\n\t<meta charset=\"utf-8\">\r\n\t<meta name=\"description\" content=\"Official website for Light of Knowledge Academy. We offer After School Programs, English Writing, Math Tutoring and much more! Learn more now!\"/>\r\n\t<title>English Writing</title>\r\n</head>\r\n<body>\r\n\t<h2 class=\"page-header\">English Writing</h2>\r\n\t<h5>New Teaching Strategies for the 2018-2019 School Year</h5>\r\n\t<p>Hello Parents and Students!</p>\r\n\t<p>In my English writing class this year, I am using some new and creative ideas to stimulate students to think more deeply about text that they read, to participate with more vigor during discussions, and eventually, to lead their own discussion regarding ideas and concepts that come up in the reading.\r\n\t\tSome of the strategies I will use are</p>\r\n\t\t<ol>\r\n\t\t\t<li>Socratic seminar, which is an activity designed to stimulate deeper, more philosophical thinking about complex issues.</li>\r\n\t\t\t<li>Town Hall Circle, which is a group activity designed to help students see different perspectives on an issue.</li>\r\n\t\t\t<li>Café Conversations, in which each student plays a role of a given character in a fictional or non-fiction story.</li>\r\n\t\t\t<li>Text to Self, Text to Text, and Text to World, a writing and discussion activity that helps students make connections between what they are reading in this class with what they are reading in other classes, and to think more deeply about what they are reading.</li>\r\n\t\t\t<li>“Keep it or Junk it”, which is a discussion-based, note-taking strategy that will help students write better essays.</li>\r\n\t\t</ol>\r\n\t\t<p>I will try out each of these activities and then repeat the activities that are the most popular and successful.  Also, in each of these exercises, students will be challenged to become directly involved with the text by reading text, answering questions about it, and then participating in various types of speaking and listening activities during class.  Also, the writing assignment for each week will be closely related to these exercises.     I look forward to the opportunity to use these new ideas in class this year!!!</p>\r\n\t\t<p>Sincerely,</p>\r\n\t\t<p>Michael N. Merrick (Mr. Mike)</p>\r\n\r\n\t\t<hr>\r\n\r\n\t\t<p>My program has two main emphases:</p>\r\n\t\t<p>Learn by Doing and Variety.</p>\r\n\r\n\t\t<p>What I mean by Learn by Doing is that since all writing is creative and subjective, I stimulate students' minds with student-friendly topics, give them a simple format to follow, and tell them to write. I do offer students ways to improve their writing, but I don't expect them to write exactly the same way as I do because I want  students' writing to grow organically and not artificially. It's a slow process but it happens. I'm also a big believer in re-writes. They are important,  not just to make an essay polished and complete, but for students' self-confidence.</p>\r\n\r\n\t\t<p>As far as Variety, I like to give students different types of assignments, such as reading comprehension, vocabulary and grammar. Reading comprehension is important because many studies have shown that one of the best ways to improve student writing is to read professional writing - both fiction and non-fiction-regularly.  Knowing this, I search out compelling stories for students to read so that they absorb a great writer's unique writing style. I am also using  new writing exercises this year that will push students to write with better sentence variety and better paragraph coherence and flow.  Vocabulary development is also very important; I expect students to complete at least one vocabulary chapter per week.  Last, I also assign periodic grammar exercises because students don't receive enough grammar instruction in school and knowledge of the rules of  grammar is a very important part of creating well-written essays.</p>\r\n\t\t<p>I hope this helps you understand my program better.</p>\r\n\t\t<p>Sincerely,</p>\r\n\t\t<p>Michael N. Merrick (Mr. Mike)</p>\r\n\t\t<br>\r\n\t\t<Legend>Schedule</Legend>\r\n\r\n\t\t<div class=\"table-responsive\">\r\n\t\t\t<table class=\"table table-bordered\">\r\n\t\t\t\t<tr>\r\n\t\t\t\t\t<th>Tuesday</th>\r\n\t\t\t\t\t<th>Wednesday</th>\r\n\t\t\t\t\t<th>Thursday</th>\r\n\t\t\t\t\t<th>Friday</th>\r\n\t\t\t\t\t<th>Saturday</th>\r\n\t\t\t\t</tr>\r\n\t\t\t\t<tr>\r\n\t\t\t\t\t<td></td>\r\n\t\t\t\t\t<td></td>\r\n\t\t\t\t\t<td></td>\r\n\t\t\t\t\t<td></td>\r\n\t\t\t\t\t<td>Grades: 5, 6<br>Time: 2:00-4:00pm</td>\r\n\t\t\t\t</tr>\r\n\t\t\t\t<tr>\r\n\t\t\t\t\t<td>Grade: 9<br> Time: 3:30-5:30pm</td>\r\n\t\t\t\t\t<td>Grades: 6, 7<br> Time: 3:30-5:30pm</td>\r\n\t\t\t\t\t<td>Grades: 7, 8<br> Time: 3:30-5:30pm</td>\r\n\t\t\t\t\t<td>Grades: 8, 9<br> Time: 3:30-5:30pm</td>\r\n\t\t\t\t\t<td>ACT/SAT<br> Time: 4:00-6:00pm</td>\r\n\t\t\t\t</tr>\r\n\t\t\t\t<tr>\r\n\t\t\t\t\t<td>Grades: 5, 6<br> Time: 5:30-7:30pm</td>\r\n\t\t\t\t\t<td>Grades: 3, 4<br> Time: 5:30-6:30pm</td>\r\n\t\t\t\t\t<td>Grade: 10<br> Time: 5:30-7:30pm</td>\r\n\t\t\t\t\t<td>Grades: 6, 7<br> Time: 5:30-7:30pm</td>\r\n\t\t\t\t\t<td>Grades: 8, 9<br> Time: 6:00pm-8:00pm</td>\r\n\t\t\t\t</tr>\r\n\t\t\t\t<tr>\r\n\t\t\t\t\t<td></td>\r\n\t\t\t\t\t<td></td>\r\n\t\t\t\t\t<td>Reading Club<br> Time: 7:30pm-9:30pm</td>\r\n\t\t\t\t\t<td></td>\r\n\t\t\t\t\t<td>Grades: 9, 10<br> Time: 8:00pm-10:00pm</td>\r\n\t\t\t\t</tr>\r\n\t\t\t</table>\r\n\t\t</div>\r\n\r\n\t\t<p>Click <a target=\"_top\" [routerLink]=\"['/contact']\">here</a> to get in touch with us today!</p>\r\n\t\t<!--\r\n\t\tDon't need PDFs anymore but leaving it here in case\r\n\t\t<div style=\"width: 100%; height: 1400px\">\r\n\t\t<ng2-pdfjs-viewer pdfSrc=\"../../pdfjs/web/TestPDF.pdf\">Test</ng2-pdfjs-viewer>\r\n\t\t</div>\r\n\t\t-->\r\n<br><br><br>\r\n</body>\r\n"
 
 /***/ }),
 

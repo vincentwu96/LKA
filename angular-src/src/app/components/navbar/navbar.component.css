@@ -4,3 +4,8 @@
 .navbar-collapse.in {
 	overflow-y: hidden;
 }
+
+.navbar-nav li a:hover, .navbar-nav > .active > a {
+  color: white !important;
+  background-color:#3b3b99 !important;
+}

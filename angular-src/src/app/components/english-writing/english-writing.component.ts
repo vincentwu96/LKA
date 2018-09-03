@@ -6,10 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./english-writing.component.css']
 })
 export class EnglishWritingComponent implements OnInit {
-
-  constructor() { }
+  constructor(){}
 
   ngOnInit() {
   }
-
 }
