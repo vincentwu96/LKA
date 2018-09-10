@@ -1091,7 +1091,7 @@ module.exports = "ul.s{\r\n\tfont-size: 110%;\r\n}\r\n.center {\r\n\tdisplay: bl
 /***/ 690:
 /***/ (function(module, exports) {
 
-module.exports = ".horizontal-collapse {\r\n\theight: 70px;\r\n}\r\n.navbar-collapse.in {\r\n\toverflow-y: hidden;\r\n}\r\n\r\n.navbar-nav li a:hover, .navbar-nav > .active > a {\r\n  color: white !important;\r\n  background-color:#3b3b99 !important;\r\n}\r\n"
+module.exports = ".horizontal-collapse {\r\n\theight: 70px;\r\n}\r\n.navbar-collapse.in {\r\n\toverflow-y: hidden;\r\n}\r\n/*\r\n.navbar-nav li a:hover, .navbar-nav > .active > a {\r\n  color: white !important;\r\n  background-color:#3b3b99 !important;\r\n}*/\r\n\r\n.navbar-nav li a:hover{\r\n  color: white !important;\r\n  background-color:#c1c1ff !important;\r\n}\r\n\r\n.navbar-nav > .active > a {\r\n  color: white !important;\r\n  background-color:#3b3b99 !important;\r\n}\r\n"
 
 /***/ }),
 

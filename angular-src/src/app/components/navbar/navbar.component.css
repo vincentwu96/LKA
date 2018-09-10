@@ -5,7 +5,12 @@
 	overflow-y: hidden;
 }
 
-.navbar-nav li a:hover, .navbar-nav > .active > a {
+.navbar-nav li a:hover{
+  color: white !important;
+  background-color:#c1c1ff !important;
+}
+
+.navbar-nav > .active > a {
   color: white !important;
   background-color:#3b3b99 !important;
 }
