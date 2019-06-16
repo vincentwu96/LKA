@@ -22,6 +22,7 @@ import { EnrichmentComponent } from './components/enrichment/enrichment.componen
 import { AfterComponent } from './components/after/after.component';
 import { JoinComponent } from './components/join/join.component';
 import { FlashMessagesModule } from 'angular2-flash-messages';
+import { SummerCampComponent } from './components/summer-camp/summer-camp.component';
 import { enableProdMode } from '@angular/core';
 //import { PdfJsViewerModule } from 'ng2-pdfjs-viewer';
 
@@ -37,6 +38,7 @@ const appRoutes: Routes = [
 	{path:'math', component: MathComponent},
 	{path:'enrichment-programs', component: EnrichmentComponent},
 	{path:'join', component: JoinComponent},
+	{path:'summer-camp', component: SummerCampComponent},
 	{path:'**', redirectTo: ''},
 	]
 
@@ -55,7 +57,8 @@ enableProdMode();
     AfterComponent,
     MathComponent,
     EnrichmentComponent,
-    JoinComponent
+    JoinComponent,
+    SummerCampComponent
   ],
   imports: [
     BrowserModule,

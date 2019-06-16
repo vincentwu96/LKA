@@ -7,7 +7,3 @@ and (min-width : 800px) {
 		padding: 30px;
 	}
 }
-
-p.s, label.s{
-	font-size:110%;
-}

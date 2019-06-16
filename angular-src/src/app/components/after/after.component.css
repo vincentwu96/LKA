@@ -7,13 +7,29 @@
 @media only screen
 and (min-width : 1024px) {
 	#info-box {
-		height: 450px;
+		height: 465px;
 	}
 	#images{
 		width:265px;
 		height:215px;
 	}
 }
+
+@media only screen
+and (max-width : 1024px) {
+	.panel-title{
+		height:30px;
+	}
+	#info-box {
+		height: 465px;
+	}
+	#images{
+		width:265px;
+		height:215px;
+	}
+}
+
+
 .panel > .panel-heading {
     background-color: #00008B;
     color: white;

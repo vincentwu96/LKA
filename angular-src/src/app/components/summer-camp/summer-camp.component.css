@@ -1,24 +1,29 @@
 ul.s{
-	font-size: 110%;
+  font-size: 110%;
 }
+
 .center {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 }
 
+button {
+  width: 95%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+  margin-bottom: 5px;
+}
+
 @media only screen
 and (min-width : 1024px) {
 	#info-box {
-		height: 450px;
+		height: 250px;
 	}
 	#images{
-		width:265px;
-		height:180px;
-	}
-	#images2{
-		width:200px;
-		height:180px;
+		height:165px;
+    width:235px;
 	}
 }
 .panel > .panel-heading {
